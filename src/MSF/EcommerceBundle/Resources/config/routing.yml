@@ -14,7 +14,7 @@ validation:
     path:     /validation
     defaults: { _controller: EcommerceBundle:Panier:validation }
 
-produits:
+catalogue_produits:
     path:     /produits
     defaults: { _controller: EcommerceBundle:Produits:produits }
 
@@ -26,6 +26,10 @@ personalisation:
     path:     /personalisation
     defaults: { _controller: EcommerceBundle:Produits:personalisation }
 
-composition:
+composition_client:
     path:     /composition
     defaults: { _controller: EcommerceBundle:Produits:composition }
+
+composition_suggestion:
+    path:     /suggestion
+    defaults: { _controller: EcommerceBundle:Composition:compose }

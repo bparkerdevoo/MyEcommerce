@@ -10,7 +10,7 @@ class ProduitsControllerTest extends WebTestCase
     {
         $client = static::createClient();
 
-        $crawler = $client->request('GET', '/produits');
+        $crawler = $client->request('GET', '/Produits');
     }
 
     public function testPresentation()

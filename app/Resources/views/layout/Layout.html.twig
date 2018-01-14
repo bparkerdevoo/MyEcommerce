@@ -11,6 +11,7 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
+    <header>
     <div class="navbar navbar-inverse navbar-fixed-top">
 
         <div class="navbar-inner">
@@ -22,6 +23,7 @@
                 </button>
                 <a class="brand" href="{{ path('accueil') }}">My Scent Factory</a>
 
+
                 <div class="nav-collapse collapse">
                     <form class="navbar-form form-search pull-right">
                         <input id="Search" name="Search" type="text" class="input-medium search-query">
@@ -31,7 +33,10 @@
             </div>
         </div>
     </div>
-    {% block body %}{% endblock %}
+    </header>
+
+            {% block body %}{% endblock %}
+
     <hr />
     <footer id="footer" class="vspace20">
         <div class="container">

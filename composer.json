@@ -6,7 +6,8 @@
         "psr-4": {
             "AppBundle\\": "src/AppBundle",
             "MSF\\EcommerceBundle\\": "src/MSF/EcommerceBundle",
-          "MSF\\PagesBundle\\": "src/MSF/PagesBundle"
+            "MSF\\PagesBundle\\": "src/MSF/PagesBundle",
+          "MSF\\UserBundle\\": "src/MSF/UserBundle"
         },
         "classmap": [
             "app/AppKernel.php",
