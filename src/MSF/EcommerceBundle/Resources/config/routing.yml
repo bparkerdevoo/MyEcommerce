@@ -23,8 +23,8 @@ presentation:
     defaults: { _controller: EcommerceBundle:Produits:presentation }
 
 personalisation:
-    path:     /personalisation
-    defaults: { _controller: EcommerceBundle:Produits:personalisation }
+    path:     /custom
+    defaults: { _controller: EcommerceBundle:Custom:add }
 
 composition_client:
     path:     /composition
@@ -33,3 +33,6 @@ composition_client:
 composition_suggestion:
     path:     /suggestion
     defaults: { _controller: EcommerceBundle:Composition:compose }
+
+
+

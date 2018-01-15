@@ -20,12 +20,7 @@ class ProduitsController extends Controller
         ));
     }
 
-    public function personalisationAction()
-    {
-        return $this->render('EcommerceBundle:Produits:layout/personalisation.html.twig', array(
-            // ...enregistrer le nom de la composition du client dans table_commandeClient
-        ));
-    }
+
 
     public function compositionAction()
     {

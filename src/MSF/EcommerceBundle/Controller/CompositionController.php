@@ -37,7 +37,7 @@ class CompositionController extends Controller
         $suggestion2->setPhotoParfum('img/msf_spray.jpg');
 
         $em->persist($suggestion2);
-        $em->flush();*/
+        $em->flush()*/
 
        $suggestions = $em->getRepository('EcommerceBundle:Composition')->findAll();
         return $this->render('EcommerceBundle:Produits/layout:composition.html.twig', array(

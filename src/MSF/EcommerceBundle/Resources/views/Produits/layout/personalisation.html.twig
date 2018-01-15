@@ -1,8 +1,20 @@
-{% extends "::base.html.twig" %}
+{% extends "::layout/Layout.html.twig" %}
 
 {% block title %}EcommerceBundle:Produits:personalisation{% endblock %}
 
 {% block body %}
 <h1>Welcome to the Produits:personalisation page</h1>
     <p>ici nommer votre composition</p>
+
+    <div class="row">
+        <div class="span6">
+
+            {{ form_start(form) }}
+            {{ form_widget(form) }}
+            <input class="btn btn-primary" type="submit" value="{{ 'Customiser'|trans }}" />
+            {{ form_end(form) }}
+
+
+        </div>
+    </div>
 {% endblock %}

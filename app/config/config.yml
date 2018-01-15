@@ -39,8 +39,8 @@ fos_user:
     firewall_name: main
     user_class: MSF\UserBundle\Entity\User
     from_email:
-        address: "mailer_user"
-        sender_name: "mysentfactory"
+        address: "noreply@msf.com"
+        sender_name: "No reply"
 
 # Twig Configuration
 twig:
