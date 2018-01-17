@@ -24,7 +24,7 @@ class Produit
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=150)
+     * @ORM\Column(name="nom", type="string", length=150, unique=true)
      */
     private $nom;
 
@@ -45,7 +45,7 @@ class Produit
     /**
      * @var float
      *
-     * @ORM\Column(name="prix", type="float")
+     * @ORM\Column(name="prix", type="float", precision=10, scale=2)
      */
     private $prix;
 

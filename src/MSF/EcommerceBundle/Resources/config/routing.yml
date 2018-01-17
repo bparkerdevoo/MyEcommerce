@@ -34,5 +34,10 @@ composition_suggestion:
     path:     /suggestion
     defaults: { _controller: EcommerceBundle:Composition:compose }
 
+ajout_produit:
+    path: /ajoutProduit
+    defaults: { _controller: EcommerceBundle:Produits:add }
+
+
 
 
