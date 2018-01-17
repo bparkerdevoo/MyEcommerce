@@ -38,6 +38,8 @@ ajout_produit:
     path: /ajoutProduit
     defaults: { _controller: EcommerceBundle:Produits:add }
 
-
+ajout_support:
+    path: /ajoutSupport
+    defaults: { _controller: EcommerceBundle:Support:add }
 
 
