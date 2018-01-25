@@ -22,7 +22,7 @@ class ClientController extends Controller
           $form->handleRequest($request);
 
           //test soumission du formulaire
-          if($form->isSubmitted()){
+          if($form->isSubmitted() && $form->isValid()){
               //enregistrer le client en bdd
               $em = $this->getDoctrine()->getManager();
 
@@ -39,4 +39,6 @@ class ClientController extends Controller
           return $this->render('UserBundle:Default:modules/ajoutClient.html.twig', array('form'=>$formView));
 
     }
+
+
 }

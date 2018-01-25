@@ -3,6 +3,7 @@
 namespace MSF\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Client
@@ -25,6 +26,8 @@ class Client
      * @var string
      *
      * @ORM\Column(name="Nom", type="string", length=100)
+     *
+     * @Assert\NotBlank(message="Merci de renseigner ce champ")
      */
     private $nom;
 
@@ -38,7 +41,7 @@ class Client
     /**
      * @var bool
      *
-     * @ORM\Column(name="Titre", type="boolean")
+     * @ORM\Column(name="Titre", type="string")
      */
     private $titre;
 
@@ -108,7 +111,7 @@ class Client
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_inscription", type="datetimetz")
+     * @ORM\Column(name="date_inscription", type="date")
      */
     private $dateInscription;
 

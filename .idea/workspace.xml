@@ -2,17 +2,221 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6232abcb-4fb1-4f91-a6e1-7837a5ef993f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/AmbianceController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CategoriesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/EvenementController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/MediaController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ParfumController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/SupportController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/TVAController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules/AjoutSupport.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_1_20_18_12_45_PM_c.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/a_propos.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pages/create.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pages/delete.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pages/factory.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pages/update.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/pages/view.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules/ModifProduit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules/editProduit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/pages/create.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/pages/delete.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/pages/eshop.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/pages/update.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/pages/view.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/pages/create.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/pages/delete.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/pages/factory.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/pages/update.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/pages/view.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/AmbianceController.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/AmbianceController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CompositionController.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CompositionController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CustomController.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CustomController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/EvenementController.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/EvenementController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ParfumController.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/ParfumController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/SupportController.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/SupportController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Ambiance.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Ambiance.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Composition.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Composition.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Evenement.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Evenement.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Parfum.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Parfum.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Personnalisation.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Personnalisation.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Support.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Support.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/AmbianceType.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/AmbianceType.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/CompositionType.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/CompositionType.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/EvenementType.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/EvenementType.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/ParfumType.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/ParfumType.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/PersonnalisationType.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/PersonnalisationType.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/SupportType.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/SupportType.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository/AmbianceRepository.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Repository/AmbianceRepository.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository/CompositionRepository.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Repository/CompositionRepository.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository/ParfumRepository.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Repository/ParfumRepository.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository/PersonnalisationRepository.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Repository/PersonnalisationRepository.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository/SupportRepository.php" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Repository/SupportRepository.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/composition.html.twig" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/layout/composition.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/personalisation.html.twig" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/layout/personalisation.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules/AjoutSupport.html.twig" afterPath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/modules/AjoutSupport.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyEcommerce.iml" afterPath="$PROJECT_DIR$/.idea/MyEcommerce.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CategoriesController.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CategoriesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/MediaController.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/MediaController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/TVAController.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/TVAController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Produit.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Produit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Default/index.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules/AjoutProduit.html.twig" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules/AjoutProduit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/index.html.twig" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/UserBundle/Controller/ClientController.php" afterPath="$PROJECT_DIR$/src/MSF/UserBundle/Controller/ClientController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/UserBundle/Entity/Client.php" afterPath="$PROJECT_DIR$/src/MSF/UserBundle/Entity/Client.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/UserBundle/Form/ClientType.php" afterPath="$PROJECT_DIR$/src/MSF/UserBundle/Form/ClientType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/UserBundle/Resources/views/Default/modules/ajoutClient.html.twig" afterPath="$PROJECT_DIR$/src/MSF/UserBundle/Resources/views/Default/modules/ajoutClient.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/CNAME" afterPath="$PROJECT_DIR$/web/bootstrap-4/CNAME" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/Gemfile" afterPath="$PROJECT_DIR$/web/bootstrap-4/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/Gemfile.lock" afterPath="$PROJECT_DIR$/web/bootstrap-4/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/README.md" afterPath="$PROJECT_DIR$/web/bootstrap-4/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/_config.yml" afterPath="$PROJECT_DIR$/web/bootstrap-4/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.css" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.css.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.min.css.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.css" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.css.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.min.css.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.css" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.min.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/alert.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/alert.js.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/alert.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/button.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/button.js.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/button.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/carousel.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/carousel.js.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/carousel.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/collapse.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/collapse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/collapse.js.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/collapse.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/dropdown.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/dropdown.js.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/dropdown.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/modal.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/modal.js.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/modal.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/popover.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/popover.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/popover.js.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/popover.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/scrollspy.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/scrollspy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/scrollspy.js.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/scrollspy.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tab.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tab.js.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tab.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tooltip.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tooltip.js.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tooltip.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/util.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/util.js.map" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/dist/util.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/alert.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/src/alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/button.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/src/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/carousel.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/src/carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/collapse.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/src/collapse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/dropdown.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/src/dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/modal.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/src/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/popover.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/src/popover.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/scrollspy.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/src/scrollspy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/tab.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/src/tab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/tooltip.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/src/tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/util.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/src/util.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/README.md" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/index.html" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/alert.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/alert.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/button.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/carousel.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/carousel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/collapse.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/collapse.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/dropdown.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/dropdown.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/modal.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/modal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/popover.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/popover.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/scrollspy.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/scrollspy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/tab.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/tab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/tooltip.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/vendor/qunit.css" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/vendor/qunit.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/vendor/qunit.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/vendor/qunit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/alert.html" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/alert.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/button.html" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/button.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/carousel.html" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/carousel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/collapse.html" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/collapse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/dropdown.html" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/dropdown.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/modal.html" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/modal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/popover.html" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/popover.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/scrollspy.html" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/scrollspy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/tab.html" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/tab.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/tooltip.html" afterPath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/tooltip.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/nuget/bootstrap.nuspec" afterPath="$PROJECT_DIR$/web/bootstrap-4/nuget/bootstrap.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/nuget/bootstrap.sass.nuspec" afterPath="$PROJECT_DIR$/web/bootstrap-4/nuget/bootstrap.sass.nuspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/package.js" afterPath="$PROJECT_DIR$/web/bootstrap-4/package.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/package.json" afterPath="$PROJECT_DIR$/web/bootstrap-4/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_alert.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_alert.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_badge.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_badge.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_breadcrumb.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_breadcrumb.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_button-group.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_button-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_buttons.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_card.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_card.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_carousel.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_carousel.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_close.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_close.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_code.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_code.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_custom-forms.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_custom-forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_dropdown.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_dropdown.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_forms.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_grid.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_images.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_images.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_input-group.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_input-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_jumbotron.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_jumbotron.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_list-group.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_list-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_mixins.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_mixins.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_modal.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_modal.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_nav.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_nav.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_navbar.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_navbar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_pagination.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_pagination.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_popover.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_popover.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_print.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_print.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_progress.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_progress.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_reboot.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_reboot.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_tables.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_tables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_tooltip.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_tooltip.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_transitions.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_transitions.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_type.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_type.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_utilities.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_utilities.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_variables.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/bootstrap-grid.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/bootstrap-grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/bootstrap-reboot.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/bootstrap-reboot.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/bootstrap.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/bootstrap.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_alert.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_alert.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_background-variant.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_background-variant.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_badge.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_badge.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_border-radius.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_border-radius.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_breakpoints.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_breakpoints.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_buttons.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_clearfix.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_clearfix.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_float.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_float.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_forms.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_forms.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_gradients.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_gradients.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_grid-framework.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_grid-framework.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_grid.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_grid.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_hover.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_hover.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_image.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_image.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_list-group.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_list-group.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_nav-divider.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_nav-divider.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_navbar-align.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_navbar-align.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_pagination.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_pagination.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_reset-text.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_reset-text.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_resize.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_resize.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_screen-reader.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_screen-reader.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_text-emphasis.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_text-emphasis.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_text-hide.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_text-hide.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_text-truncate.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_text-truncate.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_visibility.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_visibility.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_align.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_align.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_background.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_background.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_borders.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_borders.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_display.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_display.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_flex.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_flex.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_position.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_position.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_sizing.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_sizing.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_spacing.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_spacing.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_text.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_text.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_visibility.scss" afterPath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_visibility.scss" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,122 +257,143 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClientController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Controller/ClientController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="35" column="42" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="35" selection-end-column="42" />
-              <folding>
-                <element signature="e#45#78#0#PHP" expanded="true" />
-                <element signature="e#1062#1112#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SupportController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/SupportController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-              <folding>
-                <element signature="e#50#89#0#PHP" expanded="true" />
-                <element signature="e#528#585#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AjoutProduit.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules/AjoutProduit.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CustomController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="39" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.50757575">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="ProduitsController.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="177">
+                  <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#50#90#0#PHP" expanded="true" />
+                    <element signature="e#700#739#1#PHP" expanded="true" />
+                    <element signature="e#826#866#1#PHP" expanded="true" />
+                    <marker date="1516839687000" expanded="false" signature="4378:4432" ph="Ecommerce:Produits:modules/editProduit" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="PanierController.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/PanierController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TVAController.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/TVAController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1830">
+                  <caret line="54" column="58" lean-forward="false" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
+                  <folding>
+                    <element signature="e#50#85#0#PHP" expanded="true" />
+                    <element signature="e#423#463#1#PHP" expanded="true" />
+                    <element signature="e#605#644#1#PHP" expanded="true" />
+                    <element signature="e#797#837#1#PHP" expanded="true" />
+                    <element signature="e#984#1022#1#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="CategoriesController.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CategoriesController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-737">
+                  <caret line="23" column="47" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+                  <folding>
+                    <element signature="e#50#92#0#PHP" expanded="true" />
+                    <element signature="e#478#506#1#PHP" expanded="true" />
+                    <element signature="e#550#589#1#PHP" expanded="true" />
+                    <element signature="e#757#797#1#PHP" expanded="true" />
+                    <element signature="e#967#1007#1#PHP" expanded="true" />
+                    <element signature="e#1171#1209#1#PHP" expanded="true" />
+                    <element signature="e#1380#1420#1#PHP" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FrameworkCommandLineHistory">
+    <commandsHistory>
+      <command text="composer.json" />
+      <command text="ls" />
+      <command text="php bin/console generate:bundle" />
+    </commandsHistory>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.txt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Resources/views/Default/modulesUsed/utilisateursConnecte.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Resources/views/Default/modulesUsed/utilisateursConfirme.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Resources/views/Default/modulesUsed/utilisateurs.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Resources/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Listeners/LogoutListener.php" />
-        <option value="$PROJECT_DIR$/app/config/services.yml" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/UserBundle.php" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CompositionController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Controller/SecurityController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/formTestController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/FormTestController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/FormeType.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/formeType.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/FormulaireController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Personnalisation.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/PersonnalisationType.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/personalisation.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CustomController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Produit.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/navAdd.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/nav.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/ProduitType.php" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/FactoryBundle.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Tests/Controller/DefaultControllerTest.php" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Support.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Personnalisation.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Parfum.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Evenement.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Composition.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Ambiance.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/pages/update.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/pages/create.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/pages/delete.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/pages/view.html.twig" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Repository/SupportRepository.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Repository/PersonnalisationRepository.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Repository/ParfumRepository.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Repository/CompositionRepository.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Repository/AmbianceRepository.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/layout/personalisation.html.twig" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CompositionController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/SupportType.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/PersonnalisationType.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/ParfumType.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/NoteType.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/EvenementType.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/CompositionType.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Form/AmbianceType.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/pages/factory.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/pages/factory.html.twig" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/AmbianceController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CustomController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/PostController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/EvenementController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/FavorieController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/NoteController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/ParfumController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/SupportController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/pages/view.html.twig" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/pages/view.html.twig" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Resources/views/Default/modules/ajoutClient.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Controller/ClientController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Form/ClientType.php" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Entity/Client.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/AmbianceController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ParfumController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/TVAController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/MediaController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/EvenementController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CategoriesController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/pages/eshop.html.twig" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" />
         <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules/AjoutProduit.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/SupportController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CategoriesController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/MediaController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/TVAController.php" />
       </list>
     </option>
   </component>
@@ -178,9 +403,18 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="PhpDebugGeneral" xdebug_debug_port="9001" break_at_first_line="true" />
   <component name="PhpServers">
-    <servers />
+    <servers>
+      <server host="localhost" id="8d7cabea-366e-4fbd-a916-778931241eb2" name="localhost" />
+      <server host="localhost" id="927af750-e41f-4702-9c3d-d7c09b7726b3" name="local.ecommerce" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$" remote-root="/Applications/MAMP/htdocs/MyEcommerce" />
+        </path_mappings>
+      </server>
+    </servers>
   </component>
+  <component name="PhpWebServerValidation" path_to_validation_script="$PROJECT_DIR$" selected_validation_type="LOCAL" web_path_to_validation_script="http://127.0.0.1/" />
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
@@ -224,9 +458,10 @@
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
     </include_path>
   </component>
+  <component name="PhpXdebugProxy" ide_key="PHPSTORM" />
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1289" />
+    <option name="width" value="1440" />
     <option name="height" value="830" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -245,8 +480,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,6 +493,17 @@
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
@@ -335,7 +581,7 @@
               <item name="EcommerceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Produits" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
@@ -345,33 +591,21 @@
               <item name="EcommerceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Produits" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layout" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EcommerceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Produits" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FactoryBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="FactoryBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
@@ -381,25 +615,25 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/composer.json&#10;/Applications/MAMP/htdocs/MyEcommerce/app/config/parameters.yml&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/friendsofsymfony/user-bundle/Model/User.php&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/friendsofsymfony/user-bundle/Doctrine/UserListener.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Resources" />
-      <recent name="$PROJECT_DIR$/app/Resources/views/FOSUser" />
-      <recent name="$PROJECT_DIR$/src/MSF" />
-      <recent name="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/produits/layout" />
-      <recent name="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Panier/msf" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/app/Resources/views/pages" />
+      <recent name="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller" />
       <recent name="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules" />
-      <recent name="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller" />
-      <recent name="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed" />
-      <recent name="$PROJECT_DIR$/src/MSF/UserBundle/Resources/views/Default/modulesUsed" />
-      <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/MSF/FactoryBundle/Form" />
+      <recent name="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/modules" />
+      <recent name="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/layout" />
+      <recent name="$PROJECT_DIR$/src/MSF/FactoryBundle/Repository" />
+      <recent name="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -414,13 +648,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.vendor">
+  <component name="RunManager" selected="PHP Script.ProduitsController.php">
+    <configuration name="MyEcommerce" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="local.ecommerce" start_url="/MyEcommerce/web/" />
+    <configuration name="ProduitsController.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" />
     <configuration name="vendor" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$/vendor" />
     </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="PHP Web Application.MyEcommerce" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.ProduitsController.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHPUnit.vendor" />
+    </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="PHPUnit.vendor" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.ProduitsController.php" />
+        <item index="1" class="java.lang.String" itemvalue="PHPUnit.vendor" />
       </list>
     </recent_temporary>
   </component>
@@ -438,7 +680,12 @@
       <option name="presentableId" value="Default" />
       <updated>1515865361059</updated>
       <workItem from="1515865517720" duration="70287000" />
-      <workItem from="1516139402177" duration="11933000" />
+      <workItem from="1516139402177" duration="31066000" />
+      <workItem from="1516371343622" duration="393000" />
+      <workItem from="1516372135643" duration="13212000" />
+      <workItem from="1516450252552" duration="5791000" />
+      <workItem from="1516653016621" duration="3603000" />
+      <workItem from="1516657165253" duration="25003000" />
     </task>
     <servers />
   </component>
@@ -448,28 +695,29 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82220000" />
+    <option name="totallyTimeSpent" value="149355000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1289" height="830" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25581396" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10586552" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46875" sideWeight="0.37052932" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17310444" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41904762" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.093877554" sideWeight="0.62947065" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39945653" sideWeight="0.48569384" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -477,19 +725,19 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41904762" sideWeight="0.5060144" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3442177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3304721" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41904762" sideWeight="0.49398556" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23416199" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17310444" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,414 +747,531 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MSF/PagesBundle/Controller/PageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-752">
-          <caret line="38" column="20" lean-forward="false" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Resources/views/Default/modulesUsed/utilisateursConnecte.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="9" column="54" lean-forward="false" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="16" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="16" column="40" lean-forward="false" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/FormTestController.php" />
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Formulaire/form_test.html.twig" />
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/formeType.php" />
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/FormulaireController.php" />
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Personnalisation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="26" column="71" lean-forward="false" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/PersonnalisationType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="56" lean-forward="false" selection-start-line="7" selection-start-column="56" selection-end-line="7" selection-end-column="56" />
-          <folding>
-            <element signature="e#44#84#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CustomController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/UserBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/presentation.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="53" lean-forward="false" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
-          <folding>
-            <element signature="e#12#37#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produits.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="54" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/navAdd.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="13" column="78" lean-forward="false" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/nav.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/composition.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-774">
-          <caret line="17" column="42" lean-forward="false" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/personalisation.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="13" column="40" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Produit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="47" column="67" lean-forward="false" selection-start-line="47" selection-start-column="67" selection-end-line="47" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#41#83#0#PHP" expanded="true" />
-            <marker date="1516150205000" expanded="true" signature="203:441" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/ProduitType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="22" column="49" lean-forward="true" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
-          <folding>
-            <element signature="e#44#84#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="2" lean-forward="true" selection-start-line="3" selection-start-column="2" selection-end-line="5" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Form/ClientType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="26" column="45" lean-forward="false" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
-          <folding>
-            <element signature="e#39#79#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Resources/views/Default/modules/ajoutClient.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="44" column="21" lean-forward="true" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Entity/Client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9196">
-          <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/PanierController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-444">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/AmbianceController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#50#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ParfumController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-          <folding>
-            <element signature="e#50#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CategoriesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#50#92#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/EvenementController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#50#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/MediaController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#50#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/TVAController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding>
-            <element signature="e#50#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CompositionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="991">
-          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CustomController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="39" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Controller/ClientController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="35" column="42" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="35" selection-end-column="42" />
-          <folding>
-            <element signature="e#45#78#0#PHP" expanded="true" />
-            <element signature="e#1062#1112#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules/AjoutSupport.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2299">
+        <state relative-caret-position="-476">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules/AjoutProduit.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CompositionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="-1255">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/SupportController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        <state relative-caret-position="-342">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ParfumController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/layout/personalisation.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
-            <element signature="e#50#89#0#PHP" expanded="true" />
-            <element signature="e#528#585#0#PHP" expanded="true" />
+            <element signature="e#12#37#0#Twig" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CompositionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="842">
+          <caret line="39" column="35" lean-forward="false" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding>
+            <element signature="e#48#91#0#PHP" expanded="true" />
+            <element signature="e#468#493#1#PHP" expanded="true" />
+            <element signature="e#676#700#1#PHP" expanded="true" />
+            <element signature="e#888#912#1#PHP" expanded="true" />
+            <element signature="e#1092#1114#1#PHP" expanded="true" />
+            <element signature="e#1303#1327#1#PHP" expanded="true" />
+            <element signature="e#2661#2714#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Form/SupportType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Support.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Personnalisation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-971">
+          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Form/PersonnalisationType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="e#42#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Parfum.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1037">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Form/ParfumType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Note.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Form/NoteType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-191">
+          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+          <folding>
+            <element signature="e#42#82#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Evenement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-768">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Form/EvenementType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <folding>
+            <element signature="e#42#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Composition.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1196">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Form/CompositionType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="40" column="27" lean-forward="false" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+          <folding>
+            <element signature="e#42#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Form/AmbianceType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="31" column="27" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="27" />
+          <folding>
+            <element signature="e#42#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Ambiance.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="3" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/pages/factory.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding>
+            <element signature="e#12#37#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CustomController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="53" column="50" lean-forward="false" selection-start-line="53" selection-start-column="50" selection-end-line="53" selection-end-column="50" />
+          <folding>
+            <element signature="e#48#94#0#PHP" expanded="true" />
+            <element signature="e#561#600#1#PHP" expanded="true" />
+            <element signature="e#777#815#1#PHP" expanded="true" />
+            <element signature="e#997#1035#1#PHP" expanded="true" />
+            <element signature="e#1209#1245#1#PHP" expanded="true" />
+            <element signature="e#2328#2385#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/pages/factory.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/EvenementController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding>
+            <element signature="e#48#87#0#PHP" expanded="true" />
+            <element signature="e#445#484#1#PHP" expanded="true" />
+            <element signature="e#649#687#1#PHP" expanded="true" />
+            <element signature="e#857#895#1#PHP" expanded="true" />
+            <element signature="e#1057#1093#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/NoteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <caret line="31" column="50" lean-forward="false" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <caret line="39" column="50" lean-forward="false" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+          <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+          <folding>
+            <element signature="e#48#105#0#PHP" expanded="true" />
+            <element signature="e#354#393#1#PHP" expanded="true" />
+            <element signature="e#555#593#1#PHP" expanded="true" />
+            <element signature="e#760#798#1#PHP" expanded="true" />
+            <element signature="e#957#993#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/FavorieController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="48" column="50" lean-forward="false" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
+          <folding>
+            <element signature="e#48#105#0#PHP" expanded="true" />
+            <element signature="e#366#405#1#PHP" expanded="true" />
+            <element signature="e#576#614#1#PHP" expanded="true" />
+            <element signature="e#790#828#1#PHP" expanded="true" />
+            <element signature="e#996#1032#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/ParfumController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1620">
+          <caret line="18" column="50" lean-forward="false" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <caret line="26" column="50" lean-forward="false" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+          <caret line="34" column="50" lean-forward="false" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+          <caret line="42" column="50" lean-forward="false" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
+          <caret line="51" column="50" lean-forward="false" selection-start-line="51" selection-start-column="50" selection-end-line="51" selection-end-column="50" />
+          <folding>
+            <element signature="e#48#84#0#PHP" expanded="true" />
+            <element signature="e#439#478#1#PHP" expanded="true" />
+            <element signature="e#646#684#1#PHP" expanded="true" />
+            <element signature="e#857#895#1#PHP" expanded="true" />
+            <element signature="e#1060#1096#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/SupportController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="54" column="10" lean-forward="true" selection-start-line="54" selection-start-column="10" selection-end-line="54" selection-end-column="10" />
+          <folding>
+            <element signature="e#48#85#0#PHP" expanded="true" />
+            <element signature="e#445#484#1#PHP" expanded="true" />
+            <element signature="e#655#693#1#PHP" expanded="true" />
+            <element signature="e#869#907#1#PHP" expanded="true" />
+            <element signature="e#1075#1111#1#PHP" expanded="true" />
+            <element signature="e#1288#1326#1#PHP" expanded="true" />
+            <element signature="e#1643#1698#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/pages/view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/pages/view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Categories.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Produit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2981">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#37#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/AmbianceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1535">
+          <caret line="50" column="50" lean-forward="false" selection-start-line="50" selection-start-column="50" selection-end-line="50" selection-end-column="50" />
+          <folding>
+            <element signature="e#48#86#0#PHP" expanded="true" />
+            <element signature="e#450#489#1#PHP" expanded="true" />
+            <element signature="e#663#701#1#PHP" expanded="true" />
+            <element signature="e#880#918#1#PHP" expanded="true" />
+            <element signature="e#1089#1125#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="50" selection-end-column="5" />
+          <folding>
+            <element signature="e#48#105#0#PHP" expanded="true" />
+            <element signature="e#407#432#1#PHP" expanded="true" />
+            <element signature="e#476#515#1#PHP" expanded="true" />
+            <element signature="e#671#709#1#PHP" expanded="true" />
+            <element signature="e#870#908#1#PHP" expanded="true" />
+            <element signature="e#1063#1099#1#PHP" expanded="true" />
+            <element signature="e#1260#1298#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/pages/eshop.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="42" lean-forward="false" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+          <folding>
+            <element signature="e#12#37#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-186">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="41" column="23" lean-forward="false" selection-start-line="41" selection-start-column="23" selection-end-line="41" selection-end-column="23" />
+        <state relative-caret-position="-281">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CategoriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-737">
+          <caret line="23" column="47" lean-forward="false" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
+          <folding>
+            <element signature="e#50#92#0#PHP" expanded="true" />
+            <element signature="e#478#506#1#PHP" expanded="true" />
+            <element signature="e#550#589#1#PHP" expanded="true" />
+            <element signature="e#757#797#1#PHP" expanded="true" />
+            <element signature="e#967#1007#1#PHP" expanded="true" />
+            <element signature="e#1171#1209#1#PHP" expanded="true" />
+            <element signature="e#1380#1420#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#90#0#PHP" expanded="true" />
+            <element signature="e#700#739#1#PHP" expanded="true" />
+            <element signature="e#826#866#1#PHP" expanded="true" />
+            <marker date="1516839687000" expanded="false" signature="4378:4432" ph="Ecommerce:Produits:modules/editProduit" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/MediaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="53" column="58" lean-forward="false" selection-start-line="53" selection-start-column="58" selection-end-line="53" selection-end-column="58" />
+          <folding>
+            <element signature="e#50#87#0#PHP" expanded="true" />
+            <element signature="e#485#524#1#PHP" expanded="true" />
+            <element signature="e#684#724#1#PHP" expanded="true" />
+            <element signature="e#889#929#1#PHP" expanded="true" />
+            <element signature="e#1088#1126#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/PanierController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/TVAController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1830">
+          <caret line="54" column="58" lean-forward="false" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
+          <folding>
+            <element signature="e#50#85#0#PHP" expanded="true" />
+            <element signature="e#423#463#1#PHP" expanded="true" />
+            <element signature="e#605#644#1#PHP" expanded="true" />
+            <element signature="e#797#837#1#PHP" expanded="true" />
+            <element signature="e#984#1022#1#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

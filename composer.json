@@ -7,7 +7,8 @@
             "AppBundle\\": "src/AppBundle",
             "MSF\\EcommerceBundle\\": "src/MSF/EcommerceBundle",
             "MSF\\PagesBundle\\": "src/MSF/PagesBundle",
-          "MSF\\UserBundle\\": "src/MSF/UserBundle"
+            "MSF\\UserBundle\\": "src/MSF/UserBundle",
+            "MSF\\FactoryBundle\\": "src/MSF/FactoryBundle"
         },
         "classmap": [
             "app/AppKernel.php",

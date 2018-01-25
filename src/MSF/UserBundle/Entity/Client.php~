@@ -38,7 +38,7 @@ class Client
     /**
      * @var bool
      *
-     * @ORM\Column(name="Titre", type="boolean")
+     * @ORM\Column(name="Titre", type="string")
      */
     private $titre;
 
@@ -108,7 +108,7 @@ class Client
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_inscription", type="datetimetz")
+     * @ORM\Column(name="date_inscription", type="date")
      */
     private $dateInscription;
 
@@ -389,5 +389,53 @@ class Client
     public function getDateInscription()
     {
         return $this->dateInscription;
+    }
+
+    /**
+     * Set telephone.
+     *
+     * @param string $telephone
+     *
+     * @return Client
+     */
+    public function setTelephone($telephone)
+    {
+        $this->telephone = $telephone;
+
+        return $this;
+    }
+
+    /**
+     * Get telephone.
+     *
+     * @return string
+     */
+    public function getTelephone()
+    {
+        return $this->telephone;
+    }
+
+    /**
+     * Set mobile.
+     *
+     * @param string $mobile
+     *
+     * @return Client
+     */
+    public function setMobile($mobile)
+    {
+        $this->mobile = $mobile;
+
+        return $this;
+    }
+
+    /**
+     * Get mobile.
+     *
+     * @return string
+     */
+    public function getMobile()
+    {
+        return $this->mobile;
     }
 }

@@ -22,10 +22,6 @@ presentation:
     path:     /presentation
     defaults: { _controller: EcommerceBundle:Produits:presentation }
 
-personalisation:
-    path:     /custom
-    defaults: { _controller: EcommerceBundle:Custom:add }
-
 composition_client:
     path:     /composition
     defaults: { _controller: EcommerceBundle:Produits:composition }
@@ -38,8 +34,33 @@ ajout_produit:
     path: /ajoutProduit
     defaults: { _controller: EcommerceBundle:Produits:add }
 
-ajout_support:
-    path: /ajoutSupport
-    defaults: { _controller: EcommerceBundle:Support:add }
+modifier_produit:
+    path: /modifierProduit
+    defaults: { _controller: EcommerceBundle:Produits:modifier }
+
+editer_produit:
+    path: /editer/{id}
+    defaults: { _controller: EcommerceBundle:Produits:update}
 
 
+#crud ecommerce
+
+media_annotation_route:
+    resource: "@EcommerceBundle/Controller/MediaController.php"
+    type: annotation
+
+produit_annotation_route:
+    resource: "@EcommerceBundle/Controller/ProduitsController.php"
+    type: annotation
+
+categorie_annotation_route:
+    resource: "@EcommerceBundle/Controller/CategoriesController.php"
+    type: annotation
+
+tva_annotation_route:
+    resource: "@EcommerceBundle/Controller/TVAController.php"
+    type: annotation
+
+panier_annotation_route:
+    resource: "@EcommerceBundle/Controller/PanierController.php"
+    type: annotation

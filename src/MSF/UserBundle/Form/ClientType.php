@@ -2,13 +2,16 @@
 
 namespace MSF\UserBundle\Form;
 
+use MSF\UserBundle\Entity\Client;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Validator\Constraints\Choice;
 
 class ClientType extends AbstractType
 {
@@ -18,15 +21,28 @@ class ClientType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
+
             ->add('nom', TextType::class)
             ->add('prenom',TextType::class)
-            ->add('titre', TextType::class)
+            ->add('titre', ChoiceType::class,
+                array('choices'=>array(
+                                        'Madame'=>'Madame',
+                                        'Mademoiselle'=> 'Mademoiselle',
+                                        'Monsieur'=> 'Monsieur')))
             ->add('adresse1',TextType::class)
             ->add('adresse2',TextType::class)
-            ->add('ville',TextType::class)->add('codePostal',TextType::class)->add('region',TextType::class)
-            ->add('categorieAdresse',TextType::class)
+            ->add('ville',TextType::class)
+            ->add('codePostal',TextType::class)
+            ->add('region',TextType::class)
+            ->add('mobile',TextType::class)
+            ->add('telephone',TextType::class)
+            ->add('categorieAdresse',ChoiceType::class,
+                array('choices'=>array(
+                    'Adresse de facturation'=>true,
+                    'Adresse de livraison'=> true,
+                    )))
             ->add('dateDeNaissance',BirthdayType::class)
-            ->add('dateInscription',DateTimeType::class);
+            ->add('dateInscription',DateType::class);
     }/**
      * {@inheritdoc}
      */

@@ -3,7 +3,7 @@
 namespace MSF\EcommerceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\Validator\Constraints as Assert;
 /**
  * Produit
  *
@@ -25,6 +25,8 @@ class Produit
      * @var string
      *
      * @ORM\Column(name="nom", type="string", length=150, unique=true)
+     *
+     * @Assert\NotBlank(message="Merci de renseigner ce champ")
      */
     private $nom;
 
@@ -46,6 +48,12 @@ class Produit
      * @var float
      *
      * @ORM\Column(name="prix", type="float", precision=10, scale=2)
+     *
+     * @Assert\GreaterThan(0)
+     *
+     * @Assert\NotBlank(message="Le prix est obligatoire")
+     *
+     *
      */
     private $prix;
 
