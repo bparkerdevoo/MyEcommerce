@@ -29,7 +29,7 @@ class CompositionController extends Controller
     /**
      * @Route("/composition/update/{id}", name="update_composition")
      */
-    public function updateCompositionAction()
+    public function updateCompositionAction($id)
     {
         return $this->render("pages/update.html.twig");
     }
@@ -37,7 +37,7 @@ class CompositionController extends Controller
     /**
      * @Route("/composition/show/{id}", name="show_composition")
      */
-    public function showCompositionAction()
+    public function showCompositionAction($id)
     {
         return $this->render("pages/view.html.twig");
     }
@@ -46,7 +46,7 @@ class CompositionController extends Controller
     /**
      * @Route("/composition/delete/{id}", name="delete_Composition")
      */
-    public function deleteCompositionAction()
+    public function deleteCompositionAction($id)
     {
         return $this->render("pages/delete.html.twig");
     }

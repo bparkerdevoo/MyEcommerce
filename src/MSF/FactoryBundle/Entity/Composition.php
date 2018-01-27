@@ -22,46 +22,55 @@ class Composition
     private $id;
 
     /**
-     * @var string
+     * @var int
      *
-     * @ORM\Column(name="ambiance", type="string", length=255)
+     * @ORM\Column(name="id_parfum", type="integer")
+     * @ORM\ManyToMany(targetEntity="MSF\FactoryBundle\Entity\Parfum", cascade={"persist"})
+     *
      */
-    private $ambiance;
+    private $id_parfum;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id_support", type="integer")
+     * @ORM\OneToMany(targetEntity="MSF\FactoryBundle\Entity\Support", cascade={"persist"})
+     *
+     */
+    private $id_support;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id_custom", type="integer")
+     * @ORM\OneToOne(targetEntity="MSF\FactoryBundle\Entity\Personnalisation", cascade={"persist"})
+     *
+     */
+    private $id_custom;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id_client", type="integer")
+     * @ORM\ManyToOne(targetEntity="MSF\UserBundle\Entity\ClientBundle\Entity\Client", cascade={"persist"})
+     *
+     */
+    private $id_client;
 
     /**
      * @var string
-     *
-     * @ORM\Column(name="support", type="string", length=255)
+     * @ORM\Column(name="id_etat", type="string")
+     * @ORM\ManyToOne(targetEntity="MSF\FactoryBundle\Entity\etat", cascade={"persist"})
      */
-    private $support;
+    private $id_etat;
 
     /**
      * @var string
+     * @ORM\Column(name="auteur", type="string")
      *
-     * @ORM\Column(name="parfum", type="string", length=255)
      */
-    private $parfum;
+    private $auteur;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="photoSupport", type="string", length=255)
-     */
-    private $photoSupport;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="photoParfum", type="string", length=255)
-     */
-    private $photoParfum;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="description", type="text")
-     */
-    private $description;
 
     /**
      * @var float
@@ -69,20 +78,6 @@ class Composition
      * @ORM\Column(name="prix", type="float")
      */
     private $prix;
-
-    /**
-     * @var bool
-     *
-     * @ORM\Column(name="disponible", type="boolean")
-     */
-    private $disponible;
-
-    /**
-     * @var float
-     *
-     * @ORM\Column(name="tva", type="float")
-     */
-    private $tva;
 
 
     /**
@@ -95,149 +90,6 @@ class Composition
         return $this->id;
     }
 
-    /**
-     * Set ambiance.
-     *
-     * @param string $ambiance
-     *
-     * @return Composition
-     */
-    public function setAmbiance($ambiance)
-    {
-        $this->ambiance = $ambiance;
-
-        return $this;
-    }
-
-    /**
-     * Get ambiance.
-     *
-     * @return string
-     */
-    public function getAmbiance()
-    {
-        return $this->ambiance;
-    }
-
-    /**
-     * Set support.
-     *
-     * @param string $support
-     *
-     * @return Composition
-     */
-    public function setSupport($support)
-    {
-        $this->support = $support;
-
-        return $this;
-    }
-
-    /**
-     * Get support.
-     *
-     * @return string
-     */
-    public function getSupport()
-    {
-        return $this->support;
-    }
-
-    /**
-     * Set parfum.
-     *
-     * @param string $parfum
-     *
-     * @return Composition
-     */
-    public function setParfum($parfum)
-    {
-        $this->parfum = $parfum;
-
-        return $this;
-    }
-
-    /**
-     * Get parfum.
-     *
-     * @return string
-     */
-    public function getParfum()
-    {
-        return $this->parfum;
-    }
-
-    /**
-     * Set photoSupport.
-     *
-     * @param string $photoSupport
-     *
-     * @return Composition
-     */
-    public function setPhotoSupport($photoSupport)
-    {
-        $this->photoSupport = $photoSupport;
-
-        return $this;
-    }
-
-    /**
-     * Get photoSupport.
-     *
-     * @return string
-     */
-    public function getPhotoSupport()
-    {
-        return $this->photoSupport;
-    }
-
-    /**
-     * Set photoParfum.
-     *
-     * @param string $photoParfum
-     *
-     * @return Composition
-     */
-    public function setPhotoParfum($photoParfum)
-    {
-        $this->photoParfum = $photoParfum;
-
-        return $this;
-    }
-
-    /**
-     * Get photoParfum.
-     *
-     * @return string
-     */
-    public function getPhotoParfum()
-    {
-        return $this->photoParfum;
-    }
-
-    /**
-     * Set description.
-     *
-     * @param string $description
-     *
-     * @return Composition
-     */
-    public function setDescription($description)
-    {
-        $this->description = $description;
-
-        return $this;
-    }
-
-    /**
-     * Get description.
-     *
-     * @return string
-     */
-    public function getDescription()
-    {
-        return $this->description;
-    }
 
     /**
      * Set prix.
@@ -263,51 +115,148 @@ class Composition
         return $this->prix;
     }
 
+
     /**
-     * Set disponible.
+     * Set idParfum.
      *
-     * @param bool $disponible
+     * @param int $idParfum
      *
      * @return Composition
      */
-    public function setDisponible($disponible)
+    public function setIdParfum($idParfum)
     {
-        $this->disponible = $disponible;
+        $this->id_parfum = $idParfum;
 
         return $this;
     }
 
     /**
-     * Get disponible.
+     * Get idParfum.
      *
-     * @return bool
+     * @return int
      */
-    public function getDisponible()
+    public function getIdParfum()
     {
-        return $this->disponible;
+        return $this->id_parfum;
     }
 
     /**
-     * Set tva.
+     * Set idSupport.
      *
-     * @param float $tva
+     * @param int $idSupport
      *
      * @return Composition
      */
-    public function setTva($tva)
+    public function setIdSupport($idSupport)
     {
-        $this->tva = $tva;
+        $this->id_support = $idSupport;
 
         return $this;
     }
 
     /**
-     * Get tva.
+     * Get idSupport.
      *
-     * @return float
+     * @return int
      */
-    public function getTva()
+    public function getIdSupport()
     {
-        return $this->tva;
+        return $this->id_support;
+    }
+
+    /**
+     * Set idCustom.
+     *
+     * @param int $idCustom
+     *
+     * @return Composition
+     */
+    public function setIdCustom($idCustom)
+    {
+        $this->id_custom = $idCustom;
+
+        return $this;
+    }
+
+    /**
+     * Get idCustom.
+     *
+     * @return int
+     */
+    public function getIdCustom()
+    {
+        return $this->id_custom;
+    }
+
+    /**
+     * Set idClient.
+     *
+     * @param int $idClient
+     *
+     * @return Composition
+     */
+    public function setIdClient($idClient)
+    {
+        $this->id_client = $idClient;
+
+        return $this;
+    }
+
+    /**
+     * Get idClient.
+     *
+     * @return int
+     */
+    public function getIdClient()
+    {
+        return $this->id_client;
+    }
+
+    /**
+     * Set id_etat.
+     *
+     * @param string $etat
+     *
+     * @return Composition
+     */
+    public function setId_etat($etat)
+    {
+        $this->id_etat = $etat;
+
+        return $this;
+    }
+
+    /**
+     * Get id_etat.
+     *
+     * @return string
+     */
+    public function getId_etat()
+    {
+        return $this->id_etat;
+    }
+
+    /**
+     * Set auteur.
+     *
+     * @param string $auteur
+     *
+     * @return Composition
+     */
+    public function setAuteur($auteur)
+    {
+        $this->auteur = $auteur;
+
+        return $this;
+    }
+
+    /**
+     * Get auteur.
+     *
+     * @return string
+     */
+    public function getAuteur()
+    {
+        return $this->auteur;
     }
 }

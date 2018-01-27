@@ -27,7 +27,7 @@ class NoteController extends Controller
     /**
      * @Route("/note/update/{id}", name="update-note")
      */
-    public function updateNoteAction()
+    public function updateNoteAction($id)
     {
         return $this->render("FactoryBundle:pages:update.html.twig");
     }
@@ -35,7 +35,7 @@ class NoteController extends Controller
     /**
      * @Route("/note/show/{id}", name="show-note")
      */
-    public function showNoteAction()
+    public function showNoteAction($id)
     {
         return $this->render("FactoryBundle:pages:view.html.twig");
     }
@@ -44,7 +44,7 @@ class NoteController extends Controller
     /**
      * @Route("/note/delete/{id}", name="delete-note")
      */
-    public function deleteNoteAction()
+    public function deleteNoteAction($id)
     {
         return $this->render("FactoryBundle:pages:delete.html.twig");
     }

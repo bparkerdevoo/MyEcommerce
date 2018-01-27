@@ -28,6 +28,18 @@ class Personnalisation
      */
     private $titre;
 
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_creation", type="date")
+     */
+    private $dateCreation;
+
+    public function __construct()
+    {
+        $this->setDateCreation(new \DateTime('NOW'));
+    }
+
 
     /**
      * Get id.
@@ -61,5 +73,29 @@ class Personnalisation
     public function getTitre()
     {
         return $this->titre;
+    }
+
+    /**
+     * Set dateCreation.
+     *
+     * @param \DateTime $dateCreation
+     *
+     * @return Personnalisation
+     */
+    public function setDateCreation($dateCreation)
+    {
+        $this->dateCreation = $dateCreation;
+
+        return $this;
+    }
+
+    /**
+     * Get dateCreation.
+     *
+     * @return \DateTime
+     */
+    public function getDateCreation()
+    {
+        return $this->dateCreation;
     }
 }

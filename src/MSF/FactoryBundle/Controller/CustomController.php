@@ -18,8 +18,16 @@ class CustomController extends Controller
      */
     public function viewCustomiseAction()
     {
-        return $this->render("FactoryBundle:pages:factory.html.twig");
+        $customNames = $this->getDoctrine()->getRepository('FactoryBundle:Personnalisation')->findAll();
+
+
+        return $this->render('FactoryBundle:Produits:layout/personalisation.html.twig',array('customNames'=>$customNames));
     }
+
+
+
+
+
     //create
     /**
      * @Route("/customise/create", name="create_customise")
@@ -32,7 +40,7 @@ class CustomController extends Controller
     /**
      * @Route("/customise/update/{id}", name="update_customise")
      */
-    public function updateCustomiseAction()
+    public function updateCustomiseAction($id)
     {
         return $this->render("FactoryBundle:pages:update.html.twig");
     }
@@ -40,7 +48,7 @@ class CustomController extends Controller
     /**
      * @Route("/customise/show/{id}", name="show_customise")
      */
-    public function showAustomiseAction()
+    public function showAustomiseAction($id)
     {
         return $this->render("FactoryBundle:pages:view.html.twig");
     }
@@ -49,14 +57,14 @@ class CustomController extends Controller
     /**
      * @Route("/customise/delete/{id}", name="delete_customise")
      */
-    public function deleteCustomiseAction()
+    public function deleteCustomiseAction($id)
     {
         return $this->render("FactoryBundle:pages:delete.html.twig");
     }
 
 
     /**
-     * @Route("/customise", name="customise")
+     * @Route("/customise", name="customise_form")
      */
     public function addAction(Request $request)
     {
@@ -67,6 +75,10 @@ class CustomController extends Controller
 
         //faire le lien entre lobjet et la requette
         $form->handleRequest($request);
+
+        //get the form to customise: entity/personalisation
+        $customNames = $this->getDoctrine()->getRepository('FactoryBundle:Personnalisation')->findAll();
+
 
         //pour savoir si le formulaire a ete soumis
         if($form->isSubmitted()){
@@ -84,7 +96,7 @@ class CustomController extends Controller
 
         //rend la vue
         return $this->render('FactoryBundle:Produits:layout/personalisation.html.twig',
-            array('form'=>$formView));
+            array('form'=>$formView, 'custom'=>$customNames));
 
     }
 }

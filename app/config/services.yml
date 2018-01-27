@@ -33,3 +33,43 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+
+    admin.category:
+            class: AppBundle\Admin\CategoryAdmin
+            arguments: [~, AppBundle\Entity\Category, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: Category }
+            public: true
+    admin.blog_post:
+            class: AppBundle\Admin\BlogPostAdmin
+            arguments: [~, AppBundle\Entity\BlogPost, ~]
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: Blog post }
+            public: true
+    admin.client:
+        class: AppBundle\Admin\ClientAdmin
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: "Gestion_Client" }
+        arguments:
+            - ~
+            - MSF\UserBundle\Entity\Client
+            - 'AppBundle:ClientCRUD' # define the new controller via the third argument
+        public: true
+    admin.support:
+         class: AppBundle\Admin\SupportAdmin
+         tags:
+             - { name: sonata.admin, manager_type: orm, label: "Gestion_Support" }
+         arguments:
+             - ~
+             - MSF\FactoryBundle\Entity\Support
+             - 'AppBundle:SupportCRUD'
+         public: true
+    admin.parfum:
+         class: AppBundle\Admin\ParfumAdmin
+         tags:
+             - { name: sonata.admin, manager_type: orm, label: "Gestion_Parfum" }
+         arguments:
+             - ~
+             - MSF\FactoryBundle\Entity\Parfum
+             - 'AppBundle:ParfumCRUD' # define the new controller via the third argument
+         public: true

@@ -4,8 +4,11 @@ namespace MSF\EcommerceBundle\Controller;
 
 use MSF\EcommerceBundle\Entity\Categories;
 use MSF\EcommerceBundle\Form\CategoriesType;
+use function Sodium\add;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 
 class CategoriesController extends Controller
 {
@@ -32,7 +35,7 @@ class CategoriesController extends Controller
     /**
      * @Route("/categorie/update/{id}", name="update_categorie")
      */
-    public function updateCategorieAction()
+    public function updateCategorieAction($id)
     {
         return $this->render("EcommerceBundle:pages:update.html.twig");
     }
@@ -40,7 +43,7 @@ class CategoriesController extends Controller
     /**
      * @Route("/categorie/show/{id}", name="show_categorie")
      */
-    public function showCategorieAction()
+    public function showCategorieAction($id)
     {
         return $this->render("EcommerceBundle:pages:view.html.twig");
     }
@@ -48,23 +51,32 @@ class CategoriesController extends Controller
     /**
      * @Route("/categorie/delete/{id}", name="delete_post_route")
      */
-    public function deleteCategorieAction()
+    public function deleteCategorieAction($id)
     {
         return $this->render("EcommerceBundle:pages:delete.html.twig");
     }
 
 
-
+    /**
+     * @Route("/categorie", name="ajout_categorie")
+     */
 
     public function addAction()
     {
         $categorie = new Categories();
+        $categorie->setNom('Categorie');
 
         // recupere formulaire
-        $form = $this->createForm(CategoriesType::class, $categorie);
+        $form = $this->createFormBuilder($categorie)
+            ->add('Categorie', TextType::class)
+            ->add('save',SubmitType::class, array('label'=> 'Ajouter'))
+            ->getForm()
+        ;
 
+        return $this->render("EcommerceBundle:Produits:modules/AjoutCategorie.html.twig", array($form->createView()
+        ))
         //generate form html
-        $formView = $form->createView();
+        ;
     }
 }
 

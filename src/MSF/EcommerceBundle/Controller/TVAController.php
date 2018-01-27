@@ -32,7 +32,7 @@ class TVAController extends Controller
      * @Route("/tva/update/{id}", name="update_tva")
      */
 
-    public function updateTvaAction()
+    public function updateTvaAction($id)
     {
         return $this->render("EcommerceBundle:pages:update.html.twig");
     }
@@ -41,7 +41,7 @@ class TVAController extends Controller
      * @Route("/tva/show/{id}", name="show_tva")
      */
 
-    public function showTvaAction()
+    public function showTvaAction($id)
     {
         return $this->render("EcommerceBundle:pages:view.html.twig");
     }
@@ -50,7 +50,7 @@ class TVAController extends Controller
      * @Route("/tva/delete/{id}", name="delete_tva")
      */
 
-    public function deleteTvaAction()
+    public function deleteTvaAction($id)
     {
         return $this->render("EcommerceBundle:pages:delete.html.twig");
     }

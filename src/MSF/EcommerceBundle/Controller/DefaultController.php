@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('EcommerceBundle:Default:index.html.twig');
+        return $this->render('EcommerceBundle:Produits:layout/form.html.twig');
     }
 }

@@ -1,53 +1,53 @@
 <?php
 
-namespace MSF\FactoryBundle\Controller;
+namespace AppBundle\Controller;
 
-use MSF\FactoryBundle\Entity\Parfum;
-use MSF\FactoryBundle\Form\ParfumType;
+use MSF\FactoryBundle\Entity\Evenement;
+use MSF\FactoryBundle\Form\EvenementType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
-
-class ParfumController extends Controller
+class EvenementController extends Controller
 {
+
     //view
     /**
-     * @Route("/parfum/view", name="view_parfum")
+     * @Route("/event/view", name="view_event")
      */
-    public function viewParfumAction()
+    public function viewEventAction()
     {
         return $this->render("FactoryBundle:pages:factory.html.twig");
     }
     //create
     /**
-     * @Route("/parfum/create", name="create_parfum")
+     * @Route("/event/create", name="create_event")
      */
-    public function createParfumAction()
+    public function createEventAction()
     {
         return $this->render("FactoryBundle:pages:create.html.twig");
     }
     //update
     /**
-     * @Route("/parfum/update/{id}", name="update_parfum")
+     * @Route("/event/update/{id}", name="update_event")
      */
-    public function updateParfumAction()
+    public function updateEventAction($id)
     {
         return $this->render("FactoryBundle:pages:update.html.twig");
     }
     //show
     /**
-     * @Route("/parfum/show/{id}", name="show_parfum")
+     * @Route("/event/show/{id}", name="show_event")
      */
-    public function showParfumAction()
+    public function showEventAction($id)
     {
         return $this->render("FactoryBundle:pages:view.html.twig");
     }
     //delete
 
     /**
-     * @Route("/parfum/delete/{id}", name="delete_parfum")
+     * @Route("/event/delete/{id}", name="delete_event")
      */
-    public function deleteParfumAction()
+    public function deleteEventAction($id)
     {
         return $this->render("FactoryBundle:pages:delete.html.twig");
     }
@@ -55,9 +55,10 @@ class ParfumController extends Controller
     //form
     public function addAction()
     {
-        $parfum = new Parfum();
+        $event = new Evenement();
+
         // recupere formulaire
-        $form = $this->createForm(ParfumType::class, $parfum);
+        $form = $this->createForm(EvenementType::class, $event);
 
         //generate form html
         $formView = $form->createView();

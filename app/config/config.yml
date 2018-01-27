@@ -10,7 +10,7 @@ parameters:
 
 framework:
     #esi: ~
-    translator: ~
+    translator: { fallbacks: ["%locale%"] }
     secret: '%secret%'
     router:
         resource: '%kernel.project_dir%/app/config/routing.yml'
@@ -77,4 +77,19 @@ swiftmailer:
     username: '%mailer_user%'
     password: '%mailer_password%'
     spool: { type: memory }
+
+sonata_block:
+    default_contexts: [] # this line can be removed for sonata-project/block-bundle >= 3.10.0
+    blocks:
+        # enable the SonataAdminBundle block
+        sonata.admin.block.admin_list:
+            contexts: [admin]
+        sonata.admin.block.stats:
+            contexts: [admin]
+        sonata.admin.block.search_result:
+            contexts: [admin]
+sonata_admin:
+    templates:
+        dashboard: '@AppBundle/Resources/SonataTemplates/views/core/dashboard.html.twig'
+
 

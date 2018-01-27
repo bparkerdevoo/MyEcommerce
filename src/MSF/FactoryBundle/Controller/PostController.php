@@ -29,7 +29,7 @@ class PostController extends Controller
     /**
      * @Route("/post/update/{id}", name="update_post_route")
      */
-    public function updatePostAction()
+    public function updatePostAction($id)
     {
         return $this->render("FactoryBundle:pages:update.html.twig");
     }
@@ -37,7 +37,7 @@ class PostController extends Controller
     /**
      * @Route("/post/view/{id}", name="show_post_route")
      */
-    public function showPostAction()
+    public function showPostAction($id)
     {
         return $this->render("FactoryBundle:pages:view.html.twig");
     }
@@ -45,7 +45,7 @@ class PostController extends Controller
     /**
      * @Route("/post/delete/{id}", name="delete_post_route")
      */
-    public function deletePostAction()
+    public function deletePostAction($id)
     {
         return $this->render("FactoryBundle:pages:delete.html.twig");
     }

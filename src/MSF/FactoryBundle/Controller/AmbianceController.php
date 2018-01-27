@@ -6,6 +6,9 @@ use MSF\FactoryBundle\Entity\Ambiance;
 use MSF\FactoryBundle\Form\AmbianceType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\HttpFoundation\Request;
 
 class AmbianceController extends Controller
 {
@@ -29,7 +32,7 @@ class AmbianceController extends Controller
     /**
      * @Route("/ambiance/update/{id}", name="update_ambiance")
      */
-    public function updateAmbianceAction()
+    public function updateAmbianceAction($id)
     {
         return $this->render("FactoryBundle:pages:update.html.twig");
     }
@@ -37,7 +40,7 @@ class AmbianceController extends Controller
     /**
      * @Route("/ambiance/show/{id}", name="show_ambiance")
      */
-    public function showAmbianceAction()
+    public function showAmbianceAction($id)
     {
         return $this->render("FactoryBundle:pages:view.html.twig");
     }
@@ -46,20 +49,28 @@ class AmbianceController extends Controller
     /**
      * @Route("/ambiance/delete/{id}", name="delete_ambiance")
      */
-    public function deleteAmbianceAction()
+    public function deleteAmbianceAction($id)
     {
         return $this->render("FactoryBundle:pages:delete.html.twig");
     }
 
-    public function addAction()
+    //formulaire
+
+    /**
+     * @Route("/form/ambiance", name="form_ambiance")
+     */
+
+    public function addAction(Request $request)
     {
        $ambiance = new Ambiance();
+       $ambiance->setNom('type d\'ambiance');
+            // recupere formulaire
+        $form = $this->createFormBuilder($ambiance)
+            ->add('nom', TextType::class)
+            ->add('enregistrer', SubmitType::class, array('label' => "ajouter une ambiance"))
+            ->getForm();
+        return $this->render("FactoryBundle:Produits:modules/ambiance.html.twig", array('form' => $form->createView(),));//generate form html
 
-        // recupere formulaire
-        $form = $this->createForm(AmbianceType::class, $ambiance);
-
-        //generate form html
-        $formView = $form->createView();
 
     }
 }

@@ -22,6 +22,21 @@ class Support
     private $id;
 
     /**
+     * @ORM\ManyToOne(targetEntity="MSF\FactoryBundle\Entity\Composition", inversedBy="$id_support")
+     */
+    private $id_composition;
+
+    public function setId_composition(Composition $composition)
+    {
+        $this->id_composition = $composition;
+    }
+
+    public function getId_composition()
+    {
+        return $this->id_composition;
+    }
+
+    /**
      * @var string
      *
      * @ORM\Column(name="nom", type="string", length=150)

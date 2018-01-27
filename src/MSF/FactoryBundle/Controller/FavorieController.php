@@ -27,7 +27,7 @@ class FavorieController extends Controller
     /**
      * @Route("/favorie/update/{id}", name="update_favorie")
      */
-    public function updateFavorieAction()
+    public function updateFavorieAction($id)
     {
         return $this->render("FactoryBundle:pages:update.html.twig");
     }
@@ -35,7 +35,7 @@ class FavorieController extends Controller
     /**
      * @Route("/favorie/show/{id}", name="show_favorie")
      */
-    public function showFavorieAction()
+    public function showFavorieAction($id)
     {
         return $this->render("FactoryBundle:pages:view.html.twig");
     }
@@ -44,7 +44,7 @@ class FavorieController extends Controller
     /**
      * @Route("/favorie/delete/{id}", name="delete_favorie")
      */
-    public function deleteFavorieAction()
+    public function deleteFavorieAction($id)
     {
         return $this->render("FactoryBundle:pages:delete.html.twig");
     }

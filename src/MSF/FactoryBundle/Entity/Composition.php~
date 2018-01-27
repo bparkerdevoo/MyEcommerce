@@ -1,0 +1,117 @@
+<?php
+
+namespace MSF\FactoryBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Composition
+ *
+ * @ORM\Table(name="composition")
+ * @ORM\Entity(repositoryClass="MSF\FactoryBundle\Repository\CompositionRepository")
+ */
+class Composition
+{
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id_parfum", type="integer")
+     * @ORM\ManyToMany(targetEntity="MSF\FactoryBundle\Entity\Parfum", cascade={"persist"})
+     *
+     */
+    private $id_parfum;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id_support", type="integer")
+     * @ORM\OneToMany(targetEntity="MSF\FactoryBundle\Entity\Support", cascade={"persist"})
+     *
+     */
+    private $id_support;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id_custom", type="integer")
+     * @ORM\OneToOne(targetEntity="MSF\FactoryBundle\Entity\Personnalisation", cascade={"persist"})
+     *
+     */
+    private $id_custom;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="id_client", type="integer")
+     * @ORM\OneToOne(targetEntity="MSF\UserBundle\Entity\ClientBundle\Entity\Client", cascade={"persist"})
+     *
+     */
+    private $id_client;
+
+    /**
+     * @var string
+     * @ORM\Column(name="etat", type="string")
+     */
+    private $etat;
+
+    /**
+     * @var string
+     * @ORM\Column(name="auteur", type="string")
+     *
+     */
+    private $auteur;
+
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="prix", type="float")
+     */
+    private $prix;
+
+
+    /**
+     * Get id.
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+
+    /**
+     * Set prix.
+     *
+     * @param float $prix
+     *
+     * @return Composition
+     */
+    public function setPrix($prix)
+    {
+        $this->prix = $prix;
+
+        return $this;
+    }
+
+    /**
+     * Get prix.
+     *
+     * @return float
+     */
+    public function getPrix()
+    {
+        return $this->prix;
+    }
+
+}

@@ -31,7 +31,7 @@ class MediaController extends Controller
      * @Route("/media/update/{id}", name="update_media")
      *
      */
-    public function updateMediaAction()
+    public function updateMediaAction($id)
     {
         return $this->render("EcommerceBundle:pages:update.html.twig");
     }
@@ -40,7 +40,7 @@ class MediaController extends Controller
      * @Route("/media/show/{id}", name="show_media")
      *
      */
-    public function showMediaAction()
+    public function showMediaAction($id)
     {
         return $this->render("EcommerceBundle:pages:view.html.twig");
     }
@@ -49,7 +49,7 @@ class MediaController extends Controller
      * @Route("/media/delete/{id}", name="delete_media")
      *
      */
-    public function deleteMediaAction()
+    public function deleteMediaAction($id)
     {
         return $this->render("EcommerceBundle:pages:delete.html.twig");
     }

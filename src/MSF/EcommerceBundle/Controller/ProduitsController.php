@@ -39,7 +39,7 @@ class ProduitsController extends Controller
      * @Route("/produit/udpate/{id}", name="update_produit")
      *
      */
-    public function updateProduitAction()
+    public function updateProduitAction($id)
     {
         return $this->render("EcommerceBundle:pages:update.html.twig");
     }
@@ -50,7 +50,7 @@ class ProduitsController extends Controller
      * @Route("/produit/show/{id}", name="show_produit")
      *
      */
-    public function showProduitAction()
+    public function showProduitAction($id)
     {
         return $this->render("EcommerceBundle:pages:view.html.twig");
     }
@@ -61,20 +61,10 @@ class ProduitsController extends Controller
      * @Route("/produit/delete/{id}", name="delete_produit")
      *
      */
-    public function deleteProduitAction()
+    public function deleteProduitAction($id)
     {
         return $this->render("EcommerceBundle:pages:delete.html.twig");
     }
-
-
-
-
-
-
-
-
-
-
 
     //form  //form******************//form
     public function addAction(Request $request)
