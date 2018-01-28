@@ -10,6 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table(name="client")
  * @ORM\Entity(repositoryClass="MSF\UserBundle\Repository\ClientRepository")
+ *
  */
 class Client
 {
@@ -119,6 +120,11 @@ class Client
     {
         $this->dateInscription = new \DateTime('NOW');
     }
+
+    /**
+     * @ORM\ManyToMany(targetEntity="MSF\FactoryBundle\Entity\Personnalisation")
+     */
+
 
     /**
      * Get id.

@@ -19,6 +19,7 @@ use Sonata\AdminBundle\Form\Type\ModelType;
 class ParfumAdmin extends AbstractAdmin
 {
 
+
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper

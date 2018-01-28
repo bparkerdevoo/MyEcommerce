@@ -3,6 +3,7 @@
 namespace MSF\FactoryBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * Support
@@ -293,5 +294,29 @@ class Support
     public function getTva()
     {
         return $this->tva;
+    }
+
+    /**
+     * Set idComposition.
+     *
+     * @param \MSF\FactoryBundle\Entity\Composition|null $idComposition
+     *
+     * @return Support
+     */
+    public function setIdComposition(\MSF\FactoryBundle\Entity\Composition $idComposition = null)
+    {
+        $this->id_composition = $idComposition;
+
+        return $this;
+    }
+
+    /**
+     * Get idComposition.
+     *
+     * @return \MSF\FactoryBundle\Entity\Composition|null
+     */
+    public function getIdComposition()
+    {
+        return $this->id_composition;
     }
 }

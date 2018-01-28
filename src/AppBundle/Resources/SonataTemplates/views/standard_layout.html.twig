@@ -139,7 +139,7 @@ file that was distributed with this source code.
                     {% spaceless %}
                         <a class="logo" href="{{ path('sonata_admin_dashboard') }}">
                             {% if 'single_image' == sonata_admin.adminPool.getOption('title_mode') or 'both' == sonata_admin.adminPool.getOption('title_mode') %}
-                                <img src="{{ asset(MyEcommerce:web:img/msf_spray.jpg) }}" alt="{{ msf}}">
+                                <img src="{{ asset('img/msf_spray.jpg') }}" alt=" msf">
                             {% endif %}
                             {% if 'single_text' == sonata_admin.adminPool.getOption('title_mode') or 'both' == sonata_admin.adminPool.getOption('title_mode') %}
                                 <span>{{ sonata_admin.adminPool.title }}</span>
@@ -251,7 +251,7 @@ file that was distributed with this source code.
                             {% block side_bar_after_nav %}
                                 <p class="text-center small" style="border-top: 1px solid #444444; padding-top: 10px">
                                     {% block side_bar_after_nav_content %}
-                                        <a href="https://sonata-project.org" rel="noreferrer" target="_blank">sonata project</a>
+                                        <a href="http://localhost/MyEcommerce/web/app_dev.php/login" rel="noreferrer" target="_blank">MyScentFactory project</a>
                                     {% endblock %}
                                 </p>
                             {% endblock %}

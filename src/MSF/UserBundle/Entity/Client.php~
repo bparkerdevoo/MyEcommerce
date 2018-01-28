@@ -3,12 +3,14 @@
 namespace MSF\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Client
  *
  * @ORM\Table(name="client")
  * @ORM\Entity(repositoryClass="MSF\UserBundle\Repository\ClientRepository")
+ *
  */
 class Client
 {
@@ -25,6 +27,8 @@ class Client
      * @var string
      *
      * @ORM\Column(name="Nom", type="string", length=100)
+     *
+     * @Assert\NotBlank(message="Merci de renseigner ce champ")
      */
     private $nom;
 
@@ -116,6 +120,11 @@ class Client
     {
         $this->dateInscription = new \DateTime('NOW');
     }
+
+    /**
+     * @ORM\ManyToMany(targetEntity="MSF\FactoryBundle\Entity\Personnalisation")
+     */
+
 
     /**
      * Get id.

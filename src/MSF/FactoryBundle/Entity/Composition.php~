@@ -3,6 +3,7 @@
 namespace MSF\FactoryBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Composition
@@ -52,16 +53,17 @@ class Composition
      * @var int
      *
      * @ORM\Column(name="id_client", type="integer")
-     * @ORM\OneToOne(targetEntity="MSF\UserBundle\Entity\ClientBundle\Entity\Client", cascade={"persist"})
+     * @ORM\ManyToOne(targetEntity="MSF\UserBundle\Entity\ClientBundle\Entity\Client", cascade={"persist"})
      *
      */
     private $id_client;
 
     /**
      * @var string
-     * @ORM\Column(name="etat", type="string")
+     * @ORM\Column(name="id_etat", type="string")
+     * @ORM\ManyToOne(targetEntity="MSF\FactoryBundle\Entity\etat", cascade={"persist"})
      */
-    private $etat;
+    private $id_etat;
 
     /**
      * @var string
@@ -114,4 +116,148 @@ class Composition
         return $this->prix;
     }
 
+
+    /**
+     * Set idParfum.
+     *
+     * @param int $idParfum
+     *
+     * @return Composition
+     */
+    public function setIdParfum($idParfum)
+    {
+        $this->id_parfum = $idParfum;
+
+        return $this;
+    }
+
+    /**
+     * Get idParfum.
+     *
+     * @return int
+     */
+    public function getIdParfum()
+    {
+        return $this->id_parfum;
+    }
+
+    /**
+     * Set idSupport.
+     *
+     * @param int $idSupport
+     *
+     * @return Composition
+     */
+    public function setIdSupport($idSupport)
+    {
+        $this->id_support = $idSupport;
+
+        return $this;
+    }
+
+    /**
+     * Get idSupport.
+     *
+     * @return int
+     */
+    public function getIdSupport()
+    {
+        return $this->id_support;
+    }
+
+    /**
+     * Set idCustom.
+     *
+     * @param int $idCustom
+     *
+     * @return Composition
+     */
+    public function setIdCustom($idCustom)
+    {
+        $this->id_custom = $idCustom;
+
+        return $this;
+    }
+
+    /**
+     * Get idCustom.
+     *
+     * @return int
+     */
+    public function getIdCustom()
+    {
+        return $this->id_custom;
+    }
+
+    /**
+     * Set idClient.
+     *
+     * @param int $idClient
+     *
+     * @return Composition
+     */
+    public function setIdClient($idClient)
+    {
+        $this->id_client = $idClient;
+
+        return $this;
+    }
+
+    /**
+     * Get idClient.
+     *
+     * @return int
+     */
+    public function getIdClient()
+    {
+        return $this->id_client;
+    }
+
+    /**
+     * Set id_etat.
+     *
+     * @param string $etat
+     *
+     * @return Composition
+     */
+    public function setId_etat($etat)
+    {
+        $this->id_etat = $etat;
+
+        return $this;
+    }
+
+    /**
+     * Get id_etat.
+     *
+     * @return string
+     */
+    public function getId_etat()
+    {
+        return $this->id_etat;
+    }
+
+    /**
+     * Set auteur.
+     *
+     * @param string $auteur
+     *
+     * @return Composition
+     */
+    public function setAuteur($auteur)
+    {
+        $this->auteur = $auteur;
+
+        return $this;
+    }
+
+    /**
+     * Get auteur.
+     *
+     * @return string
+     */
+    public function getAuteur()
+    {
+        return $this->auteur;
+    }
 }

@@ -4,6 +4,8 @@ namespace MSF\EcommerceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+
+
 /**
  * Produit
  *
@@ -22,6 +24,19 @@ class Produit
     private $id;
 
     /**
+     * @ORM\Column(name="id_categories", type="integer")
+     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Categories", inversedBy="Produit")
+     */
+    private $id_categories;
+
+    public function setId_Categories($id_categories)
+    {
+        $this->id_categories = $id_categories;
+    }
+
+
+
+    /**
      * @var string
      *
      * @ORM\Column(name="nom", type="string", length=150, unique=true)
@@ -30,12 +45,7 @@ class Produit
      */
     private $nom;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="categorie", type="string", length=255)
-     */
-    private $categorie;
+
 
     /**
      * @var string
@@ -113,29 +123,6 @@ class Produit
         return $this->nom;
     }
 
-    /**
-     * Set categorie.
-     *
-     * @param string $categorie
-     *
-     * @return Produit
-     */
-    public function setCategorie($categorie)
-    {
-        $this->categorie = $categorie;
-
-        return $this;
-    }
-
-    /**
-     * Get categorie.
-     *
-     * @return string
-     */
-    public function getCategorie()
-    {
-        return $this->categorie;
-    }
 
     /**
      * Set description.
@@ -255,5 +242,29 @@ class Produit
     public function getImage()
     {
         return $this->image;
+    }
+
+    /**
+     * Set idCategories.
+     *
+     * @param int $idCategories
+     *
+     * @return Produit
+     */
+    public function setIdCategories($idCategories)
+    {
+        $this->id_categories = $idCategories;
+
+        return $this;
+    }
+
+    /**
+     * Get idCategories.
+     *
+     * @return int
+     */
+    public function getIdCategories()
+    {
+        return $this->id_categories;
     }
 }

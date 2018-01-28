@@ -3,6 +3,7 @@
 namespace MSF\FactoryBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Composition
@@ -258,5 +259,29 @@ class Composition
     public function getAuteur()
     {
         return $this->auteur;
+    }
+
+    /**
+     * Set idEtat.
+     *
+     * @param string $idEtat
+     *
+     * @return Composition
+     */
+    public function setIdEtat($idEtat)
+    {
+        $this->id_etat = $idEtat;
+
+        return $this;
+    }
+
+    /**
+     * Get idEtat.
+     *
+     * @return string
+     */
+    public function getIdEtat()
+    {
+        return $this->id_etat;
     }
 }

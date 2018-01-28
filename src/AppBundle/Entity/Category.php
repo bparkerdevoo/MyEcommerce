@@ -81,4 +81,30 @@ class Category
     {
         return $this->name;
     }
+
+    /**
+     * Add blogPost.
+     *
+     * @param \AppBundle\Entity\BlogPost $blogPost
+     *
+     * @return Category
+     */
+    public function addBlogPost(\AppBundle\Entity\BlogPost $blogPost)
+    {
+        $this->blogPosts[] = $blogPost;
+
+        return $this;
+    }
+
+    /**
+     * Remove blogPost.
+     *
+     * @param \AppBundle\Entity\BlogPost $blogPost
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeBlogPost(\AppBundle\Entity\BlogPost $blogPost)
+    {
+        return $this->blogPosts->removeElement($blogPost);
+    }
 }

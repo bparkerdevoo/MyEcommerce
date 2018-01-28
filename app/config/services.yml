@@ -70,6 +70,6 @@ services:
              - { name: sonata.admin, manager_type: orm, label: "Gestion_Parfum" }
          arguments:
              - ~
-             - MSF\FactoryBundle\Entity\Parfum
+             - AppBundle\Entity\Parfum
              - 'AppBundle:ParfumCRUD' # define the new controller via the third argument
          public: true

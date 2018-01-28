@@ -22,6 +22,10 @@ class Note
     private $id;
 
     /**
+     * @ORM\
+     */
+
+    /**
      * @var int
      *
      * @ORM\Column(name="Note", type="integer")
