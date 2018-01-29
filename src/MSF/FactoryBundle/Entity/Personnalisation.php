@@ -40,6 +40,20 @@ class Personnalisation
         $this->setDateCreation(new \DateTime('NOW'));
     }
 
+    /**
+     * @ORM\Column(name="id_auteur", type="string", nullable=true)
+     * @ORM\ManyToMany(targetEntity="MSF\UserBundle\Entity\Client")
+     */
+    private $id_Auteur;
+
+    /**
+     * @param mixed $id_Auteur
+     */
+    public function setIdAuteur($id_Auteur)
+    {
+        $this->id_Auteur = $id_Auteur;
+    }
+
 
     /**
      * Get id.
@@ -97,5 +111,15 @@ class Personnalisation
     public function getDateCreation()
     {
         return $this->dateCreation;
+    }
+
+    /**
+     * Get idAuteur.
+     *
+     * @return string|null
+     */
+    public function getIdAuteur()
+    {
+        return $this->id_Auteur;
     }
 }

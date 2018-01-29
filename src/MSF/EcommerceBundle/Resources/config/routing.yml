@@ -26,10 +26,6 @@ composition_client:
     path:     /composition
     defaults: { _controller: EcommerceBundle:Produits:composition }
 
-composition_suggestion:
-    path:     /suggestion
-    defaults: { _controller: EcommerceBundle:Composition:compose }
-
 ajout_produit:
     path: /ajoutProduit
     defaults: { _controller: EcommerceBundle:Produits:add }

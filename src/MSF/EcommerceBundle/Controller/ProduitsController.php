@@ -15,6 +15,11 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 
 class ProduitsController extends Controller
 {
+    public function indexAction(Request $request)
+    {
+        $locale = $request->getLocale();
+    }
+
     /**
      * @Route("/produit/view", name="view_produit")
      *

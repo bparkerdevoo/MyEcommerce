@@ -24,6 +24,23 @@ class Accessoire
     /**
      * @var string|null
      *
+     * @ORM\Column(name="id_produit", type="string", length=100, nullable=true)
+     * @ORM\ManyToMany(targetEntity="MSF\EcommerceBundle\Entity\Produit")
+     */
+    private $id_produit;
+
+    /**
+     * @param null|string $id_produit
+     */
+    public function setIdProduit($id_produit)
+    {
+        $this->id_produit = $id_produit;
+    }
+
+
+    /**
+     * @var string|null
+     *
      * @ORM\Column(name="Nom", type="string", length=200, nullable=true)
      */
     private $nom;
@@ -185,5 +202,15 @@ class Accessoire
     public function getOrigine()
     {
         return $this->origine;
+    }
+
+    /**
+     * Get idProduit.
+     *
+     * @return string|null
+     */
+    public function getIdProduit()
+    {
+        return $this->id_produit;
     }
 }

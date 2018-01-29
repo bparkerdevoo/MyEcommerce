@@ -20,17 +20,48 @@ class ClientAdmin extends AbstractAdmin
 
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('nom', 'text');
+        $formMapper
+            ->add('dateInscription', 'date')
+            ->add('titre', 'choice',
+                array('choices' => array(
+                    'Mme' => 'Madame',
+                    'Melle' => 'Mademoiselle',
+                    'Mr' => 'Monsieur'
+                )))
+            ->add('prenom', 'text')
+            ->add('nom', 'text')
+            ->add('adresse1', 'text')
+            ->add('adresse2', 'text')
+            ->add('ville', 'text')
+            ->add('codePostal', 'text')
+            ->add('region', 'text')
+            ->add('telephone', 'text')
+            ->add('mobile', 'text')
+            ->add('categorieAdresse', 'text')
+            ->add('dateDeNaissance', 'date')
+            ->add('id_User', 'sonata_type_model', [
+                'class' => 'MSF\UserBundle\Entity\User',
+                'property' => 'username',])
+
+        ;
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('nom');
+        $datagridMapper
+            ->add('nom')
+            ->add('prenom')
+            ->add('dateInscription')
+        ;
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('nom');
+        $listMapper
+            ->addIdentifier('nom')
+            ->addIdentifier('prenom')
+            ->addIdentifier('dateInscription')
+        ;
     }
     protected $baseRouteName = 'client_admin';
 

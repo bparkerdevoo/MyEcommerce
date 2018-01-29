@@ -15,26 +15,26 @@
                 </div>
     {% for suggestions in suggestions %}
                 <div class="span6">
-                    <H2>Ambiance {{ suggestions.ambiance }} </H2>
+                    <H2>Ambiance {{ suggestions.idParfum }} </H2>
                     <div class="3">
-                        <h4>description: {{ suggestions.description }}</h4>
-                            <h4>parfum: {{ suggestions.parfum }}</h4>
-                                <h4>support: {{ suggestions.support }}</h4>
+                        <h4>description: {{ suggestions.idSupport }}</h4>
+                            <h4>parfum: {{ suggestions.idCustom }}</h4>
+                                <h4>support: {{ suggestions.idSupport }}</h4>
 
                     </div>
                 </div>
                 <div class="span2">
-                    <img src="{{ asset(suggestions.photoParfum) }}" alt="MSF" width="300" height="300">
+                    <img src="{{ asset('img/msf_spray.jpg') }}" alt="MSF" width="300" height="300">
                 </div>
                 <div class="span2">
-                    <img src="{{ asset(suggestions.photoSupport) }}" alt="MSF" width="300" height="300">
+                    <img src="{{ asset('img/msf_spray.jpg') }}" alt="MSF" width="300" height="300">
                 </div>
                 <div class="span12">
                     <div class="row">
                         <div class="span6">
-                            <h4>{{ suggestions.parfum }} et {{ suggestions.support }}</h4>
-                            <h5>{{ suggestions.ambiance }}</h5>
-                            <p>{{ suggestions.disponible }}</p>
+                            <h4>{{ suggestions.idSupport }} et {{ suggestions.idSupport }}</h4>
+                            <h5>{{ suggestions.idSupport }}</h5>
+                            <p>{{ suggestions.idSupport }}</p>
                             <h4>{{ suggestions.prix }}</h4>
                             <form action="{{ path('panier') }}">
 

@@ -29,6 +29,11 @@ services:
         public: true
         tags: ['controller.service_arguments']
 
+    AppBundle\EventSubscriber\LocaleSubscriber:
+            arguments: ['%kernel.default_locale%']
+            # redundant if you're using autoconfigure
+            tags: [kernel.event_subscriber]
+
     # add more services, or override services that need manual wiring
     # AppBundle\Service\ExampleService:
     #     arguments:
@@ -73,3 +78,21 @@ services:
              - AppBundle\Entity\Parfum
              - 'AppBundle:ParfumCRUD' # define the new controller via the third argument
          public: true
+    admin.user:
+            class: AppBundle\Admin\UserAdmin
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: "Gestion_Utilisateurs" }
+            arguments:
+                - ~
+                - MSF\UserBundle\Entity\User
+                - 'AppBundle:UserCRUD' # define the new controller via the third argument
+            public: true
+    admin.produit:
+            class: AppBundle\Admin\ProduitAdmin
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: "Gestion_produit" }
+            arguments:
+                - ~
+                - MSF\EcommerceBundle\Entity\Produit
+                - 'AppBundle:ProduitCRUD' # define the new controller via the third argument
+            public: true

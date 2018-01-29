@@ -75,4 +75,28 @@ class etat
     {
         return $this->status;
     }
+
+    /**
+     * Set idComposition.
+     *
+     * @param string $idComposition
+     *
+     * @return etat
+     */
+    public function setIdComposition($idComposition)
+    {
+        $this->id_composition = $idComposition;
+
+        return $this;
+    }
+
+    /**
+     * Get idComposition.
+     *
+     * @return string
+     */
+    public function getIdComposition()
+    {
+        return $this->id_composition;
+    }
 }

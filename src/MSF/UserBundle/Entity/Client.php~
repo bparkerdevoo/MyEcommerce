@@ -3,6 +3,7 @@
 namespace MSF\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -24,9 +25,19 @@ class Client
     private $id;
 
     /**
+     * @ORM\ManyToOne(targetEntity="MSF\UserBundle\Entity\User", inversedBy="client")
+     */
+    private $id_User;
+
+    public function setId_User($id_User)
+    {
+        $this->id_User = new ArrayCollection();
+    }
+
+    /**
      * @var string
      *
-     * @ORM\Column(name="Nom", type="string", length=100)
+     * @ORM\Column(name="Nom", type="string", length=100, nullable=true)
      *
      * @Assert\NotBlank(message="Merci de renseigner ce champ")
      */
@@ -35,84 +46,84 @@ class Client
     /**
      * @var string
      *
-     * @ORM\Column(name="Prenom", type="string", length=100)
+     * @ORM\Column(name="Prenom", type="string", length=100, nullable=true)
      */
     private $prenom;
 
     /**
      * @var bool
      *
-     * @ORM\Column(name="Titre", type="string")
+     * @ORM\Column(name="Titre", type="string", nullable=true)
      */
     private $titre;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="adresse1", type="text")
+     * @ORM\Column(name="adresse1", type="text", nullable=true)
      */
     private $adresse1;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="adresse2", type="text")
+     * @ORM\Column(name="adresse2", type="text", nullable=true)
      */
     private $adresse2;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="ville", type="string", length=60)
+     * @ORM\Column(name="ville", type="string", length=60, nullable=true)
      */
     private $ville;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="CodePostal", type="string", length=8)
+     * @ORM\Column(name="CodePostal", type="string", length=8, nullable=true)
      */
     private $codePostal;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="region", type="string", length=60)
+     * @ORM\Column(name="region", type="string", length=60, nullable=true)
      */
     private $region;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="telephone", type="string", length=10)
+     * @ORM\Column(name="telephone", type="string", length=10, nullable=true)
      */
     private $telephone;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="mobile", type="string", length=10)
+     * @ORM\Column(name="mobile", type="string", length=10, nullable=true)
      */
     private $mobile;
 
     /**
      * @var bool
      *
-     * @ORM\Column(name="CategorieAdresse", type="boolean")
+     * @ORM\Column(name="CategorieAdresse", type="boolean", nullable=true)
      */
     private $categorieAdresse;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_de_naissance", type="date")
+     * @ORM\Column(name="date_de_naissance", type="date", nullable=true)
      */
     private $dateDeNaissance;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="date_inscription", type="date")
+     * @ORM\Column(name="date_inscription", type="date", nullable=true)
      */
     private $dateInscription;
 
@@ -124,6 +135,15 @@ class Client
     /**
      * @ORM\ManyToMany(targetEntity="MSF\FactoryBundle\Entity\Personnalisation")
      */
+    private $id_customName;
+
+    /**
+     * @param mixed $id_customName
+     */
+    public function setIdCustomName($id_customName)
+    {
+        $this->id_customName = $id_customName;
+    }
 
 
     /**
@@ -446,5 +466,29 @@ class Client
     public function getMobile()
     {
         return $this->mobile;
+    }
+
+    /**
+     * Set idUser.
+     *
+     * @param \MSF\UserBundle\Entity\User|null $idUser
+     *
+     * @return Client
+     */
+    public function setIdUser(\MSF\UserBundle\Entity\User $idUser = null)
+    {
+        $this->id_User = $idUser;
+
+        return $this;
+    }
+
+    /**
+     * Get idUser.
+     *
+     * @return \MSF\UserBundle\Entity\User|null
+     */
+    public function getIdUser()
+    {
+        return $this->id_User;
     }
 }

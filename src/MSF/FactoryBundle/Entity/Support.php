@@ -38,18 +38,27 @@ class Support
     }
 
     /**
+     * @var string|null
+     *
+     * @ORM\Column(name="id_produit", type="string", length=100, nullable=true)
+     * @ORM\ManyToMany(targetEntity="MSF\EcommerceBundle\Entity\Produit")
+     */
+    private $id_produit;
+
+    /**
+     * @param null|string $id_produit
+     */
+    public function setIdProduit($id_produit)
+    {
+        $this->id_produit = $id_produit;
+    }
+
+    /**
      * @var string
      *
      * @ORM\Column(name="nom", type="string", length=150)
      */
     private $nom;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="categorie", type="string", length=100)
-     */
-    private $categorie;
 
     /**
      * @var string
@@ -318,5 +327,15 @@ class Support
     public function getIdComposition()
     {
         return $this->id_composition;
+    }
+
+    /**
+     * Get idProduit.
+     *
+     * @return string|null
+     */
+    public function getIdProduit()
+    {
+        return $this->id_produit;
     }
 }

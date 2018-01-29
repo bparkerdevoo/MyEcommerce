@@ -51,7 +51,9 @@ class CompositionController extends Controller
         return $this->render("pages/delete.html.twig");
     }
 
-
+    /**
+     * @Route("/suggestion", name="suggestion")
+     */
     public function composeAction()
     {
         $em = $this->getDoctrine()->getManager();
@@ -83,7 +85,7 @@ class CompositionController extends Controller
         $em->persist($suggestion2);
         $em->flush()*/
 
-       $suggestions = $em->getRepository('EcommerceBundle:Composition')->findAll();
+       $suggestions = $em->getRepository('FactoryBundle:Composition')->findAll();
         return $this->render('FactoryBundle:Produits/layout:composition.html.twig', array(
             'suggestions' => $suggestions
             // ...add name, picture, ambiance option, prix, disponibilite
