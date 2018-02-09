@@ -4,6 +4,7 @@ namespace MSF\EcommerceBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\MoneyType;
 use Symfony\Component\Form\Extension\Core\Type\PercentType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -19,7 +20,7 @@ class ProduitType extends AbstractType
     {
         $builder
             ->add('nom', TextType::class)
-            ->add('categorie', TextType::class)
+            ->add('idCategories', ChoiceType::class)
             ->add('description', TextType::class)
             ->add('prix', MoneyType::class, array(
                 'scale'=>2,

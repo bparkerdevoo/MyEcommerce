@@ -6,9 +6,11 @@
         <link rel="stylesheet" href=" {{ asset ('css/bootstrap.css') }}" />
         <link rel="stylesheet" href=" {{ asset ('css/bootstrap-responsive.css') }}" />
         <link rel="stylesheet" href=" {{ asset ('css/style.css') }}" />
-        <link rel="stylesheet" href=" {{ asset ('css/font-awesome.css') }}" />
+        <link rel="stylesheet" href=" {{ asset ('css/fontawesome.css') }}" />
+        <link rel="stylesheet" href=" {{ asset ('css/fontawesome/fontawesome.css') }}" />
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/bmatznerfontawesome/css/font-awesome.min.css') }}" />
     </head>
     <body>
     <header>
@@ -28,14 +30,25 @@
                     <form class="navbar-form form-search pull-right">
                         <input id="Search" name="Search" type="text" class="input-medium search-query">
                         <button type="submit" class="btn">Rechercher</button>
+                        <a href="{{ path('fos_user_profile_show') }}"><i class="fa fa-user-circle fa-2x"></i></a>
                     </form>
+
+
+
+
+
                 </div>
             </div>
         </div>
     </div>
     </header>
+    <body class="container-fluid" >
+    {% block body %}
+    }
+    {% endblock %}
 
-            {% block body %}{% endblock %}
+    </body>
+
 
     <hr />
     <footer id="footer" class="vspace20">
@@ -54,6 +67,9 @@
                 </div>
                 <div class="span2">
                     <h4>Nous contacter</h4>
+                    <i class="fa fa-envelope-o fa-2x"></i>
+
+
                     <p><i class="icon-phone"></i>&nbsp;Tel: 01 54 00 00</p>
                     <p><i class="icon-print"></i>&nbsp;Fax: 01 54 00 00 00</p>
                 </div>
@@ -65,7 +81,7 @@
             </div>
         </div>
     </footer>
-    <script src="{{ asset('js/jquery-1.10.0.min.js') }}"></script>
+    <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     {% block javascripts %}{% endblock %}
     </body>

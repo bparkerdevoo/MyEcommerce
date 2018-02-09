@@ -328,4 +328,14 @@ class Support
     {
         return $this->id_composition;
     }
+
+    /**
+     * Get idProduit.
+     *
+     * @return string|null
+     */
+    public function getIdProduit()
+    {
+        return $this->id_produit;
+    }
 }

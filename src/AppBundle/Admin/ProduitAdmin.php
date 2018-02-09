@@ -23,7 +23,18 @@ class ProduitAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('nom', 'text')
+
+            ->tab('Enregistrer produit')
+                ->with('Content', ['class'=> 'col-md-9'])
+                    ->add('nom', 'text')
+                    ->add('description', 'textarea')
+                    ->add('id_Categories','sonata_type_model', [
+                        'class' => 'MSF\EcommerceBundle\Entity\Categories',
+                'property' => 'nom',])
+                    ->add('prix', 'number')
+
+                ->end()
+            ->end()
 
 
 
@@ -34,12 +45,16 @@ class ProduitAdmin extends AbstractAdmin
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
-        $datagridMapper->add('nom');
+        $datagridMapper
+            ->add('nom')
+            ->add('id_categories.nom');
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
-        $listMapper->addIdentifier('nom');
+        $listMapper
+            ->addIdentifier('nom')
+            ->add('id_categories.nom');
     }
     protected $baseRouteName = 'produit_admin';
 
@@ -49,6 +64,13 @@ class ProduitAdmin extends AbstractAdmin
         $collection->add('view', $this->getRouterIdParameter().'/view');
 
         $collection->add('update_action', $this->getRouterIdParameter().'/update_action', [], [], [], '', ['https'], ['GET', 'POST']);
+    }
+
+    public function toString($object)
+    {
+        return $object instanceof Produit
+            ? $object->getNom()
+            : 'Produit'; // shown in the breadcrumb on the create view
     }
 
 

@@ -1,0 +1,23 @@
+panier_homepage:
+    path:  /panier/produit
+    defaults: { _controller: PanierBundle:Default:Form }
+
+panier_ajouter:
+    path:  /panier/ajouter
+    defaults: { _controller: PanierBundle:ProduitCRUD:ajouter }
+
+panier_panier:
+    path:  /panier/panier
+    defaults: { _controller: PanierBundle:ProduitCRUD:panier }
+
+panier_spr:
+    path:  /panier/supprimer/{detail}
+    defaults: { _controller: PanierBundle:ProduitCRUD:supprimer }
+
+panier_modifierQte:
+    path:  /panier/modifierQte
+    defaults: { _controller: PanierBundle:ProduitCRUD:modifierQte }
+
+panier_saveCart:
+    path:  /panier/saveCart
+    defaults: { _controller: PanierBundle:ProduitCRUD:saveCart }

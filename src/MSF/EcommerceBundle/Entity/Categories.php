@@ -24,8 +24,7 @@ class Categories
     private $id;
 
     /**
-     * @ORM\Column(name="id_produit", type="integer")
-     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Produit", mappedBy="Categories")
+     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Produit", mappedBy="id_categories")
      */
     private $id_produit;
 
@@ -127,32 +126,9 @@ class Categories
      */
     public function getIdProduit()
     {
-        return $this->id_produit;
+        return $this->id;
     }
 
-    /**
-     * Set idParfum.
-     *
-     * @param \MSF\FactoryBundle\Entity\Parfum|null $idParfum
-     *
-     * @return Categories
-     */
-    public function setIdParfum(\MSF\FactoryBundle\Entity\Parfum $idParfum = null)
-    {
-        $this->id_parfum = $idParfum;
-
-        return $this;
-    }
-
-    /**
-     * Get idParfum.
-     *
-     * @return \MSF\FactoryBundle\Entity\Parfum|null
-     */
-    public function getIdParfum()
-    {
-        return $this->id_parfum;
-    }
 
     /**
      * Set idSupport.
@@ -168,15 +144,7 @@ class Categories
         return $this;
     }
 
-    /**
-     * Get idSupport.
-     *
-     * @return \MSF\FactoryBundle\Entity\Support|null
-     */
-    public function getIdSupport()
-    {
-        return $this->id_support;
-    }
+
 
     /**
      * Set idAccessoire.
@@ -192,6 +160,72 @@ class Categories
         return $this;
     }
 
+
+
+    /**
+     * Add idProduit.
+     *
+     * @param \MSF\EcommerceBundle\Entity\Produit $idProduit
+     *
+     * @return Categories
+     */
+    public function addIdProduit(\MSF\EcommerceBundle\Entity\Produit $idProduit)
+    {
+        $this->id_produit[] = $idProduit;
+
+        return $this;
+    }
+
+    /**
+     * Remove idProduit.
+     *
+     * @param \MSF\EcommerceBundle\Entity\Produit $idProduit
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeIdProduit(\MSF\EcommerceBundle\Entity\Produit $idProduit)
+    {
+        return $this->id_produit->removeElement($idProduit);
+    }
+
+
+
+
+
+    /**
+     * Set idParfum.
+     *
+     * @param \AppBundle\Entity\Parfum|null $idParfum
+     *
+     * @return Categories
+     */
+    public function setIdParfum(\AppBundle\Entity\Parfum $idParfum = null)
+    {
+        $this->id_parfum = $idParfum;
+
+        return $this;
+    }
+
+    /**
+     * Get idParfum.
+     *
+     * @return \AppBundle\Entity\Parfum|null
+     */
+    public function getIdParfum()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Get idSupport.
+     *
+     * @return \MSF\FactoryBundle\Entity\Support|null
+     */
+    public function getIdSupport()
+    {
+        return $this->id;
+    }
+
     /**
      * Get idAccessoire.
      *
@@ -199,6 +233,6 @@ class Categories
      */
     public function getIdAccessoire()
     {
-        return $this->id_accessoire;
+        return $this;
     }
 }

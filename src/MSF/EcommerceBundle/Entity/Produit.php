@@ -6,6 +6,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
 
 
+
 /**
  * Produit
  *
@@ -24,16 +25,9 @@ class Produit
     private $id;
 
     /**
-     * @ORM\Column(name="id_categories", type="integer")
-     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Categories", inversedBy="Produit")
+     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Categories", inversedBy="id_produit")
      */
     private $id_categories;
-
-    public function setId_Categories($id_categories)
-    {
-        $this->id_categories = $id_categories;
-    }
-
 
 
     /**
@@ -46,7 +40,6 @@ class Produit
     private $nom;
 
 
-
     /**
      * @var string
      *
@@ -57,7 +50,7 @@ class Produit
     /**
      * @var float
      *
-     * @ORM\Column(name="prix", type="float", precision=10, scale=2)
+     * @ORM\Column(name="prix", type="float", precision=10, scale=2, nullable=true)
      *
      * @Assert\GreaterThan(0)
      *
@@ -265,6 +258,7 @@ class Produit
      */
     public function getIdCategories()
     {
-        return $this->id_categories;
+        return $this->id;
     }
+
 }

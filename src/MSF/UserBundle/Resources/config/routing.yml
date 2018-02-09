@@ -9,6 +9,10 @@ fos_user_security_login:
     path: /login
     defaults: {_controller: FOSUserBundle:Security:login, _method: POST}
 
+fos_user_registered_login:
+    path: /userlogin
+    defaults: {_controller: UserBundle:RegisteredSecurity:login, _method: POST}
+
 fos_user_profile:
     resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
     prefix: /profile

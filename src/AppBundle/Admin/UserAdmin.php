@@ -52,6 +52,13 @@ class UserAdmin extends AbstractAdmin
         $collection->add('update_action', $this->getRouterIdParameter().'/custom-action', [], [], [], '', ['https'], ['GET', 'POST']);
     }
 
+    public function toString($object)
+    {
+        return $object instanceof User
+            ? $object->getUsername()
+            : 'User'; // shown in the breadcrumb on the create view
+    }
+
 
 }
 

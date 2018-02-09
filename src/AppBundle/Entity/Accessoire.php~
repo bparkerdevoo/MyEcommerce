@@ -203,4 +203,14 @@ class Accessoire
     {
         return $this->origine;
     }
+
+    /**
+     * Get idProduit.
+     *
+     * @return string|null
+     */
+    public function getIdProduit()
+    {
+        return $this->id_produit;
+    }
 }

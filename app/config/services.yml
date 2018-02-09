@@ -34,6 +34,15 @@ services:
             # redundant if you're using autoconfigure
             tags: [kernel.event_subscriber]
 
+    application_fos_user.security.interactive_login_listener:
+            class: MSF\UserBundle\EventListener\UserListener
+            tags:
+                - { name: kernel.event_listener, event: security.interactive_login, method: setLocaleForAuthenticatedUser }
+
+    application_fos_user.security.kernel_request_listener:
+            class: MSF\UserBundle\EventListener\UserListener
+            tags:
+                - { name: kernel.event_listener, event: kernel.request, method: setLocaleForUnauthenticatedUser }
     # add more services, or override services that need manual wiring
     # AppBundle\Service\ExampleService:
     #     arguments:
@@ -95,4 +104,13 @@ services:
                 - ~
                 - MSF\EcommerceBundle\Entity\Produit
                 - 'AppBundle:ProduitCRUD' # define the new controller via the third argument
+            public: true
+    admin.categories:
+            class: AppBundle\Admin\CategoriesAdmin
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: "Creation de Categories de produit" }
+            arguments:
+                - ~
+                - MSF\EcommerceBundle\Entity\Categories
+                - 'AppBundle:CategoriesCRUD' # define the new controller via the third argument
             public: true

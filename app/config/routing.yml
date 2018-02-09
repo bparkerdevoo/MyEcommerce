@@ -1,7 +1,7 @@
 panier:
     resource: "@PanierBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /commande
 
 admin:
     resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'

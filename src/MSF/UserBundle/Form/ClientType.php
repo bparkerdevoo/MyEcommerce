@@ -12,9 +12,26 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\Choice;
+use Sonata\AdminBundle\Form\FormMapper;
 
 class ClientType extends AbstractType
 {
+    protected function configureFormFields(FormMapper $formMapper)
+    {
+        $formMapper
+            ->tab('connexion')
+                ->with('Content', ['class' => 'col-md-9'])
+                    ->add('Id_User', 'sonata_type_model', ['class' => 'User', 'property' => 'username', 'email',
+             ])
+                ->end()
+            ->end()
+            ->tab('informations personelles')
+                ->with('Meta data', ['class' => 'col-md-3'])
+
+                ->end()
+            ->end();
+    }
+
     /**
      * {@inheritdoc}
      */
@@ -22,8 +39,9 @@ class ClientType extends AbstractType
     {
         $builder
 
-            ->add('nom', TextType::class)
-            ->add('prenom',TextType::class)
+
+
+            ->add('nom', TextType::class)            ->add('prenom',TextType::class)
             ->add('titre', ChoiceType::class,
                 array('choices'=>array(
                                         'Madame'=>'Madame',

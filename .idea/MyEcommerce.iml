@@ -9,6 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/AppBundle" isTestSource="false" packagePrefix="AppBundle\" />
       <sourceFolder url="file://$MODULE_DIR$/src/MSF/EcommerceBundle" isTestSource="false" packagePrefix="MSF\EcommerceBundle\" />
       <sourceFolder url="file://$MODULE_DIR$/src/MSF/UserBundle" isTestSource="false" packagePrefix="MSF\UserBundle\" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bmatzner/fontawesome-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cocur/slugify" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/annotations" />
@@ -72,6 +73,7 @@
           <root url="phar://$MODULE_DIR$/vendor/friendsofsymfony/user-bundle/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
           <root url="phar://$MODULE_DIR$/composer.phar/" />
           <root url="phar://$MODULE_DIR$/vendor/friendsofsymfony/user-bundle/vendor/symfony/dependency-injection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/symfony/phpunit-bridge/Tests/DeprecationErrorHandler/deprecation.phar/" />
         </CLASSES>
         <SOURCES>
           <root url="phar://$MODULE_DIR$/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
@@ -80,12 +82,14 @@
           <root url="phar://$MODULE_DIR$/vendor/friendsofsymfony/user-bundle/vendor/twig/twig/test/Twig/Tests/Loader/Fixtures/phar/phar-sample.phar/" />
           <root url="phar://$MODULE_DIR$/composer.phar/" />
           <root url="phar://$MODULE_DIR$/vendor/friendsofsymfony/user-bundle/vendor/symfony/dependency-injection/Tests/Fixtures/includes/ProjectWithXsdExtensionInPhar.phar/" />
+          <root url="phar://$MODULE_DIR$/vendor/symfony/phpunit-bridge/Tests/DeprecationErrorHandler/deprecation.phar/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library name="PHP" type="php">
         <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bmatzner/fontawesome-bundle" />
           <root url="file://$MODULE_DIR$/vendor/cocur/slugify" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/annotations" />
@@ -139,6 +143,7 @@
           <root url="file://$MODULE_DIR$/vendor/twig/twig" />
         </CLASSES>
         <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bmatzner/fontawesome-bundle" />
           <root url="file://$MODULE_DIR$/vendor/cocur/slugify" />
           <root url="file://$MODULE_DIR$/vendor/composer" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/annotations" />

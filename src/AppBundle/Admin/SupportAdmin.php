@@ -8,6 +8,7 @@
 
 namespace AppBundle\Admin;
 
+use MSF\FactoryBundle\Entity\Support;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -41,6 +42,13 @@ class SupportAdmin extends AbstractAdmin
         $collection->add('view', $this->getRouterIdParameter().'/view');
 
         $collection->add('update_action', $this->getRouterIdParameter().'/update_action', [], [], [], '', ['https'], ['GET', 'POST']);
+    }
+
+    public function toString($object)
+    {
+        return $object instanceof Support
+            ? $object->getNom()
+            : 'Support'; // shown in the breadcrumb on the create view
     }
 
 

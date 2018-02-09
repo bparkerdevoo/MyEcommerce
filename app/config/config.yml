@@ -46,6 +46,10 @@ fos_user:
 twig:
     debug: '%kernel.debug%'
     strict_variables: '%kernel.debug%'
+    form_themes:
+        - 'forms/fieldsTheme1.html.twig'
+        - 'forms/fieldsTheme2.html.twig'
+        - 'forms/fieldsTheme3.html.twig'
 
 
 # Doctrine Configuration

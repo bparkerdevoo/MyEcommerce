@@ -1,42 +1,41 @@
 {% extends "::layout/Layout.html.twig" %}
+{% form_theme form 'forms/fieldsTheme1.html.twig' 'forms/fieldsTheme2.html.twig' 'forms/fieldsTheme3.html.twig' %}
 
 {% block body %}
-    <div class="container">
-        <div class="row">
-            <h3>display widget admin page ony</h3>
-        </div>
-    </div>
-    <div class="container">
 
+    <div class="container">
         <div class="row">
             <div class="span3">
                 {% include 'UserBundle:Default:modulesUsed/utilisateursConnecte.html.twig' %}
             </div>
-            <div class="span 4 offset3">
+
+            <div class="span7">
                 <h1>
                     Espace Client
                 </h1>
             </div>
             <div class="row">
-                <div class="span3 offset3">
+
+                <div class="span5">
                     <h3>Mes Informations</h3>
                 </div>
             </div>
+
         </div>
 
         <div class="row">
-            <div class="span2 offset2">
 
-            </div>
-            <div class="span4 offset2">
-                <div class="form-actions">
-                        {{ form_start(form, {
-                                        'attr': {
+            <div class="span8 offset3">
+                <div class="form-group">
+
+                        {{ form_start(form, {'attr': {
                                                     'novalidate': 'novalidate',
                                                     'action' : path('ajout_client'),
-                                                    'method':'post'}}
-                                                    )
+                                                    'method':'post'}})
                         }}
+                            {{ form_errors(form)}}
+
+
                         {{ form_widget(form) }}
                         <input class="btn btn-primary" type="submit" value="{{ 'Ajouter'|trans }}" />
 

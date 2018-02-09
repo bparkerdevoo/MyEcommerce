@@ -35,7 +35,7 @@ class Composition
      * @var int
      *
      * @ORM\Column(name="id_support", type="integer")
-     * @ORM\OneToMany(targetEntity="MSF\FactoryBundle\Entity\Support", cascade={"persist"})
+     * @ORM\OneToMany(targetEntity="MSF\FactoryBundle\Entity\Support", mappedBy="id_composition",cascade={"persist"})
      *
      */
     private $id_support;

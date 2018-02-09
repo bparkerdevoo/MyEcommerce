@@ -2,7 +2,7 @@
 
 namespace MSF\EcommerceBundle\Controller;
 
-use MSF\EcommerceBundle\EcommerceBundle;
+use MSF\EcommerceBundle;
 use MSF\EcommerceBundle\Entity\Produit;
 use MSF\EcommerceBundle\Form\ProduitType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -71,6 +71,11 @@ class ProduitsController extends Controller
         return $this->render("EcommerceBundle:pages:delete.html.twig");
     }
 
+    /**
+     * @param Request $request
+     * @return Response
+     * @Route("/addProduit", name="form_add_produit")
+     */
     //form  //form******************//form
     public function addAction(Request $request)
     {
@@ -79,7 +84,8 @@ class ProduitsController extends Controller
 
         //recup formulaire
           $form = $this->createForm(ProduitType::class,$produit);
-        //relier formulaire a la requette
+
+          //relier formulaire a la requette
          $form->handleRequest($request);
 
         //test de soumission du formulaire

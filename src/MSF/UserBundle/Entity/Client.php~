@@ -491,4 +491,40 @@ class Client
     {
         return $this->id_User;
     }
+
+    /**
+     * Add idCustomName.
+     *
+     * @param \MSF\FactoryBundle\Entity\Personnalisation $idCustomName
+     *
+     * @return Client
+     */
+    public function addIdCustomName(\MSF\FactoryBundle\Entity\Personnalisation $idCustomName)
+    {
+        $this->id_customName[] = $idCustomName;
+
+        return $this;
+    }
+
+    /**
+     * Remove idCustomName.
+     *
+     * @param \MSF\FactoryBundle\Entity\Personnalisation $idCustomName
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeIdCustomName(\MSF\FactoryBundle\Entity\Personnalisation $idCustomName)
+    {
+        return $this->id_customName->removeElement($idCustomName);
+    }
+
+    /**
+     * Get idCustomName.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getIdCustomName()
+    {
+        return $this->id_customName;
+    }
 }

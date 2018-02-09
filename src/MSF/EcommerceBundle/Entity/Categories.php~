@@ -24,8 +24,7 @@ class Categories
     private $id;
 
     /**
-     * @ORM\Column(name="id_produit", type="integer")
-     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Produit", mappedBy="Categories")
+     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Produit", mappedBy="id_categories")
      */
     private $id_produit;
 
@@ -37,7 +36,7 @@ class Categories
     /**
      * @var int
      *
-     * @ORM\OneToOne(targetEntity="MSF\FactoryBundle\Entity\Parfum", cascade={"persist"})
+     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Parfum", cascade={"persist"})
      *
      */
     private $id_parfum;
@@ -100,6 +99,93 @@ class Categories
     public function getNom()
     {
         return $this->nom;
+    }
+
+
+
+
+
+    /**
+     * Set idProduit.
+     *
+     * @param int $idProduit
+     *
+     * @return Categories
+     */
+    public function setIdProduit($idProduit)
+    {
+        $this->id_produit = $idProduit;
+
+        return $this;
+    }
+
+    /**
+     * Get idProduit.
+     *
+     * @return int
+     */
+    public function getIdProduit()
+    {
+        return $this->id;
+    }
+
+
+    /**
+     * Set idSupport.
+     *
+     * @param \MSF\FactoryBundle\Entity\Support|null $idSupport
+     *
+     * @return Categories
+     */
+    public function setIdSupport(\MSF\FactoryBundle\Entity\Support $idSupport = null)
+    {
+        $this->id_support = $idSupport;
+
+        return $this;
+    }
+
+
+
+    /**
+     * Set idAccessoire.
+     *
+     * @param \AppBundle\Entity\Accessoire|null $idAccessoire
+     *
+     * @return Categories
+     */
+    public function setIdAccessoire(\AppBundle\Entity\Accessoire $idAccessoire = null)
+    {
+        $this->id_accessoire = $idAccessoire;
+
+        return $this;
+    }
+
+
+
+    /**
+     * Add idProduit.
+     *
+     * @param \MSF\EcommerceBundle\Entity\Produit $idProduit
+     *
+     * @return Categories
+     */
+    public function addIdProduit(\MSF\EcommerceBundle\Entity\Produit $idProduit)
+    {
+        $this->id_produit[] = $idProduit;
+
+        return $this;
+    }
+
+    /**
+     * Remove idProduit.
+     *
+     * @param \MSF\EcommerceBundle\Entity\Produit $idProduit
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeIdProduit(\MSF\EcommerceBundle\Entity\Produit $idProduit)
+    {
+        return $this->id_produit->removeElement($idProduit);
     }
 
 

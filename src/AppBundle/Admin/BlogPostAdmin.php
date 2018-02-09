@@ -7,7 +7,7 @@
  */
 
 namespace AppBundle\Admin;
-use AppBundle\AppBundle;
+use AppBundle\Entity\BlogPost;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;
