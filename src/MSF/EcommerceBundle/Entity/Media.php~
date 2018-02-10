@@ -3,12 +3,15 @@
 namespace MSF\EcommerceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * Media
  *
  * @ORM\Table(name="media")
  * @ORM\Entity(repositoryClass="MSF\EcommerceBundle\Repository\MediaRepository")
+ * @Vich\Uploadable
  */
 class Media
 {
@@ -20,6 +23,117 @@ class Media
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image_name", type="string", length=255)
+     */
+    private $imageName;
+
+    /**
+     * @param string $imageName
+     */
+    public function setImageName(?string $imageName): void
+    {
+        $this->imageName = $imageName;
+    }
+
+    /**
+     * @return string
+     */
+    public function getImageName(): ?string
+    {
+        return $this->imageName;
+    }
+
+    /**
+     * @var File
+     *
+     * @Vich\UploadableField(mapping="product_image", fileNameProperty="imageName", size="imageSize")
+     */
+    private $imageFile;
+
+    /**
+     *
+     * manually uploading a file, ensure an instance of 'UploadedFile' is injected into the setter, to trigger the update
+     * config parameter is set to true: 'inject_on_load' for the setter to accept instance of file
+     *
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
+     */
+
+    public function setImageFile(File $image = null) : void
+    {
+        $this->imageFile = $image;
+
+        if(null !== $image){
+            $this->updatedAt = new \DateTimeImmutable();
+        }
+    }
+
+    /**
+     * @return File
+     */
+    public function getImageFile(): ?File
+    {
+        return $this->imageFile;
+    }
+
+
+    /**
+     *
+     * @ORM\Column(type="integer", name="size")
+     * @var integer
+     *
+     */
+
+    private $imageSize;
+
+    /**
+     * @param int $imageSize
+     */
+    public function setImageSize(?int $imageSize): void
+    {
+        $this->imageSize = $imageSize;
+    }
+
+    /**
+     * @return int
+     */
+    public function getImageSize(): ?int
+    {
+        return $this->imageSize;
+    }
+
+    /**
+     * @ORM\Column(type="datetime", name="date_loaded")
+     * @var \DateTime
+     *
+     */
+    private $updatedAt;
+
+
+
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Produit", inversedBy="Media")
+     *
+     * @ORM\JoinColumn(name="produit", referencedColumnName="id")
+     */
+    private $produit;
+
+    public function setProduit(Produit $produit)
+    {
+        $this->produit = $produit;
+    }
+
+    public function getProduit()
+    {
+        return $this->produit;
+    }
+
+
 
     /**
      * @var string
@@ -49,12 +163,7 @@ class Media
      */
     private $vignette2;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="image", type="string", length=255)
-     */
-    private $image;
+
 
 
     /**
@@ -185,5 +294,29 @@ class Media
     public function getImage()
     {
         return $this->image;
+    }
+
+    /**
+     * Set updatedAt.
+     *
+     * @param \DateTime $updatedAt
+     *
+     * @return Media
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt.
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
     }
 }

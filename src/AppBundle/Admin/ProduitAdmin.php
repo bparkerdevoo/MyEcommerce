@@ -14,15 +14,14 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use MSF\EcommerceBundle\Entity\Produit;
 use Sonata\AdminBundle\Route\RouteCollection;
+use Symfony\Component\Form\Extension\Core\Type\FileType;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class ProduitAdmin extends AbstractAdmin
 {
-
-
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-
             ->tab('Enregistrer produit')
                 ->with('Content', ['class'=> 'col-md-9'])
                     ->add('nom', 'text')
@@ -32,23 +31,16 @@ class ProduitAdmin extends AbstractAdmin
                 'property' => 'nom',])
                     ->add('prix', 'number')
                     ->add('tva', 'number')
-
                     ->add('image', 'text')
+                    ->add('brochure', FileType::class, array('label' => 'Brochure (Fichier PDF)'))
         ->add('disponible', 'choice',
             array('choices' => array(
                 'oui' => 'oui',
                 'non' => 'non',
                 'rupture' => 'rupture')))
-
-
                 ->end()
             ->end()
-
-
-
         ;
-
-
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
@@ -66,11 +58,7 @@ class ProduitAdmin extends AbstractAdmin
             ->add('description')
             ->add('prix')
             ->add('id_categories.nom')
-
-        ;
-
-
-
+            ->add('brochure')
         ;
 
     }
@@ -90,6 +78,8 @@ class ProduitAdmin extends AbstractAdmin
             ? $object->getNom()
             : 'Produit'; // shown in the breadcrumb on the create view
     }
+
+
 
 
 }

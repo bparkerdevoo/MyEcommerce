@@ -4,6 +4,7 @@ namespace MSF\EcommerceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Validator\Constraint as Assert;
 
 
 /**
@@ -24,7 +25,7 @@ class Categories
     private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Produit", mappedBy="id_categories")
+     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Produit", mappedBy="categories")
      */
     private $id_produit;
 
@@ -60,7 +61,9 @@ class Categories
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=100)
+     * @ORM\Column(name="nom", type="string", length=100, nullable=true)
+     *
+     *
      */
     private $nom;
 
@@ -191,4 +194,48 @@ class Categories
 
 
 
+
+    /**
+     * Set idParfum.
+     *
+     * @param \AppBundle\Entity\Parfum|null $idParfum
+     *
+     * @return Categories
+     */
+    public function setIdParfum(\AppBundle\Entity\Parfum $idParfum = null)
+    {
+        $this->id_parfum = $idParfum;
+
+        return $this;
+    }
+
+    /**
+     * Get idParfum.
+     *
+     * @return \AppBundle\Entity\Parfum|null
+     */
+    public function getIdParfum()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Get idSupport.
+     *
+     * @return \MSF\FactoryBundle\Entity\Support|null
+     */
+    public function getIdSupport()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Get idAccessoire.
+     *
+     * @return \AppBundle\Entity\Accessoire|null
+     */
+    public function getIdAccessoire()
+    {
+        return $this;
+    }
 }

@@ -4,6 +4,7 @@ namespace MSF\EcommerceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\Common\Collections\ArrayCollection;
 
 
 
@@ -25,7 +26,47 @@ class Produit
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Categories", inversedBy="id_produit")
+     * @ORM\OneToMany(targetEntity="Media", mappedBy="Produit")
+     */
+    private $media_Id;
+    public function __construct()
+    {
+        $this->media_Id = new ArrayCollection();
+    }
+
+    /**
+     *
+     * @ORM\Column(name="brochure", type="string")
+     *
+     * @Assert\NotBlank(message="merci de telecharger la brochure du produit au format PDF.")
+     * @Assert\File(mimeTypes={"application/pdf"})
+     */
+    private $brochure;
+
+    /**
+     * @return mixed
+     */
+    public function getBrochure()
+    {
+        return $this->brochure;
+    }
+
+    /**
+     * @param mixed $brochure
+     */
+    public function setBrochure($brochure)
+    {
+        $this->brochure = $brochure;
+
+        return $this;
+    }
+
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Categories", inversedBy="produit")
+     *
+     * @ORM\JoinColumn(name="categories_id", referencedColumnName="id")
      */
     private $id_categories;
 
@@ -33,7 +74,7 @@ class Produit
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=150, unique=true)
+     * @ORM\Column(name="nom", type="string", length=150, unique=true, nullable=true)
      *
      * @Assert\NotBlank(message="Merci de renseigner ce champ")
      */
@@ -43,7 +84,7 @@ class Produit
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="text")
+     * @ORM\Column(name="description", type="text", nullable=true)
      */
     private $description;
 
@@ -63,14 +104,14 @@ class Produit
     /**
      * @var float
      *
-     * @ORM\Column(name="tva", type="float")
+     * @ORM\Column(name="tva", type="float", nullable=true)
      */
     private $tva;
 
     /**
      * @var bool
      *
-     * @ORM\Column(name="disponible", type="boolean")
+     * @ORM\Column(name="disponible", type="boolean", nullable=true)
      */
     private $disponible;
 
@@ -244,7 +285,7 @@ class Produit
      *
      * @return Produit
      */
-    public function setIdCategories($idCategories)
+    public function setIdCategories(Categories $idCategories)
     {
         $this->id_categories = $idCategories;
 
@@ -258,7 +299,43 @@ class Produit
      */
     public function getIdCategories()
     {
-        return $this->id;
+        return $this->id_categories;
     }
 
+
+    /**
+     * Add mediaId.
+     *
+     * @param \MSF\EcommerceBundle\Entity\Media $mediaId
+     *
+     * @return Produit
+     */
+    public function addMediaId(\MSF\EcommerceBundle\Entity\Media $mediaId)
+    {
+        $this->media_Id[] = $mediaId;
+
+        return $this;
+    }
+
+    /**
+     * Remove mediaId.
+     *
+     * @param \MSF\EcommerceBundle\Entity\Media $mediaId
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeMediaId(\MSF\EcommerceBundle\Entity\Media $mediaId)
+    {
+        return $this->media_Id->removeElement($mediaId);
+    }
+
+    /**
+     * Get mediaId.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getMediaId()
+    {
+        return $this->media_Id;
+    }
 }

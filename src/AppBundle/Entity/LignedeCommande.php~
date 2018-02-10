@@ -43,7 +43,7 @@ class LignedeCommande
     private $commande;
 
     /**
-     * @ORM\ManyToOne(targetEntity="AppBundle\Entity\Produit")
+     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Produit")
      * @ORM\JoinColumn(nullable=false)
      */
     private $produit;
@@ -60,4 +60,110 @@ class LignedeCommande
 
 
 
+
+    /**
+     * Get id.
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set quantite.
+     *
+     * @param int $quantite
+     *
+     * @return LignedeCommande
+     */
+    public function setQuantite($quantite)
+    {
+        $this->quantite = $quantite;
+
+        return $this;
+    }
+
+    /**
+     * Get quantite.
+     *
+     * @return int
+     */
+    public function getQuantite()
+    {
+        return $this->quantite;
+    }
+
+    /**
+     * Set prixUnitaire.
+     *
+     * @param float $prixUnitaire
+     *
+     * @return LignedeCommande
+     */
+    public function setPrixUnitaire($prixUnitaire)
+    {
+        $this->prixUnitaire = $prixUnitaire;
+
+        return $this;
+    }
+
+    /**
+     * Get prixUnitaire.
+     *
+     * @return float
+     */
+    public function getPrixUnitaire()
+    {
+        return $this->prixUnitaire;
+    }
+
+    /**
+     * Set commande.
+     *
+     * @param \AppBundle\Entity\Commande $commande
+     *
+     * @return LignedeCommande
+     */
+    public function setCommande(\AppBundle\Entity\Commande $commande)
+    {
+        $this->commande = $commande;
+
+        return $this;
+    }
+
+    /**
+     * Get commande.
+     *
+     * @return \AppBundle\Entity\Commande
+     */
+    public function getCommande()
+    {
+        return $this->commande;
+    }
+
+    /**
+     * Set produit.
+     *
+     * @param \AppBundle\Entity\Produit $produit
+     *
+     * @return LignedeCommande
+     */
+    public function setProduit(\AppBundle\Entity\Produit $produit)
+    {
+        $this->produit = $produit;
+
+        return $this;
+    }
+
+    /**
+     * Get produit.
+     *
+     * @return \AppBundle\Entity\Produit
+     */
+    public function getProduit()
+    {
+        return $this->produit;
+    }
 }

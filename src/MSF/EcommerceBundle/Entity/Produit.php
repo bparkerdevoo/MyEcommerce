@@ -4,6 +4,12 @@ namespace MSF\EcommerceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use Doctrine\Common\Collections\ArrayCollection;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\HttpFoundation\File\File;
+
+
+
 
 
 
@@ -12,6 +18,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  *
  * @ORM\Table(name="produit")
  * @ORM\Entity(repositoryClass="MSF\EcommerceBundle\Repository\ProduitRepository")
+ * @Vich\Uploadable
  */
 class Produit
 {
@@ -23,6 +30,45 @@ class Produit
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
+    /**
+     * @ORM\OneToMany(targetEntity="Media", mappedBy="Produit")
+     */
+    private $media_Id;
+    public function __construct()
+    {
+        $this->media_Id = new ArrayCollection();
+    }
+
+    /**
+     *@var File
+     * @ORM\Column(name="brochure", type="string")
+     *
+     * @Assert\NotBlank(message="merci de télécharger la brochure du produit au format PDF.")
+     * @Assert\File(mimeTypes={"application/pdf"})
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $brochure
+     */
+    private $brochure;
+
+    /**
+     * @return mixed
+     */
+    public function getBrochure()
+    {
+        return $this->brochure;
+    }
+
+    /**
+     * @param mixed $brochure
+     */
+    public function setBrochure(File $brochure = null)
+    {
+        $this->brochure = $brochure;
+
+        return $this;
+    }
+
+
 
     /**
      * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Categories", inversedBy="produit")
@@ -263,4 +309,40 @@ class Produit
         return $this->id_categories;
     }
 
+
+    /**
+     * Add mediaId.
+     *
+     * @param \MSF\EcommerceBundle\Entity\Media $mediaId
+     *
+     * @return Produit
+     */
+    public function addMediaId(\MSF\EcommerceBundle\Entity\Media $mediaId)
+    {
+        $this->media_Id[] = $mediaId;
+
+        return $this;
+    }
+
+    /**
+     * Remove mediaId.
+     *
+     * @param \MSF\EcommerceBundle\Entity\Media $mediaId
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeMediaId(\MSF\EcommerceBundle\Entity\Media $mediaId)
+    {
+        return $this->media_Id->removeElement($mediaId);
+    }
+
+    /**
+     * Get mediaId.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getMediaId()
+    {
+        return $this->media_Id;
+    }
 }
