@@ -7,13 +7,14 @@
  */
 
 namespace AppBundle\Admin;
-
+use Sonata\AdminBundle\Form\Type\ModelAutocompleteType;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use MSF\UserBundle\Entity\User;
 use Sonata\AdminBundle\Route\RouteCollection;
+use Symfony\Component\Security\Core\Role\SwitchUserRole;
 
 class UserAdmin extends AbstractAdmin
 {
@@ -22,8 +23,7 @@ class UserAdmin extends AbstractAdmin
     {
         $formMapper
             ->add('username', 'text')
-            ->add('roles', 'text')
-            ->add('lastLogin', 'datetime');
+            ->add('roles');
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
@@ -37,8 +37,8 @@ class UserAdmin extends AbstractAdmin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
+            ->addIdentifier('roles')
             ->addIdentifier('username')
-            ->add('roles')
             ->add('lastLogin');
 
     }

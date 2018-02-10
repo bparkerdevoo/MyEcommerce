@@ -56,49 +56,49 @@ class Support
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=150)
+     * @ORM\Column(name="nom", type="string", length=150, nullable=true)
      */
     private $nom;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="image", type="string", length=255)
+     * @ORM\Column(name="image", type="string", length=255, nullable=true)
      */
     private $image;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="prix", type="float")
+     * @ORM\Column(name="prix", type="float", nullable=true)
      */
     private $prix;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="text")
+     * @ORM\Column(name="description", type="text", nullable=true)
      */
     private $description;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="origine", type="string", length=100)
+     * @ORM\Column(name="origine", type="string", length=100, nullable=true)
      */
     private $origine;
 
     /**
      * @var bool
      *
-     * @ORM\Column(name="disponible", type="boolean")
+     * @ORM\Column(name="disponible", type="boolean", nullable=true)
      */
     private $disponible;
 
     /**
      * @var float
      *
-     * @ORM\Column(name="tva", type="float")
+     * @ORM\Column(name="tva", type="float", nullable=true)
      */
     private $tva;
 

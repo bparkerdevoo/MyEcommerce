@@ -49,6 +49,7 @@ class ClientAdmin extends AbstractAdmin
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
         $datagridMapper
+            ->add('id_user.id')
             ->add('nom')
             ->add('prenom')
             ->add('dateInscription')
@@ -58,6 +59,8 @@ class ClientAdmin extends AbstractAdmin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
+            ->addIdentifier('id_user.id')
+            ->addIdentifier('id.id')
             ->addIdentifier('nom')
             ->addIdentifier('prenom')
             ->addIdentifier('dateInscription')
@@ -71,6 +74,13 @@ class ClientAdmin extends AbstractAdmin
         $collection->add('view', $this->getRouterIdParameter().'/view');
 
         $collection->add('update_action', $this->getRouterIdParameter().'/custom-action', [], [], [], '', ['https'], ['GET', 'POST']);
+    }
+
+    public function toString($object)
+    {
+        return $object instanceof Client
+            ? $object->getNom()
+            : 'Client'; // shown in the breadcrumb on the create view
     }
 
 

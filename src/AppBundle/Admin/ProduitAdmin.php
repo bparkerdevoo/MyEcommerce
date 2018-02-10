@@ -14,7 +14,6 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use MSF\EcommerceBundle\Entity\Produit;
 use Sonata\AdminBundle\Route\RouteCollection;
-use Sonata\AdminBundle\Form\Type\ModelType;
 
 class ProduitAdmin extends AbstractAdmin
 {
@@ -32,6 +31,15 @@ class ProduitAdmin extends AbstractAdmin
                         'class' => 'MSF\EcommerceBundle\Entity\Categories',
                 'property' => 'nom',])
                     ->add('prix', 'number')
+                    ->add('tva', 'number')
+
+                    ->add('image', 'text')
+        ->add('disponible', 'choice',
+            array('choices' => array(
+                'oui' => 'oui',
+                'non' => 'non',
+                'rupture' => 'rupture')))
+
 
                 ->end()
             ->end()
@@ -47,14 +55,24 @@ class ProduitAdmin extends AbstractAdmin
     {
         $datagridMapper
             ->add('nom')
-            ->add('id_categories.nom');
+            ->add('id_categories.nom')
+           ;
     }
 
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
             ->addIdentifier('nom')
-            ->add('id_categories.nom');
+            ->add('description')
+            ->add('prix')
+            ->add('id_categories.nom')
+
+        ;
+
+
+
+        ;
+
     }
     protected $baseRouteName = 'produit_admin';
 

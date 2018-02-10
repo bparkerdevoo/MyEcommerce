@@ -8,6 +8,7 @@
 
 namespace AppBundle\Admin;
 
+use AppBundle\Entity\Parfum;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -57,6 +58,13 @@ class ParfumAdmin extends AbstractAdmin
         $collection->add('view', $this->getRouterIdParameter().'/view');
 
         $collection->add('update_action', $this->getRouterIdParameter().'/update_action', [], [], [], '', ['https'], ['GET', 'POST']);
+    }
+
+    public function toString($object)
+    {
+        return $object instanceof Parfum
+            ? $object->getNom()
+            : 'Parfum'; // shown in the breadcrumb on the create view
     }
 
 

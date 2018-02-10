@@ -8,6 +8,7 @@
 
 namespace AppBundle\Admin;
 
+use MSF\EcommerceBundle\Entity\Categories;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -42,6 +43,13 @@ class CategoriesAdmin extends AbstractAdmin
         $collection->add('view', $this->getRouterIdParameter().'/view');
 
         $collection->add('update_action', $this->getRouterIdParameter().'/update_action', [], [], [], '', ['https'], ['GET', 'POST']);
+    }
+
+    public function toString($object)
+    {
+        return $object instanceof Categories
+            ? $object->getNom()
+            : 'Categories'; // shown in the breadcrumb on the create view
     }
 
 }

@@ -25,7 +25,9 @@ class Produit
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Categories", inversedBy="id_produit")
+     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Categories", inversedBy="produit")
+     *
+     * @ORM\JoinColumn(name="categories_id", referencedColumnName="id")
      */
     private $id_categories;
 
@@ -33,7 +35,7 @@ class Produit
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=150, unique=true)
+     * @ORM\Column(name="nom", type="string", length=150, unique=true, nullable=true)
      *
      * @Assert\NotBlank(message="Merci de renseigner ce champ")
      */
@@ -43,7 +45,7 @@ class Produit
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="text")
+     * @ORM\Column(name="description", type="text", nullable=true)
      */
     private $description;
 
@@ -63,14 +65,14 @@ class Produit
     /**
      * @var float
      *
-     * @ORM\Column(name="tva", type="float")
+     * @ORM\Column(name="tva", type="float", nullable=true)
      */
     private $tva;
 
     /**
      * @var bool
      *
-     * @ORM\Column(name="disponible", type="boolean")
+     * @ORM\Column(name="disponible", type="boolean", nullable=true)
      */
     private $disponible;
 
@@ -244,7 +246,7 @@ class Produit
      *
      * @return Produit
      */
-    public function setIdCategories($idCategories)
+    public function setIdCategories(Categories $idCategories)
     {
         $this->id_categories = $idCategories;
 
@@ -258,7 +260,7 @@ class Produit
      */
     public function getIdCategories()
     {
-        return $this->id;
+        return $this->id_categories;
     }
 
 }

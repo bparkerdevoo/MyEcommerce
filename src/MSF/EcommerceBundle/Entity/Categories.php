@@ -4,6 +4,7 @@ namespace MSF\EcommerceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use Symfony\Component\Validator\Constraint as Assert;
 
 
 /**
@@ -24,7 +25,7 @@ class Categories
     private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Produit", mappedBy="id_categories")
+     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Produit", mappedBy="categories")
      */
     private $id_produit;
 
@@ -60,7 +61,9 @@ class Categories
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=100)
+     * @ORM\Column(name="nom", type="string", length=100, nullable=true)
+     *
+     *
      */
     private $nom;
 
