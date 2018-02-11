@@ -1,14 +1,6 @@
-{% extends "::layout/Layout.html.twig" %}
 
-{% block body %}
-    <div class="container">
-        <div class="row">
 
-            <div class="span3">
-                {% include "::layout/modulesUsed/nav.html.twig" %}
-            </div>
 
-            <div class="span8">
                 <ul class="thumbnails">
                     {% for i in 0..8 %}
                         <li class="span4">
@@ -29,6 +21,8 @@
                                     <h4>Thumbnail label</h4>
                                     <p>100,00 €</p>
                                     <a class="btn btn-primary" href="{{ path('presentation') }}">Plus d'infos</a>
+                                    <p>telecharger le pdf</p>
+                                    <a href="{{ asset('uploads/brochures/' ~ ) }}"> brochure (pdf)</a>
                                     <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
                                 </div>
                             </div>
@@ -37,19 +31,6 @@
 
                 </ul>
 
-                <div class="pagination">
-                    <ul>
-                        <li class="disabled"><span>Précédent</span></li>
-                        <li class="disabled"><span>1</span></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li><a href="#">Suivant</a></li>
-                    </ul>
-                </div>
 
-            </div>
-        </div>
-    </div>
-{% endblock %}
+
+

@@ -7,35 +7,27 @@
             <div class="span3">
                 {% include "::layout/modulesUsed/nav.html.twig" %}
             </div>
+        </div>
+        <div class="row">
+
+            <div class="span4">
+                {% include "EcommerceBundle:Produits/layout:produitform.html.twig" %}
+            </div>
+        </div>
+    <div class="row">
+
+        <div class="span4">
+            {% include "EcommerceBundle:Produits/layout:produitList.html.twig" %}
+        </div>
+
+    </div>
+        <div class="row">
+
+
+
 
             <div class="span8">
-                <ul class="thumbnails">
-                    {% for i in 0..8 %}
-                        <li class="span4">
-                            <div class="thumbnail">
-                                <img src="{{ asset('img/msf_spray.jpg') }}" alt="MSF" width="300" height="300">
-                                <div class="caption">
-                                    <h4>Thumbnail label</h4>
-                                    <p>100,00 €</p>
-                                    <a class="btn btn-primary" href="{{ path('presentation') }}">Plus d'infos</a>
-                                    <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="span4">
-                            <div class="thumbnail">
-                                <img src="{{ asset('img/holder.png') }}" alt="MSF-holder" width="300" height="300">
-                                <div class="caption">
-                                    <h4>Thumbnail label</h4>
-                                    <p>100,00 €</p>
-                                    <a class="btn btn-primary" href="{{ path('presentation') }}">Plus d'infos</a>
-                                    <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
-                                </div>
-                            </div>
-                        </li>
-                    {% endfor %}
 
-                </ul>
 
                 <div class="pagination">
                     <ul>

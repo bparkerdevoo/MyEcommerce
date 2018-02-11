@@ -34,6 +34,16 @@ services:
             # redundant if you're using autoconfigure
             tags: [kernel.event_subscriber]
 
+    #AppBundle\Service\FileUploader:
+     #   arguments:
+      #      $targetDir: '%brochures_directory%'
+
+    #AppBundle\EventListener\BrochureUploadListener:
+     #   tags:
+       #     - { name: doctrine.event_listener, event: prePersist }
+       #     - { name: doctrine.event_listener, event: preUpdate }
+       #     - { name: doctrine.event_listener, event: postLoad }
+
     application_fos_user.security.interactive_login_listener:
             class: MSF\UserBundle\EventListener\UserListener
             tags:
@@ -113,4 +123,23 @@ services:
                 - ~
                 - MSF\EcommerceBundle\Entity\Categories
                 - 'AppBundle:CategoriesCRUD' # define the new controller via the third argument
+            public: true
+
+    admin.medias:
+            class: AppBundle\Admin\MediaAdmin
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: "Gallery" }
+            arguments:
+                    - ~
+                    - MSF\EcommerceBundle\Entity\Media
+                    - 'AppBundle:MediaCRUD' # define the new controller via the third argument
+            public: true
+    admin.avis:
+            class: AppBundle\Admin\CommentPostAdmin
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: "avis Clients" }
+            arguments:
+                    - ~
+                    - AppBundle\Entity\CommentPost
+                    - 'AppBundle:CommentPostCRUD'
             public: true

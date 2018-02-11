@@ -8,6 +8,9 @@ imports:
 parameters:
     locale: fr
 
+    #upload path
+    brochures_directory: 'MSF/MyEcommerceBundle/uploads/brochures'
+
 framework:
     #esi: ~
     translator: { fallbacks: [fr] }
@@ -106,10 +109,51 @@ sonata_block:
             contexts: [admin]
         sonata.admin.block.search_result:
             contexts: [admin]
+
+
+#vu sonata
 sonata_admin:
     templates:
         layout: '@AppBundle/Resources/SonataTemplates/views/standard_layout.html.twig'
         dashboard: '@AppBundle/Resources/SonataTemplates/views/core/dashboard.html.twig'
+
+    ###############CUSTOM KNP MENU LATER
+     #   groups:
+     #         client:
+     #             label: ~
+     #             label_catalogue: ~
+     #             items:
+     #                 - sonata.client.admin.post
+     #                 - route:        client
+     #                   label:        client_home
+     #         news:
+     #             label:    ~
+     #             label_catalogue:    ~
+     #             items:
+     #                 - sonata.news.admin.post
+     #                 - route:        blog_home
+     #                   label:        Blog
+
+        #knp_menu_template: "@AppBundle/Menu/custom_menu.html.twig"
+            #groups:
+                #news:
+                   # label:    ~
+                    #label_catalogue:    ~
+               # items:
+                    #- route:        blog_article
+                    #  route_params: {articleId: 3}
+                    #  label:        Article
+                #roles: [ ROLE_ADMIN, ROLE_SUPER_ADMIN]
+                #admin:
+                #label:    ~
+                #label_catalogue:    ~
+                 # items:
+                 #- sonata.news.admin.news
+
+
+   ###############CUSTOM KNP MENU LATER###################################
+
+
 
 sonata_doctrine_orm_admin:
     templates:

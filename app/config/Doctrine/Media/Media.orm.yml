@@ -1,0 +1,24 @@
+AppBundle\Entity\image:
+
+    type: entity
+    repositoryClass: AppBundle\Repository\ImageRepository
+    table: images
+    id:
+        id:
+            type: integer
+            generator: {strategy: AUTO}
+
+    fields:
+        filename:
+            type: string
+            length: 255
+        updated:
+            type: datetime
+            nullable: true
+        imageName:
+            type: text
+            nullable: true
+
+    lifecycleCallbacks:
+        prePersist:    [lifecycleFileUpload]
+        preUpdate:     [lifecycleFileUpload]

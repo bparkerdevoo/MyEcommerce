@@ -2,20 +2,53 @@
 
 namespace MSF\EcommerceBundle\Controller;
 
-use MSF\EcommerceBundle;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Routing\Annotation\Route;
+use Doctrine\ORM\Mapping\Annotation;
 use MSF\EcommerceBundle\Entity\Produit;
 use MSF\EcommerceBundle\Form\ProduitType;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Doctrine\ORM\Mapping\Annotation;
-use Symfony\Component\Routing\Annotation\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
+use Symfony\Component\HttpFoundation\File\File;
+use AppBundle\Service\FileUploader;
+use Doctrine\ORM\EntityManagerInterface;
+
 
 
 class ProduitsController extends Controller
 {
-    public function indexAction(Request $request)
+
+    
+    /**
+     *
+     * @Route("produit/new", name="app_produit_new")
+     *
+     */
+    public function fileAction(Request $request, FileUploader $fileUploader)
+    {
+        $produit = new Produit();
+        $form = $this->createForm(ProduitType::class, $produit);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $file = $produit->getBrochure();
+            $fileName = $fileUploader->upload($file);
+
+            $produit->setBrochure($fileName);
+
+
+            return $this->render('EcommerceBundle:Produits:layout/produits.html.twig', array('form' => $form->createView(),
+            ));
+
+
+        }
+        return $this;
+    }
+}
+
+
+    /*public function indexAction(Request $request)
     {
         $locale = $request->getLocale();
     }
@@ -24,7 +57,7 @@ class ProduitsController extends Controller
      * @Route("/produit/view", name="view_produit")
      *
      */
-    public function viewProduitAction()
+    /*public function viewProduitAction()
     {
         return $this->render("EcommerceBundle:pages:eshop.html.twig");
     }
@@ -33,7 +66,7 @@ class ProduitsController extends Controller
      * @Route("/produit/create", name="create_produit")
      *
      */
-    public function createProduitAction()
+   /* public function createProduitAction()
     {
         return $this->render("EcommerceBundle:pages:create.html.twig");
     }
@@ -44,7 +77,7 @@ class ProduitsController extends Controller
      * @Route("/produit/udpate/{id}", name="update_produit")
      *
      */
-    public function updateProduitAction($id)
+    /*public function updateProduitAction($id)
     {
         return $this->render("EcommerceBundle:pages:update.html.twig");
     }
@@ -55,7 +88,7 @@ class ProduitsController extends Controller
      * @Route("/produit/show/{id}", name="show_produit")
      *
      */
-    public function showProduitAction($id)
+    /*public function showProduitAction($id)
     {
         return $this->render("EcommerceBundle:pages:view.html.twig");
     }
@@ -66,7 +99,7 @@ class ProduitsController extends Controller
      * @Route("/produit/delete/{id}", name="delete_produit")
      *
      */
-    public function deleteProduitAction($id)
+    /*public function deleteProduitAction($id)
     {
         return $this->render("EcommerceBundle:pages:delete.html.twig");
     }
@@ -77,7 +110,7 @@ class ProduitsController extends Controller
      * @Route("/addProduit", name="form_add_produit")
      */
     //form  //form******************//form
-    public function addAction(Request $request)
+    /*public function addAction(Request $request)
     {
         //creer produit
           $produit = new Produit();
@@ -151,14 +184,14 @@ class ProduitsController extends Controller
      *
      * @Route("/edit/{id}", name="editer_produit")
      */
-    public function updateAction()
+    /*public function updateAction()
     {
 
         return $this->render('EcommerceBundle:Produits:modules/editProduit.html.twig',
             array('form'=>$formView));
     }
 
-    /*/**
+    /#**
      * @param Request $request
      * @param Produit $produit
      * @return Response
@@ -196,4 +229,4 @@ class ProduitsController extends Controller
         return $this->render('EcommerceBundle:Produits:modules/editProduit.html.twig', array('form'=>$formView, 'produits'=>$produits));
     }*/
 
-}
+

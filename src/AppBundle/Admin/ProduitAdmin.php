@@ -17,6 +17,7 @@ use Sonata\AdminBundle\Route\RouteCollection;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
+
 class ProduitAdmin extends AbstractAdmin
 {
     protected function configureFormFields(FormMapper $formMapper)
@@ -32,7 +33,7 @@ class ProduitAdmin extends AbstractAdmin
                     ->add('prix', 'number')
                     ->add('tva', 'number')
                     ->add('image', 'text')
-                    ->add('brochure', FileType::class, array('label' => 'Brochure (Fichier PDF)'))
+//                    ->add('brochure', FileType::class, array('label' => 'Brochure (Fichier PDF)'))
         ->add('disponible', 'choice',
             array('choices' => array(
                 'oui' => 'oui',
@@ -77,6 +78,13 @@ class ProduitAdmin extends AbstractAdmin
         return $object instanceof Produit
             ? $object->getNom()
             : 'Produit'; // shown in the breadcrumb on the create view
+    }
+
+    public function configureOptions(OptionsResolver $resolver)
+    {
+        $resolver->setDefaults(array(
+            'data_class' => 'MSF\EcommerceBundle\Entity\Produit',
+        ));
     }
 
 
