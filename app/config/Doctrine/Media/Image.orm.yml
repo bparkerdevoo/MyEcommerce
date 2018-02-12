@@ -15,7 +15,7 @@ AppBundle\Entity\image:
         updated:
             type: datetime
             nullable: true
-        imageName:
+        imageAlt:
             type: text
             nullable: true
 

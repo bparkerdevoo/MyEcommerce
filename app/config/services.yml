@@ -33,6 +33,10 @@ services:
             arguments: ['%kernel.default_locale%']
             # redundant if you're using autoconfigure
             tags: [kernel.event_subscriber]
+    App\Form\Extension\ImageTypeExtension:
+        tags:
+            - { name: form.type_extension, extended_type: Symfony\Component\Form\Extension\Core\Type\FileType }
+
 
     #AppBundle\Service\FileUploader:
      #   arguments:
@@ -57,6 +61,11 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+
+    app.image_panel_request_handler:
+            class: 'AppBundle\SonataAdminImageBundle\Services\RequestImagePanelHandler'
+            tags:
+                - { name: image_panel.request_handler }
 
     admin.category:
             class: AppBundle\Admin\CategoryAdmin
@@ -128,7 +137,7 @@ services:
     admin.medias:
             class: AppBundle\Admin\MediaAdmin
             tags:
-                - { name: sonata.admin, manager_type: orm, label: "Gallery" }
+                - { name: sonata.admin, manager_type: orm, label: "Catalogues" }
             arguments:
                     - ~
                     - MSF\EcommerceBundle\Entity\Media
@@ -143,3 +152,14 @@ services:
                     - AppBundle\Entity\CommentPost
                     - 'AppBundle:CommentPostCRUD'
             public: true
+
+    admin.images:
+            class: AppBundle\Admin\ImageAdmin
+            tags:
+                - { name: sonata.admin, manager_type: orm, label: "Gallery photo" }
+            arguments:
+                    - ~
+                    - AppBundle\Entity\Image
+                    - 'AppBundle:ImageCRUD' # define the new controller via the third argument
+            public: true
+

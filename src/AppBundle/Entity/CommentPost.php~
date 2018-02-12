@@ -87,4 +87,52 @@ class CommentPost
         return $this->body;
     }
 
+
+    /**
+     * Set avis.
+     *
+     * @param string $avis
+     *
+     * @return CommentPost
+     */
+    public function setAvis($avis)
+    {
+        $this->avis = $avis;
+
+        return $this;
+    }
+
+    /**
+     * Get avis.
+     *
+     * @return string
+     */
+    public function getAvis()
+    {
+        return $this->avis;
+    }
+
+    /**
+     * Set idBlogPost.
+     *
+     * @param \AppBundle\Entity\BlogPost|null $idBlogPost
+     *
+     * @return CommentPost
+     */
+    public function setIdBlogPost(\AppBundle\Entity\BlogPost $idBlogPost = null)
+    {
+        $this->id_BlogPost = $idBlogPost;
+
+        return $this;
+    }
+
+    /**
+     * Get idBlogPost.
+     *
+     * @return \AppBundle\Entity\BlogPost|null
+     */
+    public function getIdBlogPost()
+    {
+        return $this->id_BlogPost;
+    }
 }

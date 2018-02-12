@@ -1,0 +1,27 @@
+admin_image_homepage:
+    path:     /
+    defaults: { _controller: AdminImageBundle:Default:index }
+
+image_panel_home:
+    path: /admin/images
+    defaults: {_controller: 'SonataAdminImagePanelBundle:ImagePanel:index'}
+
+image_panel_modal:
+    path: /admin/images/modal
+    defaults: {_controller: 'SonataAdminImageBundle:ImagePanel:openModalImagePanel'}
+
+image_panel_ckeditor:
+    path: /admin/images/ckeditor
+    defaults: {_controller: 'SonataAdminImageBundle:ImagePanel:ckeditorImagePanel'}
+
+image_panel_upload_image:
+    path: /mediaprocess/uploadimage
+    defaults: {_controller: 'SonataAdminImageBundle:MediaProcess:uploadImage'}
+
+image_panel_delete_image:
+    path: /mediaprocess/deleteimage/{id}
+    defaults: {_controller: 'SonataAdminImageBundle:MediaProcess:deleteImage'}
+
+image_panel_image_from_url:
+    path: /mediaprocess/imagefromurl
+    defaults: {_controller: 'SonataAdminImageBundle:MediaProcess:imageFromUrl'}

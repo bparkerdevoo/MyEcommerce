@@ -2,37 +2,62 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6232abcb-4fb1-4f91-a6e1-7837a5ef993f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/config/Doctrine/Media/Media.orm.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/CommentPostAdmin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/ImageAdmin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CommentPostCRUDController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/CommentPostController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ImageCRUDController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/MediaCRUDController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/CommentPost.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Image.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Menu/custom_menu.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/CommentPostRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/ImageRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Blog/Blog_layout.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/views/Blog/custom_layout.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Form/Extension/ImageTypeExtension.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Controller/ImagePanelController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Controller/MediaProcessController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/DependencyInjection/Compiler/RequestHandlerPass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestHandlerInterface.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestHandlerProvider.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestImagePanelHandler.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestResult.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/1ProduitsController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Document/Gallery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Document/Media.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Entity/Gallery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Entity/GalleryHasMedia.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Entity/Media.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/Gallery.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/GalleryHasMedia.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/GalleryHasMediaRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/GalleryRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/Media.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/MediaRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Gallery.mongodb.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Gallery.orm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Gallery.phpcr.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/GalleryHasMedia.orm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/GalleryHasMedia.phpcr.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Media.mongodb.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Media.orm.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Media.phpcr.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Document.Gallery.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Document.GalleryHasMedia.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Document.Media.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Entity.Gallery.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Entity.GalleryHasMedia.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Entity.Media.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Sonata/MediaBundle/SonataMediaBundle.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/image-panel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/modal-image.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyEcommerce.iml" afterPath="$PROJECT_DIR$/.idea/MyEcommerce.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/Doctrine/Media/Image.orm.yml" afterPath="$PROJECT_DIR$/app/config/Doctrine/Media/Image.orm.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Admin/ProduitAdmin.php" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/ProduitAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/ClientCRUDController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/ClientCRUDController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Admin/ImageAdmin.php" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/ImageAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/BlogPost.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/BlogPost.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/EventListener/BrochureUploadListener.php" afterPath="$PROJECT_DIR$/src/AppBundle/EventListener/BrochureUploadListener.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Service/FileUploader.php" afterPath="$PROJECT_DIR$/src/AppBundle/Service/FileUploader.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Image.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Image.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/standard_layout.html.twig" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/standard_layout.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/ProduitType.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/ProduitType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produitList.html.twig" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produitList.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produitform.html.twig" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produitform.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produits.html.twig" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produits.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/uploads/brochures/brochure.html.twig" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/uploads/brochures/brochure.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php" />
     </list>
+    <list id="3885c4b7-ed0c-4f94-8ff9-e0df37c2a738" name="New changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,62 +97,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Media.orm.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/Doctrine/Media/Media.orm.yml">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="services.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageAdmin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/ImageAdmin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageCRUDController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ImageCRUDController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Image.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Image.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageRepository.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ImageRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3390">
-              <caret line="113" column="10" lean-forward="false" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
+            <state relative-caret-position="150">
+              <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -139,6 +114,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -163,57 +139,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Resources/views/Default/modulesUsed/utilisateursConfirme.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Controller/ClientController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content_r.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_r.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/registered_content.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Controller/SecurityController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/registered.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registered/registered_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout/Layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/BlogPostAdmin.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/SupportAdmin.php" />
-        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Support.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Categories.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/ParfumAdmin.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/CategoriesAdmin.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/ClientAdmin.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/UserAdmin.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Produit.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/ProduitAdmin.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/ProduitType.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/uploads/brochures/brochure.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produits.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produitform.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produitList.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Blog/Blog_layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Service/FileUploader.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/EventListener/BrochureUploadListener.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Resources/views/Blog/custom_layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Menu/custom_menu.html.twig" />
-        <option value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/views/Menu/sonata_menu.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/ClientCRUDController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/MediaCRUDController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/SonataMediaBundle.php" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Entity.Media.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Entity.GalleryHasMedia.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Entity.Gallery.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Document.Media.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Document.GalleryHasMedia.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Document.Gallery.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Media.phpcr.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Media.orm.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Media.mongodb.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/GalleryHasMedia.phpcr.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/GalleryHasMedia.orm.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Gallery.phpcr.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Gallery.orm.xml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Gallery.mongodb.xml" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Document/Gallery.php" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/GalleryHasMedia.php" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/GalleryHasMediaRepository.php" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/Gallery.php" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/Media.php" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Entity/GalleryHasMedia.php" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Entity/Gallery.php" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/GalleryRepository.php" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/MediaRepository.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/1ProduitsController.php" />
         <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/CommentPost.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/CommentPostRepository.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/BlogPost.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/CommentPostCRUDController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/CommentPostAdmin.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php" />
+        <option value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/public/css/styles.css" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/CRUD/base_list.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/standard_layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/Sonata/MediaBundle/Entity/Media.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/Extension/ImageTypeExtension.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestHandlerInterface.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestHandlerProvider.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestResult.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Controller/MediaProcessController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Controller/ImagePanelController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/web/js/modal-image.js" />
+        <option value="$PROJECT_DIR$/web/js/image-panel.js" />
+        <option value="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/DependencyInjection/Compiler/RequestHandlerPass.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/AdminImageBundle.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/ImagePanelRequestHandler.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestImagePanelHandler.php" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/CommentPostController.php" />
-        <option value="$PROJECT_DIR$/app/config/Doctrine/Media/Media.orm.yml" />
       </list>
     </option>
   </component>
@@ -292,11 +268,35 @@
       <path value="$PROJECT_DIR$/vendor/jms/metadata" />
       <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
       <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zenddiagnostics" />
+      <path value="$PROJECT_DIR$/vendor/queue-interop/amqp-interop" />
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/buzz" />
+      <path value="$PROJECT_DIR$/vendor/php-amqplib/php-amqplib" />
+      <path value="$PROJECT_DIR$/vendor/queue-interop/queue-interop" />
+      <path value="$PROJECT_DIR$/vendor/phpcollection/phpcollection" />
+      <path value="$PROJECT_DIR$/vendor/enqueue/amqp-tools" />
+      <path value="$PROJECT_DIR$/vendor/enqueue/amqp-lib" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer" />
+      <path value="$PROJECT_DIR$/vendor/jms/parser-lib" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/media-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/notification-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/easy-extends-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/gaufrette" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/Sonata" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/ckeditor-bundle" />
+      <path value="$PROJECT_DIR$/vendor/egeloen/json-builder" />
     </include_path>
   </component>
   <component name="PhpXdebugProxy" ide_key="PHPSTORM" />
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
+    <option name="x" value="492" />
+    <option name="width" value="948" />
     <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -315,7 +315,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -338,111 +337,104 @@
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SonataAdminImageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SonataAdminImageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DependencyInjection" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SonataAdminImageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DependencyInjection" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Compiler" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SonataAdminImageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Request" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SonataAdminImageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SonataAdminImageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Doctrine" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Menu" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SonataAdminImageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="SonataAdminImageBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="SonataTemplates" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Service" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EcommerceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EcommerceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="EcommerceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -455,19 +447,19 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web" />
+      <recent name="$PROJECT_DIR$/src/Sonata" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/AppBundle" />
+      <recent name="$PROJECT_DIR$/web/js" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request" />
+      <recent name="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller" />
       <recent name="$PROJECT_DIR$/src/AppBundle/Repository" />
       <recent name="$PROJECT_DIR$/src/AppBundle/Controller" />
       <recent name="$PROJECT_DIR$/src/AppBundle/Admin" />
-      <recent name="$PROJECT_DIR$/src/AppBundle/Entity" />
-      <recent name="$PROJECT_DIR$/src/AppBundle/Resources/views/Blog" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/web/js" />
-      <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registered" />
-      <recent name="$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/Menu" />
-      <recent name="$PROJECT_DIR$/src/AppBundle/EventListener" />
-      <recent name="$PROJECT_DIR$/src/AppBundle/Repository" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -509,6 +501,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6232abcb-4fb1-4f91-a6e1-7837a5ef993f" name="Default" comment="" />
+      <changelist id="3885c4b7-ed0c-4f94-8ff9-e0df37c2a738" name="New changelist" comment="" />
       <created>1515865361059</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -525,7 +518,8 @@
       <workItem from="1517478417274" duration="1674000" />
       <workItem from="1518184173258" duration="38803000" />
       <workItem from="1518260415068" duration="254000" />
-      <workItem from="1518261722786" duration="41006000" />
+      <workItem from="1518261722786" duration="48728000" />
+      <workItem from="1518358887136" duration="30654000" />
     </task>
     <servers />
   </component>
@@ -535,19 +529,20 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="340830000" />
+    <option name="totallyTimeSpent" value="379206000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="597" y="0" width="843" height="900" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19241774" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2908864" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46875" sideWeight="0.37052932" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17310444" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292517" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32889965" sideWeight="0.62947065" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44527364" sideWeight="0.62947065" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39782345" sideWeight="0.48569384" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -585,8 +580,37 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -605,7 +629,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/CRUD/edit.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/BlogPostAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-806">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/FileUploader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -613,33 +645,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/pages/create.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2501">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-397">
+          <caret line="56" column="22" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="22" />
           <folding>
-            <element signature="e#12#37#0#Twig" expanded="false" />
+            <element signature="e#46#78#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/empty_layout.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/CRUD/base_list_field.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="-838">
+          <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/ajax_layout.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/CRUD/preview.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-595">
+        <state relative-caret-position="-1436">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/pages/delete.html.twig">
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/public/css/layout.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="94" column="30" lean-forward="true" selection-start-line="94" selection-start-column="30" selection-end-line="94" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/public/css/colors.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -647,21 +687,297 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/pages/factory.html.twig">
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/public/css/tree.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3683">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="103" selection-end-column="14" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/public/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/views/Block/block_admin_list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1037">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/CRUD/list_url.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1103">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/standard_layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6084">
+          <caret line="325" column="0" lean-forward="false" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/CRUD/base_list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4059">
+          <caret line="332" column="0" lean-forward="false" selection-start-line="332" selection-start-column="0" selection-end-line="332" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/CRUD/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/Form/form_admin_fields.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7188">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1115">
+          <caret line="99" column="9" lean-forward="false" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
           <folding>
-            <element signature="e#12#37#0#Twig" expanded="false" />
+            <element signature="e#116#163#0#PHP" expanded="false" />
+            <element signature="e#1418#1505#0#PHP" expanded="false" />
+            <element signature="e#1511#1597#0#PHP" expanded="false" />
+            <element signature="e#1603#1750#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        <state relative-caret-position="651">
+          <caret line="124" column="30" lean-forward="false" selection-start-line="124" selection-start-column="30" selection-end-line="124" selection-end-column="30" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Sonata/MediaBundle/Entity/Media.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="847">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/Extension/ImageTypeExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#44#93#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-248">
+          <caret line="57" column="78" lean-forward="false" selection-start-line="57" selection-start-column="78" selection-end-line="57" selection-end-column="78" />
+          <folding>
+            <marker date="1518395231000" expanded="true" signature="902:1705" ph="{&quot;php&quot;: &quot;&gt;=7.1.8&quot;...}" />
+            <marker date="1518395231000" expanded="true" signature="1726:1870" ph="{&quot;doctrine/doctrine-fixtures-bundle&quot;: &quot;^3.0&quot;...}" />
+            <marker date="1518395231000" expanded="true" signature="1887:2697" ph="{...}" />
+            <marker date="1518395231000" expanded="true" signature="1916:2548" ph="[...]" />
+            <marker date="1518395231000" expanded="true" signature="2578:2620" ph="[...]" />
+            <marker date="1518395231000" expanded="true" signature="2713:2750" ph="{&quot;sort-packages&quot;: true...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Controller/MediaProcessController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="e#63#120#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/modal-image.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/image-panel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9150">
+          <caret line="234" column="7" lean-forward="false" selection-start-line="234" selection-start-column="7" selection-end-line="234" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestHandlerInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1171">
+          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestResult.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1056">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Controller/ImagePanelController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="985">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#63#120#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="35" column="58" lean-forward="false" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/egeloen/ckeditor-bundle/IvoryCKEditorBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#276#351#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cropper/src/js/events.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cropper/src/js/render.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cropper/src/js/cropper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cropper/src/js/methods.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cropper/src/js/preview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cropper/src/js/defaults.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cropper/src/js/template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cropper/src/js/handlers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cropper/src/js/change.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cropper/src/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1371">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -673,390 +989,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-278">
-          <caret line="40" column="31" lean-forward="false" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/FileUploader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/EventListener/BrochureUploadListener.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1405">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="e#42#97#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Admin/Pool.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8403">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#293#354#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/DependencyInjection/Configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1408">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#307#367#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/DependencyInjection/Configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#59#119#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Blog/Blog_layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/Blog/custom_layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2483">
-          <caret line="248" column="122" lean-forward="false" selection-start-line="248" selection-start-column="122" selection-end-line="248" selection-end-column="122" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/views/standard_layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7504">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/views/Menu/sonata_menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="42" column="51" lean-forward="true" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Menu/custom_menu.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="44" column="26" lean-forward="false" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/BlogPostAdmin.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestHandlerProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/MediaController.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestImagePanelHandler.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-418">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/ClientAdmin.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Resources/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/standard_layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3679">
-          <caret line="238" column="25" lean-forward="false" selection-start-line="238" selection-start-column="25" selection-end-line="238" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-            <element signature="e#3588#3855#0#Twig" expanded="false" />
-            <element signature="e#4373#5490#0#Twig" expanded="false" />
-            <element signature="e#5542#5790#0#Twig" expanded="false" />
-            <element signature="e#5833#12567#0#Twig" expanded="false" />
-            <element signature="e#21119#21681#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/Block/block_admin_list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1050">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/Core/add_block.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-289">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/Core/dashboard.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3050">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ProduitCRUDController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/CategoriesAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CategoriesCRUDController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#41#90#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/SupportCRUDController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="50" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#116#153#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#50#118#0#PHP" expanded="true" />
-            <element signature="e#1160#1212#0#PHP" expanded="true" />
-            <marker date="1518303677000" expanded="false" signature="2007:2045" ph="Ecommerce:pages:update" />
-            <marker date="1518303677000" expanded="false" signature="2229:2265" ph="Ecommerce:pages:view" />
-            <marker date="1518303677000" expanded="false" signature="2457:2495" ph="Ecommerce:pages:delete" />
-            <marker date="1518303677000" expanded="false" signature="3491:3546" ph="Ecommerce:Produits:modules/AjoutProduit" />
-            <marker date="1518303677000" expanded="false" signature="3658:3708" ph="Ecommerce:Produits:layout/produits" />
-            <marker date="1518303677000" expanded="false" signature="3921:3975" ph="Ecommerce:Produits:layout/presentation" />
-            <marker date="1518303677000" expanded="false" signature="4186:4239" ph="Ecommerce:Produits:layout/composition" />
-            <marker date="1518303677000" expanded="false" signature="4484:4507" ph="Produit" />
-            <marker date="1518303677000" expanded="false" signature="4587:4642" ph="Ecommerce:Produits:modules/ModifProduit" />
-            <marker date="1518303677000" expanded="false" signature="4883:4937" ph="Ecommerce:Produits:modules/editProduit" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CommentPost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3812">
+        <state relative-caret-position="219">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/BlogPost.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/DependencyInjection/Compiler/RequestHandlerPass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1574">
-          <caret line="5" column="48" lean-forward="false" selection-start-line="5" selection-start-column="48" selection-end-line="5" selection-end-column="48" />
-          <folding>
-            <element signature="e#36#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ClientCRUDController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="49" />
-          <folding>
-            <element signature="e#40#89#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Category.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="790">
-          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        <state relative-caret-position="9">
+          <caret line="4" column="20" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/CommentPostRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/AdminImageBundle.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="-83">
+          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/DependencyInjection/AdminImageExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#72#131#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/DependencyInjection/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-951">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#72#132#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestImagePanelHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#60#129#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/services.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="136" column="14" lean-forward="false" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MediaCRUDController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/CommentPostAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-842">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#116#146#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CommentPostCRUDController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="49" lean-forward="false" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CommentPostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
-          <caret line="32" column="57" lean-forward="false" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
-          <folding>
-            <element signature="e#40#64#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3390">
-          <caret line="113" column="10" lean-forward="false" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-278">
-          <caret line="15" column="6" lean-forward="false" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-          <folding>
-            <element signature="e#46#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/Doctrine/Media/Media.orm.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/ImageAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/ImageCRUDController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Image.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ImageRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="150">
+          <caret line="67" column="16" lean-forward="false" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
           <folding />
         </state>
       </provider>

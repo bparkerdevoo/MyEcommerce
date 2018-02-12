@@ -7,9 +7,9 @@ imports:
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: fr
-
     #upload path
-    brochures_directory: 'MSF/MyEcommerceBundle/uploads/brochures'
+    brochures_directory: '/uploads/brochures'
+    media_directory: '/uploads/media'
 
 framework:
     #esi: ~
@@ -70,12 +70,51 @@ doctrine:
         #     e.g. database_path: '%kernel.project_dir%/var/data/data.sqlite'
         #   2. Uncomment database_path in parameters.yml.dist
         #   3. Uncomment next line:
-        #path: '%database_path%'
+        #path: '%database_path%'~
+        #types:
+            #json: Sonata\Doctrine\Types\JsonType
 
     orm:
         auto_generate_proxy_classes: '%kernel.debug%'
         naming_strategy: doctrine.orm.naming_strategy.underscore
         auto_mapping: true
+        # USE IF automapping false
+        #entity_managers:
+        #    default:
+         #       mappings:
+         #           SonataMediaBundle: ~
+
+#Configuration sonata_media
+
+sonata_media:
+            #class:
+            #    media:   Sonata\MediaBundle\Entity\Media
+            #    gallery: Sonata\MediaBundle\Entity\Gallery
+            #    gallery_has_media: Sonata\MediaBundle\Entity\GalleryHasMedia
+
+            db_driver: doctrine_orm
+            default_context: default
+            contexts:
+                default:
+                    providers:
+                        - sonata.media.provider.image
+                        - sonata.media.provider.youtube
+                        - sonata.media.provider.file
+                        - sonata.media.resizer.square
+
+                    formats:
+                        small: { width: 100 , quality: 70}
+                        big:   { width: 500 , quality: 70}
+                        admin: { width: 300 , quality: 70}
+
+            cdn:
+                server:
+                    path: /Applications/MAMP/htdocs/MyEcommerce/public/images/products
+            filesystem:
+                local:
+                    directory: '%kernel.project_dir%/public/uploads/media'
+                    create: false
+
 
 #vich Loader configuration using ORM engine
 vich_uploader:
@@ -83,7 +122,7 @@ vich_uploader:
 
     mappings:
         product_image:
-            uri_prefix: /images/products
+            uri_prefix: public/images/products
             upload_destination: '%kernel.project_dir%/public/images/products'
 
             inject_on_load: false
@@ -113,9 +152,12 @@ sonata_block:
 
 #vu sonata
 sonata_admin:
+    title: MYSCENTFACTORY
     templates:
         layout: '@AppBundle/Resources/SonataTemplates/views/standard_layout.html.twig'
         dashboard: '@AppBundle/Resources/SonataTemplates/views/core/dashboard.html.twig'
+
+
 
     ###############CUSTOM KNP MENU LATER
      #   groups:

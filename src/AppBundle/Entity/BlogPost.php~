@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 
 /**
@@ -13,6 +14,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class BlogPost
 {
+
     /**
      * @ORM\ManyToOne(targetEntity="Category", inversedBy="blogPosts")
      */
@@ -57,6 +59,22 @@ class BlogPost
      * @ORM\Column(name="draft", type="boolean")
      */
     private $draft = false;
+
+    /**
+     * @ORM\OneToMany(targetEntity="CommentPost", mappedBy="BlogPost")
+     */
+    private $CommentPost;
+
+    public function __construct()
+    {
+        $this->commentPost = new ArrayCollection();
+    }
+
+    public function getCommentPost()
+    {
+        return $this->commentPost;
+    }
+
 
 
     /**

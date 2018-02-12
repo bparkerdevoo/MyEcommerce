@@ -1,0 +1,6 @@
+services:
+#    admin_image.example:
+#        class: AppBundle\SonataAdminImageBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    image_panel.request_handler_provider:
+        class: AppBundle\SonataAdminImageBundle\Request\RequestHandlerProvider

@@ -4,6 +4,7 @@ namespace MSF\EcommerceBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
@@ -15,6 +16,7 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
  */
 class Media
 {
+    const SERVER_PATH_TO_IMAGE_FOLDER = '/server/path/to/images';
     /**
      * @var int
      *
@@ -27,14 +29,14 @@ class Media
     /**
      * @var string
      *
-     * @ORM\Column(name="image_name", type="string", length=255)
+     * @ORM\Column(name="image_name", type="string", length=255, nullable=true)
      */
     private $imageName;
 
     /**
      * @param string $imageName
      */
-    public function setImageName(?string $imageName): void
+    public function setImageName($imageName)
     {
         $this->imageName = $imageName;
     }
@@ -59,30 +61,62 @@ class Media
      * manually uploading a file, ensure an instance of 'UploadedFile' is injected into the setter, to trigger the update
      * config parameter is set to true: 'inject_on_load' for the setter to accept instance of file
      *
-     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $image
+     *
      */
 
-    public function setImageFile(File $image = null) : void
+    public function setImageFile(File $file = null)
     {
-        $this->imageFile = $image;
+        $this->imageFile = $file;
 
-        if(null !== $image){
-            $this->updatedAt = new \DateTimeImmutable();
+        if($file){
+            $this->updatedAt = new \DateTime('now');
         }
     }
 
-    /**
-     * @return File
-     */
-    public function getImageFile(): ?File
+
+    public function getImageFile()
     {
-        return $this->imageFile;
+        return $this ->imageFile;
     }
 
 
+    public function upload()
+    {
+        if(null === $this->getImageFile())
+        {
+            return;
+        }
+
+        $this->getImageFile()->move(
+            self::SERVER_PATH_TO_IMAGE_FOLDER,
+            $this->getImageFile()->getClientOriginalName()
+        );
+
+        $this->filename =$this->getImageFile()->getClientOriginalName();
+
+        $this->setImageFile(null);
+    }
+
+    /**
+     * Lifecycle callback to upload the file to the server
+     *
+     */
+    public function lifecycleFileUpload()
+    {
+        $this->upload();
+    }
     /**
      *
-     * @ORM\Column(type="integer", name="size")
+     * updates the hash value to force the preUpdate events to fire
+     */
+    public function refreshUpDated()
+    {
+        $this->setUpdatedAt(new \DateTime());
+    }
+
+    /**
+     *
+     * @ORM\Column(type="integer", name="size", nullable=true)
      * @var integer
      *
      */
@@ -106,20 +140,17 @@ class Media
     }
 
     /**
-     * @ORM\Column(type="datetime", name="date_loaded")
+     * @ORM\Column(type="datetime", name="date_loaded", nullable=true)
      * @var \DateTime
      *
      */
     private $updatedAt;
 
 
-
-
-
     /**
      * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Produit", inversedBy="Media")
      *
-     * @ORM\JoinColumn(name="produit", referencedColumnName="id")
+     * @ORM\JoinColumn(name="produit", referencedColumnName="id", nullable=true)
      */
     private $produit;
 
@@ -138,33 +169,30 @@ class Media
     /**
      * @var string
      *
-     * @ORM\Column(name="path", type="string", length=255)
+     * @ORM\Column(name="path", type="string", length=255, nullable=true)
      */
     private $path;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="alt", type="string", length=255)
+     * @ORM\Column(name="alt", type="string", length=255, nullable=true)
      */
     private $alt;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="vignette1", type="string", length=255)
+     * @ORM\Column(name="vignette1", type="string", length=255, nullable=true)
      */
     private $vignette1;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="vignette2", type="string", length=255)
+     * @ORM\Column(name="vignette2", type="string", length=255, nullable=true)
      */
     private $vignette2;
-
-
-
 
     /**
      * Get id.
@@ -272,29 +300,6 @@ class Media
         return $this->vignette2;
     }
 
-    /**
-     * Set image.
-     *
-     * @param string $image
-     *
-     * @return Media
-     */
-    public function setImage($image)
-    {
-        $this->image = $image;
-
-        return $this;
-    }
-
-    /**
-     * Get image.
-     *
-     * @return string
-     */
-    public function getImage()
-    {
-        return $this->image;
-    }
 
     /**
      * Set updatedAt.

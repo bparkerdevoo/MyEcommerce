@@ -22,8 +22,31 @@ class ImageAdmin extends AbstractAdmin
 
     protected function configureFormFields(FormMapper $formMapper)
     {
-        $formMapper->add('imageName', 'text');
+        $formMapper->add('file', 'file',[
+                        'required' => false])
+
+        ;
+
     }
+
+    public function prePersist($image)
+    {
+        $this->manageFileUpload($image);
+    }
+
+    public function preUpdate($image)
+    {
+        $this->manageFileUpload($image);
+    }
+
+    private function manageFileUpload($image)
+    {
+        if ($image->getFile())
+        {
+            $image->refreshUpdated();
+        }
+    }
+
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)
     {
