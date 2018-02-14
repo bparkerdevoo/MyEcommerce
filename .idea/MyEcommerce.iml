@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/AppBundle" isTestSource="false" packagePrefix="AppBundle\" />
       <sourceFolder url="file://$MODULE_DIR$/src/MSF/EcommerceBundle" isTestSource="false" packagePrefix="MSF\EcommerceBundle\" />
       <sourceFolder url="file://$MODULE_DIR$/src/MSF/UserBundle" isTestSource="false" packagePrefix="MSF\UserBundle\" />
+      <excludeFolder url="file://$MODULE_DIR$/var/cache" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/behat/transliterator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bmatzner/fontawesome-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cocur/slugify" />
@@ -27,8 +28,6 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/orm" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/egeloen/ckeditor-bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/egeloen/json-builder" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/enqueue/amqp-lib" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/enqueue/amqp-tools" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fig/link-util" />
@@ -73,6 +72,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/sonata-project/media-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/sonata-project/notification-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/asset" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/monolog-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/phpunit-bridge" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-apcu" />
@@ -135,8 +135,6 @@
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/orm" />
-          <root url="file://$MODULE_DIR$/vendor/egeloen/ckeditor-bundle" />
-          <root url="file://$MODULE_DIR$/vendor/egeloen/json-builder" />
           <root url="file://$MODULE_DIR$/vendor/enqueue/amqp-lib" />
           <root url="file://$MODULE_DIR$/vendor/enqueue/amqp-tools" />
           <root url="file://$MODULE_DIR$/vendor/fig/link-util" />
@@ -181,6 +179,7 @@
           <root url="file://$MODULE_DIR$/vendor/sonata-project/media-bundle" />
           <root url="file://$MODULE_DIR$/vendor/sonata-project/notification-bundle" />
           <root url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/asset" />
           <root url="file://$MODULE_DIR$/vendor/symfony/monolog-bundle" />
           <root url="file://$MODULE_DIR$/vendor/symfony/phpunit-bridge" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-apcu" />
@@ -215,8 +214,6 @@
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/orm" />
-          <root url="file://$MODULE_DIR$/vendor/egeloen/ckeditor-bundle" />
-          <root url="file://$MODULE_DIR$/vendor/egeloen/json-builder" />
           <root url="file://$MODULE_DIR$/vendor/enqueue/amqp-lib" />
           <root url="file://$MODULE_DIR$/vendor/enqueue/amqp-tools" />
           <root url="file://$MODULE_DIR$/vendor/fig/link-util" />
@@ -261,6 +258,7 @@
           <root url="file://$MODULE_DIR$/vendor/sonata-project/media-bundle" />
           <root url="file://$MODULE_DIR$/vendor/sonata-project/notification-bundle" />
           <root url="file://$MODULE_DIR$/vendor/swiftmailer/swiftmailer" />
+          <root url="file://$MODULE_DIR$/vendor/symfony/asset" />
           <root url="file://$MODULE_DIR$/vendor/symfony/monolog-bundle" />
           <root url="file://$MODULE_DIR$/vendor/symfony/phpunit-bridge" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-apcu" />

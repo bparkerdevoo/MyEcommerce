@@ -3,21 +3,30 @@
 namespace MSF\PagesBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Routing\Annotation\Route;
 
 class PageController extends Controller
 {
-    public function pageAction($id)
+    /**
+     * @Route("/condition/{cgu}", name="cgu")
+     */
+    public function cduAction($cgu)
     {
         return $this->render('PagesBundle:Page:layout/page.html.twig', array(
-            // ...
+            'condition' => $cgu
         ));
     }
 
-    public function accueilAction()
+    /**
+     * @Route("/condition/{cgv}", name="cgv")
+     */
+    public function cgvAction($cgv)
     {
-        return $this->render('PagesBundle:Page:layout/accueil.html.twig', array(
-            // ...
+        return $this->render('PagesBundle:Page:layout/page.html.twig', array(
+            'condition' => $cgv
         ));
     }
+
+
 
 }

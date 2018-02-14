@@ -27,59 +27,31 @@
             </div>
 
             <div class="span12">
-                <h3>Nos supports</h3>
-                <ul class="thumbnails">
-                    {% for i in 0..5 %}
-                        <li class="span2">
-                            <div class="thumbnail">
-                                <img src="{{ asset('img/holder.png') }}" alt="MSF" width="300" height="300">
-                                <div class="caption">
-                                    <h4>Thumbnail label</h4>
-                                    <p>100,00 €</p>
-                                    <a class="btn btn-primary" href="{{ path('presentation') }}">Plus d'infos</a>
-                                    <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
-                                </div>
-                            </div>
-                        </li>
-                    {% endfor %}
+                <h2>Shopping creation</h2>
 
-                </ul>
 
-                <h3>Nos Essences</h3>
-                <ul class="thumbnails">
-                    {% for i in 0..5 %}
-                        <li class="span2">
-                            <div class="thumbnail">
-                                <img src="{{ asset('img/msf_spray.jpg') }}" alt="MSF" width="300" height="300">
-                                <div class="caption">
-                                    <h4>Thumbnail label</h4>
-                                    <p>100,00 €</p>
-                                    <a class="btn btn-primary" href="{{ path('presentation') }}">Plus d'infos</a>
-                                    <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
-                                </div>
-                            </div>
-                        </li>
-                    {% endfor %}
 
-                </ul>
+                {% block composition%}
+                    <H3>1-trouver ou selectioner une inspiration</H3>
 
-                <h3>Inspirez vous de nos compositions</h3>
-                <ul class="thumbnails">
-                    {% for i in 0..5 %}
-                        <li class="span2">
-                            <div class="thumbnail">
-                                <img src="{{ asset('img/msf_spray.jpg') }}" alt="MSF" width="300" height="300">
-                                <div class="caption">
-                                    <h4>Thumbnail label</h4>
-                                    <p>100,00 €</p>
-                                    <a class="btn btn-primary" href="{{ path('presentation') }}">Plus d'infos</a>
-                                    <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
-                                </div>
-                            </div>
-                        </li>
-                    {% endfor %}
+                    {% include "PagesBundle:Page/layout:catalogue_composition.html.twig" %}
 
-                </ul>
+                {% endblock %}
+                {% block parfum %}
+                    <h3>2-composer parmis nos {n} parfums</h3>
+
+                    {% include "PagesBundle:Page/layout:catalogue_parfum.html.twig" %}
+
+                {% endblock %}
+                {% block support %}
+                    <h3>3 - associer votre support au choix</h3>
+                    {% include "PagesBundle:Page/layout:catalogue_support.html.twig" %}
+
+                {% endblock %}
+                {% block apropos %}
+                    {% include "PagesBundle:Page/layout:apropos.html.twig" %}
+
+                {% endblock %}
 
                 <div class="pagination">
                     <ul>

@@ -16,7 +16,7 @@ use Sonata\AdminBundle\Form\FormMapper;
 
 class ClientType extends AbstractType
 {
-    protected function configureFormFields(FormMapper $formMapper)
+    /*protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
             ->tab('connexion')
@@ -25,12 +25,8 @@ class ClientType extends AbstractType
              ])
                 ->end()
             ->end()
-            ->tab('informations personelles')
-                ->with('Meta data', ['class' => 'col-md-3'])
 
-                ->end()
-            ->end();
-    }
+    }*/
 
     /**
      * {@inheritdoc}

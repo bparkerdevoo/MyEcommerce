@@ -1,7 +1,3 @@
-admin_image:
-    resource: "@AdminImageBundle/Resources/config/routing.yml"
-    prefix:   /
-
 gallery:
     resource: '@SonataMediaBundle/Resources/config/routing/gallery.xml'
     prefix:   /media/gallery
@@ -36,9 +32,9 @@ user:
     resource: "@UserBundle/Resources/config/routing.yml"
     prefix:   /
 
-pages:
+page:
     resource: "@PagesBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /page
 
 ecommerce:
     resource: "@EcommerceBundle/Resources/config/routing.yml"

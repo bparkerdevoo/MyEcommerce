@@ -3,11 +3,28 @@
 namespace MSF\PagesBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Routing\Annotation\Route;
 
 class DefaultController extends Controller
 {
-    public function indexAction()
+    /**
+     * @Route("/accueil/msf")
+     */
+    public function infoMSFAction()
     {
-        return $this->render('PagesBundle:Default:index.html.twig');
+        $accueil = $this->render("PagesBundle:page:layout/accueil.html.twig");
+
+        return $accueil;
     }
+
+    /**
+     * @Route("/catalogue/{categorie}", name="catalogue_composition")
+     */
+    public function showCompositionAction($categorie)
+    {
+        return $this->render("PagesBundle:page:layout/catalogue.html.twig",['categorie'=>$categorie]);
+
+    }
+
+
 }

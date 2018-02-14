@@ -1,0 +1,29 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block updateInformation%}
+
+        <div class="row">
+
+            <div class="span8 offset3">
+                <div class="form-group">
+
+                    {{ form_start(form, {'attr': {
+                            'novalidate': 'novalidate',
+                            'action' : path('information_client'),
+                            'method':'post'}})
+                        }}
+                    {{ form_errors(form)}}
+
+
+                    {{ form_widget(form) }}
+                    <input class="btn btn-primary" type="submit" value="{{ 'Ajouter'|trans }}" />
+
+                    {{ form_end(form) }}
+
+                </div>
+
+            </div>
+
+        </div>
+<hr>
+{% endblock updateInformation%}

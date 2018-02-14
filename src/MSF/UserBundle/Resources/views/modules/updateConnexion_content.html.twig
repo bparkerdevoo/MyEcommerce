@@ -1,0 +1,22 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block updateConnexion%}
+
+    <div id="collapseOne" class="accordion-body collapse in">
+        <div class="accordion-inner">
+
+            <div class="span4">
+                <h4>Modifier mes informations</h4>
+                {{ form_start(form, { 'action': path('fos_user_profile_edit'),
+                    'attr': { 'class': 'fos_user_profile_edit' } }) }}
+                {{ form_widget(form) }}
+
+                <br />
+
+                <input class="btn btn-primary" type="submit" value="{{ 'profile.edit.submit'|trans }}" />
+            </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
+<hr>
+{% endblock updateConnexion%}

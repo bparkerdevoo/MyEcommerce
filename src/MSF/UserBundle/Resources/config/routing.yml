@@ -15,7 +15,7 @@ fos_user_registered_login:
 
 fos_user_profile:
     resource: "@FOSUserBundle/Resources/config/routing/profile.xml"
-    prefix: /profile
+    prefix: /user/profile
 
 fos_user_register:
     resource: "@FOSUserBundle/Resources/config/routing/registration.xml"
@@ -29,6 +29,8 @@ fos_user_change_password:
     resource: "@FOSUserBundle/Resources/config/routing/change_password.xml"
     prefix: /profile
 
-ajout_client:
-    path: /ajoutClient
-    defaults: { _controller: UserBundle:Client:add}
+information_client:
+    resource: "@UserBundle/Controller/EspaceClientController.php"
+    type: annotation
+
+

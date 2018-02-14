@@ -1,0 +1,110 @@
+{% extends "::layout/Layout.html.twig" %}
+{% form_theme form 'forms/fieldsTheme1.html.twig' 'forms/fieldsTheme2.html.twig' 'forms/fieldsTheme3.html.twig' %}
+
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                {% include 'UserBundle:nav_inc:utilisateursConnecte.html.twig' %}
+            </div>
+
+            <div class="span7">
+                <h1>
+                    Espace Client
+                </h1>
+            </div>
+            <div class="row">
+
+                <div class="span5">
+                    <h3>Mes Informations</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="span8 offset3">
+                <div class="form-group">
+
+                        {{ form_start(form, {'attr': {
+                                                    'novalidate': 'novalidate',
+                                                    'action' : path('information_client'),
+                                                    'method':'post'}})
+                        }}
+                            {{ form_errors(form)}}
+
+
+                        {{ form_widget(form) }}
+                        <input class="btn btn-primary" type="submit" value="{{ 'Ajouter'|trans }}" />
+
+                        {{ form_end(form) }}
+
+                </div>
+
+            </div>
+
+        </div>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="span12">
+            <h3>Produits favoris</h3>
+            <ul class="thumbnails">
+                {% for i in 0..3 %}
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <img src="{{ asset('img/msf_spray.jpg') }}" alt="MSF" width="200" height="200">
+                            <div class="caption">
+                                <h4>Thumbnail label</h4>
+                                <p>100,00 €</p>
+                                <a class="btn btn-primary" href="{{ path('presentation') }}">Plus d'infos</a>
+                                <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </li>
+
+                {% endfor %}
+
+            </ul>
+            <hr>
+        </div>
+
+        <div class="span12">
+
+            <h3>Produits recemment consultés</h3>
+            <ul class="thumbnails">
+                {% for i in 0..3 %}
+                    <li class="span3">
+                        <div class="thumbnail">
+                            <img src="{{ asset('img/msf_spray.jpg') }}" alt="MSF" width="200" height="200">
+                            <div class="caption">
+                                <h4>Thumbnail label</h4>
+                                <p>100,00 €</p>
+                                <a class="btn btn-primary" href="{{ path('presentation') }}">Plus d'infos</a>
+                                <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </li>
+
+                {% endfor %}
+
+            </ul>
+        </div>
+        <div class="span12">
+            <div class="pagination">
+                <ul>
+                    <li class="disabled"><span>Précédent</span></li>
+                    <li class="disabled"><span>1</span></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">Suivant</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
