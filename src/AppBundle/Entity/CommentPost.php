@@ -14,6 +14,28 @@ use Doctrine\ORM\Mapping as ORM;
 class CommentPost
 {
     /**
+     * @var
+     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Produit", inversedBy="CommentPost")
+     */
+    private $idProduit;
+
+    /**
+     * @return mixed
+     */
+    public function getIdProduit()
+    {
+        return $this->idProduit;
+    }
+
+    /**
+     * @param mixed $idProduit
+     */
+    public function setIdProduit($idProduit)
+    {
+        $this->idProduit = $idProduit;
+    }
+
+    /**
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\BlogPost", inversedBy="CommentPost")
      */
     private $id_BlogPost;

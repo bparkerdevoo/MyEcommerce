@@ -6,6 +6,10 @@ namespace AppBundle\Controller;
 use Sonata\AdminBundle\Controller\CRUDController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use MSF\EcommerceBundle\Entity\Produit;
+use MSF\EcommerceBundle\Entity\LignedeCommande;
+use MSF\EcommerceBundle\Entity\Commande;
+
 
 
 

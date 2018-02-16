@@ -32,5 +32,6 @@ fos_user_change_password:
 information_client:
     resource: "@UserBundle/Controller/EspaceClientController.php"
     type: annotation
+    prefix: /user/profile
 
 

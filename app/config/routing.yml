@@ -32,9 +32,9 @@ user:
     resource: "@UserBundle/Resources/config/routing.yml"
     prefix:   /
 
-page:
+pages:
     resource: "@PagesBundle/Resources/config/routing.yml"
-    prefix:   /page
+    prefix:   /pages
 
 ecommerce:
     resource: "@EcommerceBundle/Resources/config/routing.yml"

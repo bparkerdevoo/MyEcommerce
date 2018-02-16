@@ -109,7 +109,7 @@ sonata_media:
 
             cdn:
                 server:
-                    path: /Applications/MAMP/htdocs/MyEcommerce/public/images/products
+                    path: '%kernel.project_dir%/public/uploads/images/products'
             filesystem:
                 local:
                     directory: '%kernel.project_dir%/public/uploads/media'

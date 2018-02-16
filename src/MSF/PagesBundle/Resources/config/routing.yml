@@ -1,15 +1,4 @@
-#page:
- #   path:     /page/{id}
-  #  defaults: { _controller: PagesBundle:Page:page }
-
-#accueil:
- #   path:     /accueil
-  #  defaults: { _controller: PagesBundle:Page:accueil }
-
-info_annotation_route:
-    resource: "@PagesBundle/Controller/DefaultController.php"
-    type: annotation
 
 page_annotation_route:
-    resource: "@PagesBundle/Controller/PageController.php"
+    resource: "@PagesBundle/Controller/PagesController.php"
     type: annotation

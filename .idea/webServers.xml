@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b52b52c4-edbe-4fa0-8271-6d0846936bba" name="msf.parkercommunication.pro" url="http://msf.parkercommunication.pro">
+        <fileTransfer host="sftp://parkercoae@ssh.cluster021.hosting.ovh.net:22" port="22" rootFolder="/home/parkercoae" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

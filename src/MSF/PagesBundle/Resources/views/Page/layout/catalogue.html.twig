@@ -20,17 +20,17 @@
                 {% if 'composition' matches {{  categorie}}   %}
                         <H3>1-trouver ou selectioner une inspiration</H3>
 
-                        {% include "PagesBundle:Page/layout:catalogue_composition.html.twig" %}
+                        {% include "PagesBundle:Page/inc:catalogue_composition.html.twig" %}
 
 
                 {% elseif  parfum matches '{{  categorie}} ' %}
                         <h3>2-composer parmis nos {n} parfums</h3>
 
-                        {% include "PagesBundle:Page/layout:catalogue_parfum.html.twig" %}
+                        {% include "PagesBundle:Page/inc:catalogue_parfum.html.twig" %}
 
                 {% elseif  support matches '{{  categorie}} ' %}
                         <h3>3 - associer votre support au choix</h3>
-                        {% include "PagesBundle:Page/layout:catalogue_support.html.twig" %}
+                        {% include "PagesBundle:Page/inc:catalogue_support.html.twig" %}
 
                 {% endif %}
 

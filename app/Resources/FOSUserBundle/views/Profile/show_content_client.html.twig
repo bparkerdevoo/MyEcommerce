@@ -9,11 +9,11 @@
         <div id="collapseOne" class="accordion-body collapse in">
             <div class="accordion-inner">
 
-                {% block user_content %}
-                    {% include "FOSUserBundle:Profile:show_content_user_profile.html.twig" %}
-                {% endblock user_content %}
 
 
+                {% block client_content %}
+                    {% include "FOSUserBundle:Profile:show_content_client_profile.html.twig" %}
+                {% endblock client_content %}
             </div>
         </div>
     </div>

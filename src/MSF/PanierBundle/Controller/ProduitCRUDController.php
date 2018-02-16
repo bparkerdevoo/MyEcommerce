@@ -5,11 +5,11 @@ namespace MSF\PanierBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use MSF\EcommerceBundle\Entity\Produit;
-use Panier\AdminBundle\Entity\Commande;
-use Panier\AdminBundle\Entity\LigneCommande;
+use MSF\EcommerceBundle\Entity\Commande;
+use AppBundle\Entity\LigneCommande;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Panier\AdminBundle\classes\Panier;
+use AppBundle\Admin\PanierAdmin;
 
 class ProduitCRUDController extends Controller
 {

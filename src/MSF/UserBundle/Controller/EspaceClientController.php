@@ -2,8 +2,11 @@
 
 namespace MSF\UserBundle\Controller;
 
+use MSF\EcommerceBundle\Entity\Produit;
+use MSF\FactoryBundle\Entity\Composition;
 use MSF\UserBundle\Entity\Client;
 use MSF\UserBundle\Form\ClientType;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -80,6 +83,35 @@ class EspaceClientController extends Controller
         return $this->render('UserBundle:modules:UpdateClient.html.twig', array('form'=>$formView));
 
     }
+
+    /**
+     *
+     * @Route("/{profile_client}", name="profile_client")
+     * @Method("GET")
+     */
+    public function showClientProfileAction($profile_client)
+    {
+        $profile_client = new Client();
+        #$profile_client->setPrenom('justine');
+
+        return $this->render('FOSUserBundle:Profile:show_profile.html.twig',  array('client'=>$profile_client->getPrenom()));
+    }
+
+    /**
+     * @Route("/test_profile/{client}", name="test")
+     *
+     */
+    public function testAction($client){
+
+        $client =$this->getDoctrine()
+         ->getRepository(Client::class)->find($client);
+var_dump($client);
+echo 'ddd';
+
+        return $this->render('FOSUserBundle:Profile:show_content_client.html.twig',  array('client'=>$client));
+
+    }
+
 
 
 

@@ -10,16 +10,7 @@ class indexController extends Controller
 {
 
 
-    /**
-     * @Route("/accueil", name="accueil")
-     */
 
-    public function indexAction()
-    {
-        return new Response(
-            'bienvenue chez msf'
-        );
-    }
     /**
      * //acceder a l'espace admin si session administrateur
      * @Route("/administrateur", name="admin")

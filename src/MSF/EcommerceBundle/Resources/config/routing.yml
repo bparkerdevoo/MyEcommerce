@@ -1,7 +1,3 @@
-ecommerce_homepage:
-    path:     /
-    defaults: { _controller: EcommerceBundle:Default:index }
-
 panier:
     path:     /panier
     defaults: { _controller: EcommerceBundle:Panier:panier }
@@ -15,7 +11,7 @@ validation:
     defaults: { _controller: EcommerceBundle:Panier:validation }
 
 catalogue_produits:
-    path:     /produits
+    path:     /catalogue
     defaults: { _controller: EcommerceBundle:Produits:produits }
 
 presentation:
@@ -45,18 +41,22 @@ media_annotation_route:
     resource: "@EcommerceBundle/Controller/MediaController.php"
     type: annotation
 
+categorie_annotation_route:
+    resource: "@EcommerceBundle/Controller/CategoriesController.php"
+    type: annotation
+
 produit_annotation_route:
     resource: "@EcommerceBundle/Controller/ProduitsController.php"
     type: annotation
 
-categorie_annotation_route:
-    resource: "@EcommerceBundle/Controller/CategoriesController.php"
+panier_annotation_route:
+    resource: "@EcommerceBundle/Controller/PanierController.php"
     type: annotation
 
 tva_annotation_route:
     resource: "@EcommerceBundle/Controller/TVAController.php"
     type: annotation
 
-panier_annotation_route:
-    resource: "@EcommerceBundle/Controller/PanierController.php"
+bondecommande_annotation_route:
+    resource: "@EcommerceBundle/Controller/CommandeController.php"
     type: annotation
