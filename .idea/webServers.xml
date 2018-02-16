@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="b52b52c4-edbe-4fa0-8271-6d0846936bba" name="msf.parkercommunication.pro" url="http://msf.parkercommunication.pro">
-        <fileTransfer host="sftp://parkercoae@ssh.cluster021.hosting.ovh.net:22" port="22" rootFolder="/home/parkercoae" accessType="SFTP">
+      <webServer id="b52b52c4-edbe-4fa0-8271-6d0846936bba" name="myscentfactory" url="http://msf.parkercommunication.pro">
+        <fileTransfer host="ssh.cluster021.hosting.ovh.net" port="22" privateKey="$USER_HOME$/.ssh/id_rsa" rootFolder="/home/parkercoae" accessType="SFTP" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" />
           </advancedOptions>
