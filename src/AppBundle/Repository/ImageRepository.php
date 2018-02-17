@@ -2,6 +2,11 @@
 
 namespace AppBundle\Repository;
 
+use Doctrine\ORM\QueryBuilder;
+use AppBundle\Entity\Image;
+use Symfony\Bridge\Doctrine\RegistryInterface;
+use Doctrine\ORM\EntityRepository;
+
 /**
  * ImageRepository
  *
@@ -10,4 +15,20 @@ namespace AppBundle\Repository;
  */
 class ImageRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function imageList()
+    {
+        $repository = $this->getDoctrine()->getRepository(Image::class);
+
+// createQueryBuilder() automatically selects FROM AppBundle:Product
+// and aliases it to "p"
+        $query = $repository->createQueryBuilder('p')
+            ->where('p.price > :price')
+            ->setParameter('price', '19.99')
+            ->orderBy('p.price', 'ASC')
+            ->getQuery();
+
+        $products = $query->getResult();
+// to get just one result:
+// $product = $query->setMaxResults(1)->getOneOrNullResult();
+    }
 }

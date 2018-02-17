@@ -1,10 +1,7 @@
 <?php
-
 namespace AppBundle\Form\Extension;
-
 use Symfony\Component\Form\AbstractTypeExtension;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
-
 
 class ImageTypeExtension extends AbstractTypeExtension
 {

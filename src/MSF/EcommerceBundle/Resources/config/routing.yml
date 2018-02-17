@@ -1,40 +1,3 @@
-panier:
-    path:     /panier
-    defaults: { _controller: EcommerceBundle:Panier:panier }
-
-livraison:
-    path:     /livraison
-    defaults: { _controller: EcommerceBundle:Panier:livraison }
-
-validation:
-    path:     /validation
-    defaults: { _controller: EcommerceBundle:Panier:validation }
-
-catalogue_produits:
-    path:     /catalogue
-    defaults: { _controller: EcommerceBundle:Produits:produits }
-
-presentation:
-    path:     /presentation
-    defaults: { _controller: EcommerceBundle:Produits:presentation }
-
-composition_client:
-    path:     /composition
-    defaults: { _controller: EcommerceBundle:Produits:composition }
-
-ajout_produit:
-    path: /ajoutProduit
-    defaults: { _controller: EcommerceBundle:Produits:add }
-
-modifier_produit:
-    path: /modifierProduit
-    defaults: { _controller: EcommerceBundle:Produits:modifier }
-
-editer_produit:
-    path: /editer/{id}
-    defaults: { _controller: EcommerceBundle:Produits:update}
-
-
 #crud ecommerce
 
 media_annotation_route:
@@ -60,3 +23,4 @@ tva_annotation_route:
 bondecommande_annotation_route:
     resource: "@EcommerceBundle/Controller/CommandeController.php"
     type: annotation
+

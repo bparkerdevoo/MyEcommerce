@@ -1,14 +1,7 @@
-gallery:
-    resource: '@SonataMediaBundle/Resources/config/routing/gallery.xml'
-    prefix:   /media/gallery
-
-media:
-    resource:  '@SonataMediaBundle/Resources/config/routing/media.xml'
-    prefix: /media
-panier:
-    resource: "@PanierBundle/Controller/"
+msf:
+    resource: "@MSFBundle/Controller/"
     type:     annotation
-    prefix:   /commande
+    prefix:   /
 
 admin:
     resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
@@ -30,11 +23,11 @@ fos_user:
 
 user:
     resource: "@UserBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /user
 
 pages:
     resource: "@PagesBundle/Resources/config/routing.yml"
-    prefix:   /pages
+    prefix:   /pagessss
 
 ecommerce:
     resource: "@EcommerceBundle/Resources/config/routing.yml"

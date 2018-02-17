@@ -1,0 +1,67 @@
+{% extends "::Layout.html.twig" %}
+
+{% block body %}
+    <div class="container">
+        <div class="row">
+
+            <div class="span3">
+                {% include "::layout/modulesUsed/nav.html.twig" %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="span8 offset3">
+                <div class="row">
+                    <h1>BIENVENUE CHEZ MY SCENT FACTORY</h1>
+                    <h4>Le Bar d'ambiances</h4>
+
+
+                    {% for photo in image %}
+
+                    <img src="{{ asset('img/') }}{{ photo.imageName }}" alt="{{ photo.alt }}">
+
+                    {%  endfor %}
+
+                </div>
+
+            </div>
+            <div class="span12">
+                {% block citations %}
+                    <div class="span9">
+                        <p>Ici laissez libre court à vos désires d'ambiance.</p>
+
+                    </div>
+
+                {% endblock citations %}
+            </div>
+
+            <div class="span12">
+                <h2>Shopping creation</h2>
+
+
+                {% block introduction %}
+
+                    <H3>1-trouver ou selectioner une inspiration</H3>
+
+                    <h3>2-composer parmis nos {n} parfums</h3>
+
+
+                    <h3>3 - associer votre support au choix</h3>
+
+                {% endblock introduction %}
+
+                <div class="pagination">
+                    <ul>
+                        <li class="disabled"><span>Précédent</span></li>
+                        <li class="disabled"><span>1</span></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">Suivant</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

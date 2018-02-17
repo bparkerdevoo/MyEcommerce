@@ -15,6 +15,25 @@ use Symfony\Component\Routing\Annotation\Route;
 class EspaceClientController extends Controller
 {
     /**
+     *
+     * @Route("/session", name="login_client")
+     */
+    public function accesAction()
+    {
+        $client =new Client();
+        $user = $this->getUser();
+
+        $client->getIdUser();
+
+
+
+        var_dump($client);
+        return $this->render('@FOSUser/Profile/show.html.twig', array(
+            'user' => $user,
+            'client' => $client
+        ));
+    }
+    /**
      * @param Request $request
      * @return Response
      * @Route("/enregistrement", name="information_client")

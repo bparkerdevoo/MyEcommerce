@@ -3,8 +3,771 @@
   <component name="ChangeListManager">
     <list id="3885c4b7-ed0c-4f94-8ff9-e0df37c2a738" name="New changelist" comment="" />
     <list default="true" id="6232abcb-4fb1-4f91-a6e1-7837a5ef993f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MSF/UserBundle/Controller/UserController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity/Photo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository/ImageRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository/PhotoRepository.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/AdminImageBundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Controller/DefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Controller/ImagePanelController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Controller/MediaProcessController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/DependencyInjection/AdminImageExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/DependencyInjection/Compiler/RequestHandlerPass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/DependencyInjection/Configuration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestHandlerInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestHandlerProvider.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestImagePanelHandler.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Request/RequestResult.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Resources/config/routing.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Resources/config/services.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Resources/views/Default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/SonataAdminImageBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/uploads/brochures/brochure.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/FavorieController.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/DependencyInjection/Configuration.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/DependencyInjection/PanierExtension.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/Form/ProduitType.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/PanierBundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/Resources/config/routing.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/Resources/config/services.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/Resources/views/Default/adminIndex.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/Resources/views/Default/index.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/Resources/views/Default/panier.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Document/Gallery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Document/Media.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Entity/Gallery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Entity/GalleryHasMedia.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Entity/Media.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/Gallery.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/GalleryHasMedia.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/GalleryHasMediaRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/GalleryRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/Media.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/PHPCR/MediaRepository.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Gallery.mongodb.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Gallery.orm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Gallery.phpcr.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/GalleryHasMedia.orm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/GalleryHasMedia.phpcr.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Media.mongodb.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Media.orm.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/doctrine/Media.phpcr.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Document.Gallery.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Document.GalleryHasMedia.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Document.Media.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Entity.Gallery.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Entity.GalleryHasMedia.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/Resources/config/serializer/Entity.Media.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Sonata/MediaBundle/SonataMediaBundle.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/var/cache/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/.eslintignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/.hound.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/.houndignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/CODE_OF_CONDUCT.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/CONTRIBUTING.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/Gemfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/Gemfile.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/ISSUE_TEMPLATE.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_config.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_data/breakpoints.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_data/browser-bugs.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_data/browser-features.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_data/colors.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_data/grays.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_data/nav.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_data/theme-colors.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_data/translations.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/ads.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/callout-danger-async-methods.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/callout-info-mediaqueries-breakpoints.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/callout-warning-color-assistive-technologies.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/docs-navbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/docs-sidebar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/favicons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/icons/bootstrap.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/icons/download.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/icons/github.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/icons/import.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/icons/lightning.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/icons/menu.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/icons/slack.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/icons/twitter.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/scripts.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_includes/social.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_layouts/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_layouts/docs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_layouts/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_layouts/redirect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_layouts/simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_plugins/bugify.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_plugins/callout.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_plugins/example.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/_plugins/markdown-block.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/brand/bootstrap-outline.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/brand/bootstrap-punchout.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/brand/bootstrap-social-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/brand/bootstrap-social.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/brand/bootstrap-solid.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/css/docs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/css/docs.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/bootstrap-stack.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/bootstrap-themes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/android-chrome-192x192.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/android-chrome-512x512.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/browserconfig.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/favicon-16x16.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/favicon-32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/manifest.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/mstile-144x144.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/mstile-150x150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/mstile-310x150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/mstile-310x310.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/mstile-70x70.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/img/favicons/safari-pinned-tab.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/js/docs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/js/src/application.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/js/src/ie-emulation-modes-warning.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/js/src/pwa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/js/vendor/anchor.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/js/vendor/clipboard.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/js/vendor/holder.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/js/vendor/jquery-slim.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/js/vendor/popper.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_ads.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_algolia.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_anchor.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_brand.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_browser-bugs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_callouts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_clipboard-js.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_colors.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_component-examples.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_content.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_examples.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_masthead.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_sidebar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_skiplink.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_syntax.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/assets/scss/docs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/.htmllintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/.stylelintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/change-version.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/gcp-key.json.enc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/generate-sri.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/lint-vars.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/postcss.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/rollup.config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/sauce_browsers.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/saucelabs-unit-test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/ship.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/upload-preview.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/vnu-jar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/workbox.config.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/build/workbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-grid.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap-reboot.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.bundle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.bundle.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.bundle.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.bundle.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/dist/js/bootstrap.min.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/.htmlhintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/about/brand.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/about/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/about/overview.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/about/translations.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/browser-bugs.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/alerts.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/badge.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/breadcrumb.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/button-group.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/buttons.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/card.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/carousel.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/collapse.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/dropdowns.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/forms.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/input-group.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/jumbotron.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/list-group.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/modal.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/navbar.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/navs.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/pagination.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/popovers.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/progress.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/scrollspy.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/components/tooltips.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/content/code.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/content/figures.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/content/images.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/content/reboot.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/content/tables.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/content/typography.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/.stylelintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/album/album.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/album/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/blog/blog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/blog/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/carousel/carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/carousel/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/cover/cover.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/cover/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/dashboard/dashboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/dashboard/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/grid/grid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/grid/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/jumbotron/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/jumbotron/jumbotron.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/justified-nav/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/justified-nav/justified-nav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/narrow-jumbotron/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/narrow-jumbotron/narrow-jumbotron.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/navbar-bottom/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/navbar-top-fixed/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/navbar-top-fixed/navbar-top-fixed.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/navbar-top/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/navbar-top/navbar-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/navbars/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/navbars/navbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/offcanvas/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/offcanvas/offcanvas.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/offcanvas/offcanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/album.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/blog.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/carousel.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/cover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/dashboard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/grid.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/jumbotron-narrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/jumbotron.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/justified-nav.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/navbar-bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/navbar-fixed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/navbar-static.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/navbar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/offcanvas.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/sign-in.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/starter-template.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/sticky-footer-navbar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/screenshots/sticky-footer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/signin/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/signin/signin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/starter-template/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/starter-template/starter-template.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/sticky-footer-navbar/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/sticky-footer/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/sticky-footer/sticky-footer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/tooltip-viewport/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/tooltip-viewport/tooltip-viewport.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/examples/tooltip-viewport/tooltip-viewport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/extend/approach.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/extend/icons.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/extend/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/getting-started/accessibility.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/getting-started/best-practices.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/getting-started/browsers-devices.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/getting-started/build-tools.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/getting-started/contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/getting-started/download.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/getting-started/introduction.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/getting-started/javascript.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/getting-started/theming.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/getting-started/webpack.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/layout/grid.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/layout/media-object.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/layout/overview.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/layout/utilities-for-layout.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/migration.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/borders.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/clearfix.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/close-icon.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/colors.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/display.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/embed.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/flex.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/float.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/image-replacement.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/position.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/screenreaders.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/sizing.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/spacing.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/text.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/vertical-align.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/4.0/utilities/visibility.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/CNAME" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_data/breakpoints.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_data/browser-bugs.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_data/browser-features.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_data/core-team.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_data/nav.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_data/showcase.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_data/translations.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_includes/ads.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_includes/callout-warning-color-assistive-technologies.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_includes/footer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_includes/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_includes/nav-docs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_includes/nav-home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_includes/page-headers.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_includes/social.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_layouts/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_layouts/docs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_layouts/home.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_layouts/simple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_plugins/bridge.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_plugins/bugify.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_plugins/callout.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_plugins/highlight_alt.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/_plugins/markdown-block.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/about/brand.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/about/history.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/about/license.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/about/team.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/about/translations.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/apple-touch-icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/brand/bootstrap-outline.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/brand/bootstrap-punchout.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/brand/bootstrap-social-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/brand/bootstrap-social.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/brand/bootstrap-solid.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/css/docs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/css/docs.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/img/bs-themes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/img/components.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/img/devices.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/img/expo-lyft.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/img/expo-newsweek.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/img/expo-riot.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/img/expo-vogue.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/img/sass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/js/docs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/js/ie-emulation-modes-warning.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/js/ie10-viewport-bug-workaround.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/js/src/application.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/js/vendor/anchor.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/js/vendor/clipboard.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/js/vendor/holder.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/js/vendor/jekyll-search.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/js/vendor/jquery-slim.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/js/vendor/tether.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_ads.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_anchor.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_booticon.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_brand.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_browser-bugs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_callouts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_clipboard-js.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_component-examples.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_content.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_examples.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_featured-sites.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_featurettes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_footer.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_masthead.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_page-header.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_responsive-tests.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_sidebar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_skiplink.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_syntax.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/_team.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/assets/scss/docs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/browser-bugs.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/alerts.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/badge.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/breadcrumb.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/button-group.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/buttons.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/card.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/carousel.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/collapse.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/dropdowns.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/forms.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/input-group.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/jumbotron.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/list-group.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/modal.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/navbar.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/navs.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/pagination.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/popovers.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/progress.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/scrollspy.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/components/tooltips.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/content/code.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/content/figures.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/content/images.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/content/reboot.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/content/tables.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/content/typography.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap-grid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap-grid.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap-grid.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap-grid.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap-reboot.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap-reboot.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap-reboot.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap-reboot.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/css/bootstrap.min.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/dist/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/album/album.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/album/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/blog/blog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/blog/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/carousel/carousel.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/carousel/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/cover/cover.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/cover/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/dashboard/dashboard.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/dashboard/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/grid/grid.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/grid/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/jumbotron/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/jumbotron/jumbotron.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/justified-nav/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/justified-nav/justified-nav.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/narrow-jumbotron/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/narrow-jumbotron/narrow-jumbotron.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/navbar-top-fixed/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/navbar-top-fixed/navbar-top-fixed.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/navbar-top/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/navbar-top/navbar-top.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/navbars/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/navbars/navbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/offcanvas/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/offcanvas/offcanvas.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/offcanvas/offcanvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/album.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/blog.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/carousel.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/cover.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/dashboard.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/equal-height-columns.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/grid.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/jumbotron-narrow.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/jumbotron.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/justified-nav.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/navbar-fixed.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/navbar-static.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/navbar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/non-responsive.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/offcanvas.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/sign-in.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/starter-template.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/sticky-footer-navbar.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/sticky-footer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/screenshots/theme.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/signin/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/signin/signin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/starter-template/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/starter-template/starter-template.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/sticky-footer-navbar/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/sticky-footer-navbar/sticky-footer-navbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/sticky-footer/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/sticky-footer/sticky-footer.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/tooltip-viewport/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/tooltip-viewport/tooltip-viewport.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/examples/tooltip-viewport/tooltip-viewport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/extend/approach.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/extend/icon-fonts.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/extend/index.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/getting-started/accessibility.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/getting-started/best-practices.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/getting-started/browsers-devices.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/getting-started/build-tools.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/getting-started/contents.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/getting-started/download.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/getting-started/introduction.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/getting-started/javascript.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/getting-started/options.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/layout/grid.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/layout/media-object.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/layout/overview.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/layout/responsive-utilities.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/migration.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/search.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/borders.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/clearfix.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/close-icon.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/colors.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/display-property.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/flexbox.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/image-replacement.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/invisible-content.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/position.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/responsive-helpers.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/screenreaders.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/sizing.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/spacing.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/typography.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/docs/utilities/vertical-align.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/grunt/change-version.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/grunt/configBridge.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/grunt/gcp-key.json.enc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/grunt/npm-shrinkwrap.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/grunt/postcss.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/grunt/sauce_browsers.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/grunt/upload-preview.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/.babelrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/.eslintrc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/alert.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/button.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/carousel.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/collapse.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/dropdown.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/index.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/modal.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/popover.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/scrollspy.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tab.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/tooltip.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/dist/util.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/src/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/.eslintrc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/alert.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/carousel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/collapse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/modal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/phantom.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/popover.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/scrollspy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/tab.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/unit/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/vendor/jquery-1.9.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/vendor/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/vendor/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/alert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/button.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/carousel.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/collapse.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/dropdown.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/modal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/popover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/scrollspy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/tab.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/js/tests/visual/tooltip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/nuget/MyGet.ps1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/nuget/bootstrap.nuspec" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/nuget/bootstrap.sass.nuspec" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/package-lock.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/package.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/sache.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/.scss-lint.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_alert.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_badge.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_breadcrumb.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_button-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_card.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_carousel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_close.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_code.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_custom-forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_custom.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_dropdown.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_functions.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_images.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_input-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_jumbotron.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_list-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_media.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_modal.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_nav.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_navbar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_normalize.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_popover.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_print.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_progress.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_reboot.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_responsive-embed.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_root.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_tooltip.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_transitions.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_type.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/bootstrap-grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/bootstrap-reboot.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/bootstrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_alert.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_background-variant.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_badge.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_border-radius.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_box-shadow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_breakpoints.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_cards.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_caret.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_clearfix.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_float.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_gradients.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_grid-framework.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_hover.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_image.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_list-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_lists.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_nav-divider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_navbar-align.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_reset-text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_resize.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_screen-reader.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_size.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_table-row.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_text-emphasis.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_text-hide.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_text-truncate.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_transforms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_transition.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/mixins/_visibility.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_align.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_background.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_borders.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_clearfix.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_display.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_embed.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_flex.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_float.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_position.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_screenreaders.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_sizing.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_spacing.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/scss/utilities/_visibility.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bootstrap-4/sw.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Image.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity/Image.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Produit.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity/Produit.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository/ProduitRepository.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository/ProduitRepository.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page/accueil.html.twig" afterPath="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page/oldAccueil.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/PanierDefaultController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/Controller/PanierController.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/PanierController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/PanierBundle/Controller/ProduitCRUDController.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitCRUDController.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/var/logs/.gitkeep" afterPath="$PROJECT_DIR$/src/AppBundle/Form/Extension/ImageTypeExtension.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/cropper" afterPath="$PROJECT_DIR$/web/cropper" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyEcommerce.iml" afterPath="$PROJECT_DIR$/.idea/MyEcommerce.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/25e850be-49fe-44ff-922f-e254ea77b54e.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/25e850be-49fe-44ff-922f-e254ea77b54e.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/symfony2.xml" afterPath="$PROJECT_DIR$/.idea/symfony2.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/nav.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/nav.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/navAdd.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/navAdd.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/pages/factory.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/pages/factory.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/panier/promo_panier.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/panier/promo_panier.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Admin/ClientAdmin.php" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/ClientAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/CommentPost.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/CommentPost.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/ImageRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/ImageRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/1ProduitsController.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/1ProduitsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CommandeController.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CommandeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Categories.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Categories.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Commande.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Commande.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/LigneDeCommande.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/LigneDeCommande.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/MediaType.php" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/MediaType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Panier/layout/panier.html.twig" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Panier/layout/panier.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produits.html.twig" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produits.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/index.html.twig" afterPath="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/PagesBundle/Controller/PagesController.php" afterPath="$PROJECT_DIR$/src/MSF/PagesBundle/Controller/PagesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page/layout/catalogue.html.twig" afterPath="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page/layout/catalogue.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/UserBundle/Controller/EspaceClientController.php" afterPath="$PROJECT_DIR$/src/MSF/UserBundle/Controller/EspaceClientController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MSF/UserBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/MSF/UserBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/bootstrap.css" afterPath="$PROJECT_DIR$/web/css/bootstrap.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,95 +802,99 @@
         <item name="" type="eadb38e5:DatabaseStructure$Root" />
         <item name="MyEcommerce@localhost" type="e3449647:DbNodeDescriptor" />
         <item name="MyEcommerce" type="e3449647:DbNodeDescriptor" />
-        <item name="code_promo" type="e3449647:DbNodeDescriptor" />
+        <item name="photo" type="e3449647:DbNodeDescriptor" />
       </path>
     </expand>
     <select />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Local" pinned="false" current-in-tab="true">
-              <entry file="mock:///Local">
-                <provider selected="true" editor-type-id="terminal-session-editor">
-                  <state />
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.16740479">
+    <splitter split-orientation="vertical" split-proportion="0.7895461">
       <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="CompositionController.php" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CompositionController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1400">
-                  <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#48#91#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="horizontal" split-proportion="0.8097282">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="produit.html.twig" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/produit.html.twig">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="387">
+                      <caret line="28" column="32" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="28" selection-end-column="32" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="panier.html.twig" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/panier.html.twig">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="350">
+                      <caret line="37" column="99" lean-forward="false" selection-start-line="37" selection-start-column="99" selection-end-line="37" selection-end-column="99" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+              <file leaf-file-name="Media.php" pinned="false" current-in-tab="false">
+                <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="-1629">
+                      <caret line="150" column="97" lean-forward="false" selection-start-line="150" selection-start-column="97" selection-end-line="150" selection-end-column="97" />
+                      <folding />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="EcommerceController.php" pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/EcommerceController.php">
+                  <provider selected="true" editor-type-id="text-editor">
+                    <state relative-caret-position="727">
+                      <caret line="128" column="27" lean-forward="false" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="27" />
+                      <folding>
+                        <element signature="e#55#98#0#PHP" expanded="true" />
+                        <element signature="e#721#760#0#PHP" expanded="true" />
+                        <element signature="e#938#978#0#PHP" expanded="true" />
+                        <element signature="e#3997#4035#0#PHP" expanded="true" />
+                      </folding>
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="CodePromoController.php" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CodePromoController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="365">
-                  <caret line="39" column="152" lean-forward="false" selection-start-line="39" selection-start-column="152" selection-end-line="39" selection-end-column="152" />
-                  <folding>
-                    <element signature="e#40#64#0#PHP" expanded="true" />
-                    <element signature="e#924#945#1#PHP" expanded="true" />
-                    <element signature="e#999#1032#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="promo_panier.html.twig" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/Resources/views/panier/promo_panier.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#12#28#0#Twig" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="composition.html.twig" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/layout/composition.html.twig">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="261">
-                  <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-            <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25e850be-49fe-44ff-922f-e254ea77b54e/console.sql">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
+        <splitter split-orientation="horizontal" split-proportion="0.36168224">
+          <split-first>
+            <leaf>
+              <file leaf-file-name="produit" pinned="false" current-in-tab="true">
+                <entry file="das://table:/cca8f7c7/25e850be-49fe-44ff-922f-e254ea77b54e/MyEcommerce.produit">
+                  <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                    <state>
+                      <filtering enabled="true" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-first>
+          <split-second>
+            <leaf>
+              <file leaf-file-name="media" pinned="false" current-in-tab="true">
+                <entry file="das://table:/cca8f7c7/25e850be-49fe-44ff-922f-e254ea77b54e/MyEcommerce.media">
+                  <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+                    <state>
+                      <filtering enabled="true" />
+                    </state>
+                  </provider>
+                </entry>
+              </file>
+            </leaf>
+          </split-second>
+        </splitter>
       </split-second>
     </splitter>
   </component>
@@ -142,6 +909,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>public</find>
+      <find>asset</find>
+      <find>ImageTypeExtension</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/vendor/sonata-project/doctrine-orm-admin-bundle</dir>
@@ -171,57 +940,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/modules/catalogue.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Commande.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/LigneDeCommande.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository/CommandeRepository.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository/LigneDeCommandeRepository.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/ProduitCRUDController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/PanierBundle/Controller/ProduitCRUDController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/PanierAdmin.php" />
-        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page/layout/page.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page/layout/catalogue.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Controller/PageController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/indexController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Controller/PagesController.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page/accueil.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout/Layout.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/Layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page/inc/cgv.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/LigneDeCommande.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Produit.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CommandeController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content_user_profile.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Resources/config/routing.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_client" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_profile.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Entity/Client.php" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content_client_profile.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content_client.html.twig" />
-        <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
-        <option value="$PROJECT_DIR$/app/config/config.yml" />
-        <option value="$PROJECT_DIR$/web/app.php" />
-        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Controller/EspaceClientController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/codePromoType.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/CodePromoType.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/panier.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Commande.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/25e850be-49fe-44ff-922f-e254ea77b54e/console.sql" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/CodePromo.php" />
-        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/layout/composition.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/CodePromoController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page/accueil.html.twig" />
+        <option value="$PROJECT_DIR$/src/MSF/PanierBundle/Controller/PanierDefaultController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Panier/layout/panier.html.twig" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/navAdd.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/panier/promo_panier.html.twig" />
-        <option value="$PROJECT_DIR$/web/js/avis.react.js" />
+        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page/layout/catalogue.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/nav.html.twig" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/MSF/UserBundle/Controller/EspaceClientController.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/PageController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Image.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository/ImageRepository.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity/Image.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository/PhotoRepository.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity/Photo.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Controller/PagesController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/ClientAdmin.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/MediaType.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/Extension/ImageTypeExtension.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/MediaType.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Produit.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository/ProduitRepository.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produits.html.twig" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/1ProduitsController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CommandeController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/PanierController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/PanierDefaultController.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitCRUDController.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity/Produit.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/CommentPost.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Commande.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/LigneDeCommande.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Categories.php" />
+        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/produit.html.twig" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/EcommerceController.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/panier.html.twig" />
       </list>
     </option>
   </component>
@@ -300,37 +1069,41 @@
       <path value="$PROJECT_DIR$/vendor/jms/metadata" />
       <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
       <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
-      <path value="$PROJECT_DIR$/vendor/zendframework/zenddiagnostics" />
-      <path value="$PROJECT_DIR$/vendor/queue-interop/amqp-interop" />
-      <path value="$PROJECT_DIR$/vendor/kriswallsmith/buzz" />
-      <path value="$PROJECT_DIR$/vendor/php-amqplib/php-amqplib" />
-      <path value="$PROJECT_DIR$/vendor/queue-interop/queue-interop" />
-      <path value="$PROJECT_DIR$/vendor/phpcollection/phpcollection" />
-      <path value="$PROJECT_DIR$/vendor/enqueue/amqp-tools" />
-      <path value="$PROJECT_DIR$/vendor/enqueue/amqp-lib" />
-      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
-      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
-      <path value="$PROJECT_DIR$/vendor/jms/serializer" />
-      <path value="$PROJECT_DIR$/vendor/jms/parser-lib" />
-      <path value="$PROJECT_DIR$/vendor/jms/serializer-bundle" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/media-bundle" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/notification-bundle" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/doctrine-extensions" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/easy-extends-bundle" />
-      <path value="$PROJECT_DIR$/vendor/knplabs/gaufrette" />
-      <path value="$PROJECT_DIR$/vendor/sonata-project/Sonata" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/asset" />
-      <path value="$PROJECT_DIR$/vendor/michelf/php-markdown" />
-      <path value="$PROJECT_DIR$/vendor/knplabs/knp-markdown-bundle" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/queue-interop/amqp-interop" />
+      <path value="$PROJECT_DIR$/vendor/phpcollection/phpcollection" />
+      <path value="$PROJECT_DIR$/vendor/queue-interop/queue-interop" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/php-amqplib/php-amqplib" />
+      <path value="$PROJECT_DIR$/vendor/enqueue/amqp-tools" />
+      <path value="$PROJECT_DIR$/vendor/imagine/imagine" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zenddiagnostics" />
+      <path value="$PROJECT_DIR$/vendor/enqueue/amqp-lib" />
+      <path value="$PROJECT_DIR$/vendor/kriswallsmith/buzz" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/serializer" />
+      <path value="$PROJECT_DIR$/vendor/jms/parser-lib" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/easy-extends-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/notification-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sonata-project/media-bundle" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/gaufrette" />
     </include_path>
   </component>
   <component name="PhpXdebugProxy" ide_key="PHPSTORM" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="111" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="359" />
     <option name="y" value="23" />
-    <option name="width" value="1329" />
+    <option name="width" value="1081" />
     <option name="height" value="845" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -350,7 +1123,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -378,6 +1150,19 @@
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -386,6 +1171,14 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="EcommerceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="EcommerceBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
@@ -398,26 +1191,119 @@
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Ecommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Page" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="logs" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.stylesheets" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/views/standard_layout.html.twig&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/friendsofsymfony/user-bundle/composer.json&#10;/Applications/MAMP/htdocs/MyEcommerce/app/config/parameters.yml&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/form_div_layout.html.twig&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/friendsofsymfony/user-bundle/Model/User.php&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/friendsofsymfony/user-bundle/Doctrine/UserListener.php" />
-    <property name="SearchEverywhereHistoryKey" value="skin&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/web/bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black-light.css&#10;knp_menu.html.twig&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu.html.twig&#10;knp&#9;null&#9;null&#10;frameworkB&#9;null&#9;null&#10;sonatacoreexten&#9;null&#9;null&#10;sonata core form mapping&#9;null&#9;null&#10;getRoutes&#9;null&#9;null" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/views/standard_layout.html.twig&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/friendsofsymfony/user-bundle/composer.json&#10;/Applications/MAMP/htdocs/MyEcommerce/app/config/parameters.yml&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/form_div_layout.html.twig&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/bmatzner/fontawesome-bundle/Bmatzner/FontAwesomeBundle/Resources/public/css/font-awesome.css.map&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/friendsofsymfony/user-bundle/Model/User.php&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/bmatzner/fontawesome-bundle/Bmatzner/FontAwesomeBundle/Resources/public/css/font-awesome.min.css&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/friendsofsymfony/user-bundle/Doctrine/UserListener.php&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/bmatzner/fontawesome-bundle/Bmatzner/FontAwesomeBundle/Resources/public/css/font-awesome.css" />
+    <property name="SearchEverywhereHistoryKey" value="ImageTypeExtension&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/var/cache/dev/ContainerIl6hrp3/getImageTypeExtensionService.php&#10;skin&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/web/bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black-light.css&#10;knp_menu.html.twig&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu.html.twig&#10;knp&#9;null&#9;null&#10;frameworkB&#9;null&#9;null&#10;sonatacoreexten&#9;null&#9;null&#10;sonata core form mapping&#9;null&#9;null&#10;getRoutes&#9;null&#9;null" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
@@ -427,19 +1313,19 @@
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository" />
-      <recent name="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity" />
-      <recent name="$PROJECT_DIR$/src/EcommerceBundle/Entity" />
-      <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration" />
-      <recent name="$PROJECT_DIR$/src/MSF/UserBundle/Resources/views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/MyScentFactory/MSFBundle" />
       <recent name="$PROJECT_DIR$/app/Resources/views/panier" />
       <recent name="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile" />
       <recent name="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page/inc" />
       <recent name="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page" />
-      <recent name="$PROJECT_DIR$/src/MSF/UserBundle/Resources/views/modules" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository" />
+      <recent name="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity" />
+      <recent name="$PROJECT_DIR$/src/MSF/PagesBundle/Entity" />
+      <recent name="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Default" />
+      <recent name="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -505,7 +1391,8 @@
       <workItem from="1518554983996" duration="24204000" />
       <workItem from="1518618680735" duration="6569000" />
       <workItem from="1518627944213" duration="55332000" />
-      <workItem from="1518731644932" duration="15155000" />
+      <workItem from="1518731644932" duration="24459000" />
+      <workItem from="1518792188796" duration="48418000" />
     </task>
     <task id="LOCAL-00001" summary="added codePromo Entity, issue of null tables still to be solved">
       <created>1518745446695</created>
@@ -528,7 +1415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518748486263</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added codePromo Entity, issue of null tables still to be solved">
+      <created>1518748755770</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1518748755770</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers>
       <GitHub shared="false" url="https://github.com">
         <option name="assignedIssuesOnly" value="false" />
@@ -554,34 +1448,34 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="501699000" />
+    <option name="totallyTimeSpent" value="559421000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="111" y="23" width="1329" height="845" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="845" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944834" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.090844065" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36313617" sideWeight="0.37510878" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.539801" sideWeight="0.3783977" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14377682" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6877579" sideWeight="0.6248912" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944834" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17637917" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24475524" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.6216023" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39752406" sideWeight="0.48569384" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.49713877" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -665,12 +1559,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/MSF/UserBundle/Controller/EspaceClientController.php</url>
-          <line>107</line>
+          <line>126</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/src/MSF/UserBundle/Controller/EspaceClientController.php</url>
-          <line>108</line>
+          <line>127</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
@@ -682,109 +1576,175 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content_user_profile.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="444">
+          <caret line="19" column="94" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="94" />
+          <folding>
+            <element signature="e#12#30#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Category.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/SonataTemplates/views/Form/form_admin_fields.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/CommentPostAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
+        <state relative-caret-position="-2587">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/views/modules/avis.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/ClientAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="42" column="14" lean-forward="true" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
+        <state relative-caret-position="480">
+          <caret line="21" column="65" lean-forward="false" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
           <folding>
-            <element signature="e#12#37#0#Twig" expanded="true" />
+            <element signature="e#116#159#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/profile.xml">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/MediaType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/MediaCRUDController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-997">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/EventListener/BrochureUploadListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1447">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#42#97#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_0.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27180">
+          <caret line="1061" column="69" lean-forward="true" selection-start-line="1061" selection-start-column="69" selection-end-line="1061" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/ContainerIl6hrp3/getImageTypeExtensionService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity/Photo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="24" column="33" lean-forward="false" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Service/FileUploader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="e#447#482#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/MediaType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/profile.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/GroupController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5122">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/SecurityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2971">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Controller/ProfileController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="105" column="0" lean-forward="true" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_client.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="31" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding>
-            <marker date="1518715244000" expanded="false" signature="12:37" ph="@FOSUser/layout" />
-            <marker date="1518715244000" expanded="true" signature="43:175" ph="{% block fos_user_content ...%}" />
-            <marker date="1518715244000" expanded="true" signature="88:139" ph="FOSUser:Profile:show_content_client" />
+            <element signature="e#44#84#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_profile.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/Extension/ImageTypeExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        <state relative-caret-position="116">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#88#139#0#Twig" expanded="true" />
+            <element signature="e#42#91#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CommentPostController.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-740">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        <state relative-caret-position="139">
+          <caret line="71" column="8" lean-forward="false" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
+          <folding>
+            <element signature="e#33#80#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/cca8f7c7/25e850be-49fe-44ff-922f-e254ea77b54e/MyEcommerce.photo">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository/ProduitRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produitform.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1234">
+        <state relative-caret-position="-1897">
+          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produitList.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="31" column="21" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="31" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="15" lean-forward="false" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
           <folding />
         </state>
       </provider>
@@ -797,201 +1757,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produits.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-493">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content_client_profile.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/presentation.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="3" column="57" lean-forward="true" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content_client.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="14" column="95" lean-forward="false" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="95" />
+        <state relative-caret-position="210">
+          <caret line="7" column="18" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="7" selection-end-column="18" />
           <folding>
-            <element signature="e#403#462#0#Twig" expanded="true" />
+            <element signature="e#12#37#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CodePromoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#84#123#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="268">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="35" selection-start-column="17" selection-end-line="36" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Category.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2412">
+        <state relative-caret-position="-3435">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app.php">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/TVA.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3658">
+        <state relative-caret-position="-3735">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-815">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Produit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="48" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Entity/Client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-          <folding>
-            <element signature="e#41#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/cca8f7c7/25e850be-49fe-44ff-922f-e254ea77b54e/MyEcommerce.commande">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/25e850be-49fe-44ff-922f-e254ea77b54e.SCHEMA:MyEcommerce">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>25e850be-49fe-44ff-922f-e254ea77b54e.SCHEMA:MyEcommerce</OriginalElement>
-          <nodes>
-            <node x="215.0" y="885.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.etat</node>
-            <node x="0.0" y="700.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.comment_post</node>
-            <node x="408.0" y="1048.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.client_personnalisation</node>
-            <node x="674.0" y="1048.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.commande_produit</node>
-            <node x="1078.0" y="0.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.media</node>
-            <node x="946.0" y="885.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.category</node>
-            <node x="0.0" y="427.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.parfum</node>
-            <node x="934.0" y="700.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.personnalisation</node>
-            <node x="268.0" y="0.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.utilisateurs</node>
-            <node x="207.0" y="1048.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.ambiance</node>
-            <node x="494.0" y="885.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.note</node>
-            <node x="469.0" y="427.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.commande</node>
-            <node x="237.0" y="700.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.LignedeCommande</node>
-            <node x="903.0" y="1048.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.categories_produit</node>
-            <node x="682.0" y="700.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.code_promo</node>
-            <node x="0.0" y="1048.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.evenement</node>
-            <node x="0.0" y="0.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.client</node>
-            <node x="837.0" y="0.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.produit</node>
-            <node x="0.0" y="1167.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.produit_categories</node>
-            <node x="759.0" y="427.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.accessoire</node>
-            <node x="1003.0" y="427.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.categories</node>
-            <node x="466.0" y="700.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.blog_post</node>
-            <node x="244.0" y="427.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.composition</node>
-            <node x="723.0" y="885.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.forfait</node>
-            <node x="582.0" y="0.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.support</node>
-            <node x="0.0" y="885.0">25e850be-49fe-44ff-922f-e254ea77b54e.TABLE:MyEcommerce.t_v_a</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.5357142857142857" x="372.0" y="398.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1923">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Controller/EspaceClientController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="104" column="8" lean-forward="true" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
           <folding>
-            <element signature="e#45#84#0#PHP" expanded="true" />
+            <element signature="e#41#73#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Form/AmbianceType.php">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/TVAController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#85#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitCRUDController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#644#669#1#PHP" expanded="false" />
+            <element signature="e#761#802#0#PHP" expanded="false" />
+            <element signature="e#2039#2081#0#PHP" expanded="false" />
+            <element signature="e#3503#3530#1#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/PanierDefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#91#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/MediaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#50#87#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -999,150 +1860,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Form/CompositionType.php">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CommandeController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-953">
+        <state relative-caret-position="245">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CategoriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-166">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#42#82#0#PHP" expanded="true" />
+            <element signature="e#50#92#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/1ProduitsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/CodePromoType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="11" column="76" lean-forward="false" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
-          <folding>
-            <element signature="e#34#65#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/cca8f7c7/25e850be-49fe-44ff-922f-e254ea77b54e/MyEcommerce.code_promo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/BlogPostAdmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-73">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CompositionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding>
-            <element signature="e#48#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/pages/factory.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3047">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/pages/view.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-943">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/panier.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1785">
-          <caret line="136" column="29" lean-forward="true" selection-start-line="136" selection-start-column="29" selection-end-line="136" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/25e850be-49fe-44ff-922f-e254ea77b54e/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Commande.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="133" column="62" lean-forward="false" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
+        <state relative-caret-position="169">
+          <caret line="113" column="76" lean-forward="false" selection-start-line="113" selection-start-column="76" selection-end-line="113" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/layout/composition.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/LigneDeCommande.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="75">
+          <caret line="45" column="75" lean-forward="false" selection-start-line="45" selection-start-column="75" selection-end-line="45" selection-end-column="75" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CodePromo.php">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Categories.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        <state relative-caret-position="161">
+          <caret line="170" column="14" lean-forward="false" selection-start-line="170" selection-start-column="14" selection-end-line="170" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/CodePromoController.php">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/CommentPost.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="39" column="152" lean-forward="false" selection-start-line="39" selection-start-column="152" selection-end-line="39" selection-end-column="152" />
+        <state relative-caret-position="53">
+          <caret line="17" column="75" lean-forward="false" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity/Produit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1673">
+          <caret line="160" column="6" lean-forward="false" selection-start-line="160" selection-start-column="6" selection-end-line="160" selection-end-column="6" />
           <folding>
-            <element signature="e#40#64#0#PHP" expanded="true" />
-            <element signature="e#924#945#1#PHP" expanded="true" />
-            <element signature="e#999#1032#0#PHP" expanded="true" />
+            <element signature="e#51#83#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/avis.react.js">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="44" column="6" lean-forward="false" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+        <state relative-caret-position="1860">
+          <caret line="60" column="24" lean-forward="true" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+          <folding>
+            <element signature="e#50#101#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/pages/view.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="41" column="14" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="41" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/panier/promo_panier.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/PanierController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        <state relative-caret-position="60">
+          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="23" />
           <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
+            <element signature="e#50#103#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/panier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="57" column="18" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="57" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="41" />
+          <folding>
+            <element signature="e#55#112#0#PHP" expanded="true" />
+            <element signature="e#886#921#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/cca8f7c7/25e850be-49fe-44ff-922f-e254ea77b54e/MyEcommerce.produit">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1629">
+          <caret line="150" column="97" lean-forward="false" selection-start-line="150" selection-start-column="97" selection-end-line="150" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/cca8f7c7/25e850be-49fe-44ff-922f-e254ea77b54e/MyEcommerce.media">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/produit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="28" column="32" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="28" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/EcommerceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="727">
+          <caret line="128" column="27" lean-forward="false" selection-start-line="128" selection-start-column="27" selection-end-line="128" selection-end-column="27" />
+          <folding>
+            <element signature="e#55#98#0#PHP" expanded="true" />
+            <element signature="e#721#760#0#PHP" expanded="true" />
+            <element signature="e#938#978#0#PHP" expanded="true" />
+            <element signature="e#3997#4035#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/panier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="37" column="99" lean-forward="false" selection-start-line="37" selection-start-column="99" selection-end-line="37" selection-end-column="99" />
+          <folding />
         </state>
       </provider>
     </entry>

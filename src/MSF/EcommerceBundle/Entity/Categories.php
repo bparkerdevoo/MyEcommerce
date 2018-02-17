@@ -25,7 +25,7 @@ class Categories
     private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Produit", mappedBy="categories")
+     * @ORM\OneToMany(targetEntity="MyScentFactory\MSFBundle\Entity\Produit", mappedBy="categories")
      */
     private $id_produit;
 
@@ -168,28 +168,18 @@ class Categories
     /**
      * Add idProduit.
      *
-     * @param \MSF\EcommerceBundle\Entity\Produit $idProduit
+     * @param \MSFBundle\Entity\Produit $idProduit
      *
      * @return Categories
      */
-    public function addIdProduit(\MSF\EcommerceBundle\Entity\Produit $idProduit)
+    public function addIdProduit(\MyScentFactory\MSFBundle\Entity\Produit $idProduit)
     {
         $this->id_produit[] = $idProduit;
 
         return $this;
     }
 
-    /**
-     * Remove idProduit.
-     *
-     * @param \MSF\EcommerceBundle\Entity\Produit $idProduit
-     *
-     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-     */
-    public function removeIdProduit(\MSF\EcommerceBundle\Entity\Produit $idProduit)
-    {
-        return $this->id_produit->removeElement($idProduit);
-    }
+
 
 
 
@@ -237,5 +227,17 @@ class Categories
     public function getIdAccessoire()
     {
         return $this;
+    }
+
+    /**
+     * Remove idProduit.
+     *
+     * @param \MyScentFactory\MSFBundle\Entity\Produit $idProduit
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeIdProduit(\MyScentFactory\MSFBundle\Entity\Produit $idProduit)
+    {
+        return $this->id_produit->removeElement($idProduit);
     }
 }

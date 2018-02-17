@@ -86,40 +86,41 @@ doctrine:
 
 #Configuration sonata_media
 
-sonata_media:
-            #class:
-            #    media:   Sonata\MediaBundle\Entity\Media
-            #    gallery: Sonata\MediaBundle\Entity\Gallery
-            #    gallery_has_media: Sonata\MediaBundle\Entity\GalleryHasMedia
+#sonata_media:
+#         #class:
+#         #    media:   Sonata\MediaBundle\Entity\Media
+#         #    gallery: Sonata\MediaBundle\Entity\Gallery
+#         #    gallery_has_media: Sonata\MediaBundle\Entity\GalleryHasMedia
 
-            db_driver: doctrine_orm
-            default_context: default
-            contexts:
-                default:
-                    providers:
-                        - sonata.media.provider.image
-                        - sonata.media.provider.youtube
-                        - sonata.media.provider.file
-                        - sonata.media.resizer.square
+#         db_driver: doctrine_orm
+#         default_context: default
+#         contexts:
+#             default:
+#                 providers:
+#                     - sonata.media.provider.image
+#                     - sonata.media.provider.youtube
+#                     - sonata.media.provider.file
+#                     - sonata.media.resizer.square
 
-                    formats:
-                        small: { width: 100 , quality: 70}
-                        big:   { width: 500 , quality: 70}
-                        admin: { width: 300 , quality: 70}
+#                 formats:
+#                     small: { width: 100 , quality: 70}
+#                     big:   { width: 500 , quality: 70}
+#                     admin: { width: 300 , quality: 70}
 
-            cdn:
-                server:
-                    path: '%kernel.project_dir%/public/uploads/images/products'
-            filesystem:
-                local:
-                    directory: '%kernel.project_dir%/public/uploads/media'
-                    create: false
+#         cdn:
+#             server:
+#                 path: '%kernel.project_dir%/public/uploads/images/products'
+#         filesystem:
+#             local:
+#                 directory: '%kernel.project_dir%/public/uploads/media'
+#                 create: false
 
 
 #vich Loader configuration using ORM engine
 vich_uploader:
     db_driver: orm
 
+#chargement depuis l'admin
     mappings:
         product_image:
             uri_prefix: public/images/products
@@ -128,6 +129,7 @@ vich_uploader:
             inject_on_load: false
             delete_on_update: true
             delete_on_remove: true
+
 
 
 # Swiftmailer Configuration

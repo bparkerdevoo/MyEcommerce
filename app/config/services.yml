@@ -1,7 +1,7 @@
 # Learn more about services, parameters and containers at
 # https://symfony.com/doc/current/service_container.html
 parameters:
-    #parameter_name: value
+    parameter_name: value
 
 services:
     # default configuration for services in *this* file
@@ -62,10 +62,7 @@ services:
     #     arguments:
     #         $someArgument: 'some_value'
 
-    app.image_panel_request_handler:
-            class: 'AppBundle\SonataAdminImageBundle\Services\RequestImagePanelHandler'
-            tags:
-                - { name: image_panel.request_handler }
+
 
     admin.category:
             class: AppBundle\Admin\CategoryAdmin

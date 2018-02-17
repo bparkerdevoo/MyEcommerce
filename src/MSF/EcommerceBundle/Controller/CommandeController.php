@@ -8,7 +8,6 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 use Symfony\Component\Routing\Annotation\Route;
 use Doctrine\ORM\Mapping\Annotation;
 use MSF\EcommerceBundle\Entity\Commande;
-use MSF\EcommerceBundle\Entity\Produit;
 use MSF\EcommerceBundle\Form\ProduitType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

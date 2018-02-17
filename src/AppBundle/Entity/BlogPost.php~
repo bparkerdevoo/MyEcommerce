@@ -158,4 +158,30 @@ class BlogPost
     {
         return $this->draft;
     }
+
+    /**
+     * Add commentPost.
+     *
+     * @param \AppBundle\Entity\CommentPost $commentPost
+     *
+     * @return BlogPost
+     */
+    public function addCommentPost(\AppBundle\Entity\CommentPost $commentPost)
+    {
+        $this->CommentPost[] = $commentPost;
+
+        return $this;
+    }
+
+    /**
+     * Remove commentPost.
+     *
+     * @param \AppBundle\Entity\CommentPost $commentPost
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeCommentPost(\AppBundle\Entity\CommentPost $commentPost)
+    {
+        return $this->CommentPost->removeElement($commentPost);
+    }
 }

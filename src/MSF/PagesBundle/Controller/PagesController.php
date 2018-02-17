@@ -7,18 +7,11 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class PagesController extends Controller
 {
-    /**
-     * @Route("/index", name="index")
-     */
-    public function indexAccueilAction()
-    {
-        $accueil = $this->render("PagesBundle:page:accueil.html.twig");
 
-        return $accueil;
-    }
+
 
     /**
-     * @Route("/catalogue/{categorie}", name="catalogue_composition")
+     * @Route("/catalogue", name="catalogue_composition")
      */
     public function showCompositionAction($categorie)
     {
@@ -35,6 +28,8 @@ class PagesController extends Controller
         return $this->render("PagesBundle:page:layout/page.html.twig");
 
     }
+
+
 
 
 }

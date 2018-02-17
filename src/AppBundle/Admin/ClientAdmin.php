@@ -14,6 +14,7 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
 use MSF\UserBundle\Entity\Client;
 use Sonata\AdminBundle\Route\RouteCollection;
+use Sonata\MediaBundle\Model\MediaInterface;
 
 class ClientAdmin extends AbstractAdmin
 {
@@ -37,7 +38,6 @@ class ClientAdmin extends AbstractAdmin
             ->add('region', 'text')
             ->add('telephone', 'text')
             ->add('mobile', 'text')
-            ->add('categorieAdresse', 'text')
             ->add('dateDeNaissance', 'date')
             ->add('id_User', 'sonata_type_model', [
                 'class' => 'MSF\UserBundle\Entity\User',

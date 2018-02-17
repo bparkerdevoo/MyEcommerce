@@ -26,6 +26,7 @@ class Client
 
     /**
      * @ORM\ManyToOne(targetEntity="MSF\UserBundle\Entity\User", inversedBy="client")
+     * @ORM\Column(type="integer")
      */
     private $id_User;
 
@@ -33,6 +34,14 @@ class Client
     {
         $this->id_User = new ArrayCollection();
     }
+
+
+    /**
+     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Commande", mappedBy="idClient")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $idCommande;
+
 
     /**
      * @var string
@@ -46,14 +55,14 @@ class Client
     /**
      * @var string
      *
-     * @ORM\Column(name="Prenom", type="string", length=100, nullable=true)
+     * @ORM\Column(name="Prenom", type="string", length=100, nullable=false)
      */
     private $prenom;
 
     /**
      * @var bool
      *
-     * @ORM\Column(name="Titre", type="string", nullable=true)
+     * @ORM\Column(name="Titre", type="string", nullable=false)
      */
     private $titre;
 
@@ -107,11 +116,11 @@ class Client
     private $mobile;
 
     /**
-     * @var bool
+     * @var string
      *
-     * @ORM\Column(name="CategorieAdresse", type="boolean", nullable=true)
+     * @ORM\Column(name="AdresseType", type="string", nullable=true)
      */
-    private $categorieAdresse;
+    private $adresseType;
 
     /**
      * @var \DateTime
@@ -134,8 +143,11 @@ class Client
 
     /**
      * @ORM\ManyToMany(targetEntity="MSF\FactoryBundle\Entity\Personnalisation")
+     * @ORM\Column(type="integer")
      */
     private $id_customName;
+
+
 
     /**
      * @param mixed $id_customName
@@ -526,5 +538,65 @@ class Client
     public function getIdCustomName()
     {
         return $this->id_customName;
+    }
+
+    /**
+     * Set adresseType.
+     *
+     * @param string|null $adresseType
+     *
+     * @return Client
+     */
+    public function setAdresseType($adresseType = null)
+    {
+        $this->adresseType = $adresseType;
+
+        return $this;
+    }
+
+    /**
+     * Get adresseType.
+     *
+     * @return string|null
+     */
+    public function getAdresseType()
+    {
+        return $this->adresseType;
+    }
+
+    /**
+     * Add idCommande.
+     *
+     * @param \MSF\EcommerceBundle\Entity\Commande $idCommande
+     *
+     * @return Client
+     */
+    public function addIdCommande(\MSF\EcommerceBundle\Entity\Commande $idCommande)
+    {
+        $this->idCommande[] = $idCommande;
+
+        return $this;
+    }
+
+    /**
+     * Remove idCommande.
+     *
+     * @param \MSF\EcommerceBundle\Entity\Commande $idCommande
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeIdCommande(\MSF\EcommerceBundle\Entity\Commande $idCommande)
+    {
+        return $this->idCommande->removeElement($idCommande);
+    }
+
+    /**
+     * Get idCommande.
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getIdCommande()
+    {
+        return $this->idCommande;
     }
 }

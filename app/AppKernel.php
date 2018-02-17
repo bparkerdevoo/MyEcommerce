@@ -26,14 +26,9 @@ class AppKernel extends Kernel
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
             new Sonata\AdminBundle\SonataAdminBundle(),
             new Sonata\DoctrineORMAdminBundle\SonataDoctrineORMAdminBundle(),
-            new MSF\PanierBundle\PanierBundle(),
             new Bmatzner\FontAwesomeBundle\BmatznerFontAwesomeBundle(),
             new Vich\UploaderBundle\VichUploaderBundle(),
-            new Sonata\MediaBundle\SonataMediaBundle(),
-            new Sonata\EasyExtendsBundle\SonataEasyExtendsBundle(),
-            new JMS\SerializerBundle\JMSSerializerBundle(),
-            new AppBundle\SonataAdminImageBundle\AdminImageBundle(),
-            new Knp\Bundle\MarkdownBundle\KnpMarkdownBundle(),
+            new MyScentFactory\MSFBundle\MSFBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], false)) {

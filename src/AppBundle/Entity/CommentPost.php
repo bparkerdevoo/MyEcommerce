@@ -15,7 +15,7 @@ class CommentPost
 {
     /**
      * @var
-     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Produit", inversedBy="CommentPost")
+     * @ORM\ManyToOne(targetEntity="MyScentFactory\MSFBundle\Entity\Produit", inversedBy="CommentPost")
      */
     private $idProduit;
 

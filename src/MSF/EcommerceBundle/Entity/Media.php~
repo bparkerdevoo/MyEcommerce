@@ -148,7 +148,7 @@ class Media
 
 
     /**
-     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Produit", inversedBy="Media")
+     * @ORM\ManyToOne(targetEntity="MyScentFactory\MSFBundle\Entity\Produit", inversedBy="Media")
      *
      * @ORM\JoinColumn(name="produit", referencedColumnName="id", nullable=true)
      */

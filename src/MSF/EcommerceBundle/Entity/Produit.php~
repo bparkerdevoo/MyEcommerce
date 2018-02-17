@@ -9,10 +9,6 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
 use Symfony\Component\HttpFoundation\File\File;
 
 
-
-
-
-
 /**
  * Produit
  *
@@ -42,7 +38,7 @@ class Produit
 
     /**
      *@var File
-     * @ORM\Column(name="brochure", type="string")
+     * @ORM\Column(name="brochure", type="string", nullable=true)
      *
      * @Assert\NotBlank(message="merci de télécharger la brochure du produit au format PDF.")
      * @Assert\File(mimeTypes={"application/pdf"})
@@ -77,6 +73,12 @@ class Produit
      */
     private $id_categories;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Commande", inversedBy="produit")
+     *
+     * @ORM\JoinColumn(name="idCommande", referencedColumnName="id")
+     */
+    private $idCommande;
 
     /**
      * @var string
@@ -344,5 +346,29 @@ class Produit
     public function getMediaId()
     {
         return $this->media_Id;
+    }
+
+    /**
+     * Set idCommande.
+     *
+     * @param \MSF\EcommerceBundle\Entity\Commande|null $idCommande
+     *
+     * @return Produit
+     */
+    public function setIdCommande(\MSF\EcommerceBundle\Entity\Commande $idCommande = null)
+    {
+        $this->idCommande = $idCommande;
+
+        return $this;
+    }
+
+    /**
+     * Get idCommande.
+     *
+     * @return \MSF\EcommerceBundle\Entity\Commande|null
+     */
+    public function getIdCommande()
+    {
+        return $this->idCommande;
     }
 }

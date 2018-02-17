@@ -146,11 +146,11 @@ class LignedeCommande
     /**
      * Set produit.
      *
-     * @param \AppBundle\Entity\Produit $produit
+     * @param  $produit
      *
      * @return LignedeCommande
      */
-    public function setProduit(\AppBundle\Entity\Produit $produit)
+    public function setProduit( \MSF\EcommerceBundle\Entity\Produit $produit)
     {
         $this->produit = $produit;
 
@@ -160,7 +160,7 @@ class LignedeCommande
     /**
      * Get produit.
      *
-     * @return \AppBundle\Entity\Produit
+     * @return \MSF\EcommerceBundle\Entity\Produit
      */
     public function getProduit()
     {
