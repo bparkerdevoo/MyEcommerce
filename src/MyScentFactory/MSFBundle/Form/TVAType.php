@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\EcommerceBundle\Form;
+namespace MSFBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -20,7 +20,7 @@ class TVAType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'MSF\EcommerceBundle\Entity\TVA'
+            'data_class' => 'MSFBundle\Entity\TVA'
         ));
     }
 
@@ -29,7 +29,7 @@ class TVAType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'msf_ecommercebundle_tva';
+        return 'myscentfactory_msfbundle_tva';
     }
 
 

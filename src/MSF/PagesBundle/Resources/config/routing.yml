@@ -1,4 +1,0 @@
-
-page_annotation_route:
-    resource: "@PagesBundle/Controller/PagesController.php"
-    type: annotation

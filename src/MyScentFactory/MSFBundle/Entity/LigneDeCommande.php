@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\EcommerceBundle\Entity;
+namespace MyScentFactory\MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * LigneDeCommande
  *
  * @ORM\Table(name="LigneDeCommande")
- * @ORM\Entity(repositoryClass="MSF\EcommerceBundle\Repository\LigneDeCommandeRepository")
+ * @ORM\Entity(repositoryClass="\MSFBundle\Repository\LigneDeCommandeRepository")
  */
 class LigneDeCommande
 {
@@ -37,7 +37,7 @@ class LigneDeCommande
 
 
     /**
-     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Commande")
+     * @ORM\ManyToOne(targetEntity="MSFBundle\Entity\Commande")
      * @ORM\JoinColumn(nullable=false)
      */
     private $commande;
@@ -47,18 +47,6 @@ class LigneDeCommande
      * @ORM\JoinColumn(nullable=false)
      */
     private $produit;
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     /**
@@ -126,7 +114,7 @@ class LigneDeCommande
      *
      * @return LignedeCommande
      */
-    public function setCommande(\AppBundle\Entity\Commande $commande)
+    public function setCommande(\MyScentFactory\MSFBundle\Bundle\Entity\Commande $commande)
     {
         $this->commande = $commande;
 
@@ -150,7 +138,7 @@ class LigneDeCommande
      *
      * @return LignedeCommande
      */
-    public function setProduit( \MSF\EcommerceBundle\Entity\Produit $produit)
+    public function setProduit( \MSFBundle\Entity\Produit $produit)
     {
         $this->produit = $produit;
 
@@ -160,7 +148,7 @@ class LigneDeCommande
     /**
      * Get produit.
      *
-     * @return \MSF\EcommerceBundle\Entity\Produit
+     * @return \MSFBundle\Entity\Produit
      */
     public function getProduit()
     {

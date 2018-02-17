@@ -25,15 +25,6 @@ user:
     resource: "@UserBundle/Resources/config/routing.yml"
     prefix:   /user
 
-pages:
-    resource: "@PagesBundle/Resources/config/routing.yml"
-    prefix:   /pagessss
-
-ecommerce:
-    resource: "@EcommerceBundle/Resources/config/routing.yml"
-    prefix:   /eshop
-
-
 app:
     resource: '@AppBundle/Controller/'
     type: annotation

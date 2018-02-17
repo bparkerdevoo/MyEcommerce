@@ -6,7 +6,7 @@
  * Time: 01:37
  */
 
-namespace MSF\EcommerceBundle\Entity;
+namespace MyScentFactory\MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -154,7 +154,7 @@ class Commande
 
     /**
      * @ORM\JoinColumn(nullable=true)
-     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\LigneDeCommande")
+     * @ORM\ManyToOne(targetEntity="MSFBundle\Entity\LigneDeCommande")
      */
     private $ligneDeCommande;
 

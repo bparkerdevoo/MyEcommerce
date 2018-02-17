@@ -61,7 +61,7 @@ class DefaultController extends Controller
             $produit->setBrochure($fileName);
 
 
-            return $this->render('EcommerceBundle:Produits:layout/produits.html.twig', array('form' => $form->createView(),
+            return $this->render('MSFBundle:produits.html.twig', array('form' => $form->createView(),
             ));
 
 

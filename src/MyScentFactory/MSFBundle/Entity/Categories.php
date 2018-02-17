@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\EcommerceBundle\Entity;
+namespace MyScentFactory\MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -11,7 +11,7 @@ use Symfony\Component\Validator\Constraint as Assert;
  * Categories
  *
  * @ORM\Table(name="categories")
- * @ORM\Entity(repositoryClass="MSF\EcommerceBundle\Repository\CategoriesRepository")
+ * @ORM\Entity(repositoryClass="\MSFBundle\Repository\CategoriesRepository")
  */
 class Categories
 {
@@ -37,7 +37,7 @@ class Categories
     /**
      * @var int
      *
-     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Parfum", cascade={"persist"})
+     * @ORM\OneToOne(targetEntity="MyScentFactory\MSFBundle\Entity\Parfum", cascade={"persist"})
      *
      */
     private $id_parfum;
@@ -45,7 +45,7 @@ class Categories
     /**
      * @var int
      *
-     * @ORM\OneToOne(targetEntity="MSF\FactoryBundle\Entity\Support", cascade={"persist"})
+     * @ORM\OneToOne(targetEntity="MSFBundle\Entity\Support", cascade={"persist"})
      *
      */
     private $id_support;
@@ -53,7 +53,7 @@ class Categories
     /**
      * @var int
      *
-     * @ORM\OneToOne(targetEntity="AppBundle\Entity\Accessoire", cascade={"persist"})
+     * @ORM\OneToOne(targetEntity="MSFBundle\Entity\Accessoire", cascade={"persist"})
      *
      */
     private $id_accessoire;
@@ -140,7 +140,7 @@ class Categories
      *
      * @return Categories
      */
-    public function setIdSupport(\MSF\FactoryBundle\Entity\Support $idSupport = null)
+    public function setIdSupport(\MSFBundle\Entity\Support $idSupport = null)
     {
         $this->id_support = $idSupport;
 
@@ -152,11 +152,11 @@ class Categories
     /**
      * Set idAccessoire.
      *
-     * @param \AppBundle\Entity\Accessoire|null $idAccessoire
+     * @param \MSFBundle\Entity\Accessoire|null $idAccessoire
      *
      * @return Categories
      */
-    public function setIdAccessoire(\AppBundle\Entity\Accessoire $idAccessoire = null)
+    public function setIdAccessoire(\MSFBundle\Entity\Accessoire $idAccessoire = null)
     {
         $this->id_accessoire = $idAccessoire;
 
@@ -168,11 +168,11 @@ class Categories
     /**
      * Add idProduit.
      *
-     * @param \MSF\EcommerceBundle\Entity\Produit $idProduit
+     * @param \MSFBundle\Entity\Produit $idProduit
      *
      * @return Categories
      */
-    public function addIdProduit(\MSFBundle\Entity\Produit $idProduit)
+    public function addIdProduit(\MyScentFactory\MSFBundle\Entity\Produit $idProduit)
     {
         $this->id_produit[] = $idProduit;
 
@@ -188,7 +188,7 @@ class Categories
     /**
      * Set idParfum.
      *
-     * @param \AppBundle\Entity\Parfum|null $idParfum
+     * @param \MSFBundle\Entity\Parfum|null $idParfum
      *
      * @return Categories
      */
@@ -202,7 +202,7 @@ class Categories
     /**
      * Get idParfum.
      *
-     * @return \AppBundle\Entity\Parfum|null
+     * @return \MSFBundle\Entity\Parfum|null
      */
     public function getIdParfum()
     {
@@ -212,7 +212,7 @@ class Categories
     /**
      * Get idSupport.
      *
-     * @return \MSF\FactoryBundle\Entity\Support|null
+     * @return \MSFBundle\Entity\Support|null
      */
     public function getIdSupport()
     {
@@ -222,10 +222,22 @@ class Categories
     /**
      * Get idAccessoire.
      *
-     * @return \AppBundle\Entity\Accessoire|null
+     * @return \MSFBundle\Entity\Accessoire|null
      */
     public function getIdAccessoire()
     {
         return $this;
+    }
+
+    /**
+     * Remove idProduit.
+     *
+     * @param \MyScentFactory\MSFBundle\Entity\Produit $idProduit
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeIdProduit(\MyScentFactory\MSFBundle\Entity\Produit $idProduit)
+    {
+        return $this->id_produit->removeElement($idProduit);
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\EcommerceBundle\Form;
+namespace MSFBundle\Form;
 
 use function Sodium\add;
 use Symfony\Component\Form\AbstractType;
@@ -12,7 +12,7 @@ use Symfony\Component\Form\Extension\Core\Type\PercentType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use MSF\EcommerceBundle\Entity\Produit;
+use MyScentFactory\MSFBundle\Entity\Produit;
 use Sonata\AdminBundle\Form\DataTransformer;
 use Symfony\Component\Form\DataTransformerInterface;
 
@@ -44,7 +44,7 @@ class ProduitType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'MSF\EcommerceBundle\Entity\Produit'
+            'data_class' => 'MSFBundle\Entity\Produit'
         ));
 
 
@@ -55,7 +55,7 @@ class ProduitType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'msf_ecommercebundle_produit';
+        return 'myscentfactory_msfbundle_produit';
     }
 
 

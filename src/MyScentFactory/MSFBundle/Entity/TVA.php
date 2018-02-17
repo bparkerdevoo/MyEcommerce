@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\EcommerceBundle\Entity;
+namespace MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * TVA
  *
  * @ORM\Table(name="t_v_a")
- * @ORM\Entity(repositoryClass="MSF\EcommerceBundle\Repository\TVARepository")
+ * @ORM\Entity(repositoryClass="MSFBundle\Repository\TVARepository")
  */
 class TVA
 {
