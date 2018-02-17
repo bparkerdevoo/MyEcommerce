@@ -7,8 +7,7 @@
  */
 
 namespace AppBundle\Admin;
-
-use MSF\EcommerceBundle\Entity\Categories;
+use MyScentFactory\MSFBundle\Entity\Categories;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;

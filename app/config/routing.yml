@@ -12,10 +12,6 @@ _sonata_admin:
     type: sonata_admin
     prefix: /admin
 
-factory:
-    resource: "@FactoryBundle/Controller/"
-    type:     annotation
-    prefix:   /factory
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"

@@ -8,12 +8,12 @@
 
 namespace AppBundle\Admin;
 
-use AppBundle\Entity\Parfum;
+use MSFBundle\Entity\Parfum;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
-use MSF\UserBundle\Entity\Client;
+use MSFBundle\Entity\Client;
 use Sonata\AdminBundle\Route\RouteCollection;
 use Sonata\AdminBundle\Form\Type\ModelType;
 

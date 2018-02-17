@@ -9,7 +9,7 @@
 namespace AppBundle\Admin;
 
 use AppBundle\Entity\BlogPost;
-use AppBundle\Entity\CommentPost;
+use MSFBundle\Entity\CommentPost;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Form\FormMapper;

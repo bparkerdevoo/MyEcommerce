@@ -1,4 +1,0 @@
-services:
-#    factory.example:
-#        class: MSF\FactoryBundle\Example
-#        arguments: ["@service_id", "plain_value", "%parameter%"]

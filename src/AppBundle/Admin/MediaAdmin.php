@@ -1,7 +1,8 @@
 <?php
 namespace AppBundle\Admin;
+
 use Symfony\Component\HttpFoundation\File\File;
-use MSF\EcommerceBundle\Entity\Media;
+use MSFBundle\Entity\Media;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -10,6 +11,7 @@ use Sonata\AdminBundle\Route\RouteCollection;
 use Vich\UploaderBundle\Form\Type\VichImageType;
 use AppBundle\Service\FileUploader;
 use Sonata\AdminBundle\Show\ShowMapper;
+
 class MediaAdmin extends AbstractAdmin
 {
     protected function configureFormFields(FormMapper $formMapper)
@@ -72,7 +74,6 @@ class MediaAdmin extends AbstractAdmin
                 'prefix' => '/public/images/products/'
             ))
         ;
-#var_dump($listMapper);
     }
     protected $baseRouteName = 'media_admin';
     protected function configureRoutes(RouteCollection $collection)

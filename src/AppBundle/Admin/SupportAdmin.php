@@ -8,7 +8,7 @@
 
 namespace AppBundle\Admin;
 
-use MSF\FactoryBundle\Entity\Support;
+use MSFBundle\Entity\Support;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
