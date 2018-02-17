@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\EcommerceBundle\Entity;
+namespace MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
@@ -11,7 +11,7 @@ use Vich\UploaderBundle\Mapping\Annotation as Vich;
  * Media
  *
  * @ORM\Table(name="media")
- * @ORM\Entity(repositoryClass="MSF\EcommerceBundle\Repository\MediaRepository")
+ * @ORM\Entity(repositoryClass="MSFBundle\Repository\MediaRepository")
  * @Vich\Uploadable
  */
 class Media

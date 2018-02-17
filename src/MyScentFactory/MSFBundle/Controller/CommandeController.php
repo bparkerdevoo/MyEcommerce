@@ -1,14 +1,43 @@
 <?php
 
-namespace MSF\EcommerceBundle\Controller;
+namespace MSFBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use MSF\EcommerceBundle\Entity\Commande;
+use Doctrine\ORM\EntityManagerInterface;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
+use Doctrine\ORM\Mapping\Annotation;
+use Symfony\Component\Routing\Annotation\Route;
 
-class PanierController extends Controller
+
+class CommandeController extends Controller
 {
+    /**
+     *
+     * @return Response
+     * @Route("/bondecommande", name="bon_de_commande")
+     *
+     */
+    public function indexAction()
+    {
+        $bonDeCommande = new Commande();
+
+
+        $bonDeCommande->setDate(new \DateTime());
+        $bonDeCommande->setModeReglement('modeRegelement');
+        $bonDeCommande->setMontant('20');
+
+        $em=$this->getDoctrine()->getManager();
+
+        $em->persist($bonDeCommande);
+
+        $em->flush();
+
+        return new Response('BON DE COMMANDE');
+
+
+    }
 	
 /**
  * Verifie si le panier existe, le créé sinon
@@ -52,7 +81,6 @@ class PanierController extends Controller
     * @param string $libelleProduit
     * @param int $qteProduit
     * @param float $prixProduit
-    * @return void
     */
    function ajouterArticle($libelleProduit,$qteProduit,$prixProduit){
 
@@ -211,5 +239,160 @@ class PanierController extends Controller
          return 0;
       }
    }
+
+    /**
+     * @Route("/", name="PanierProduit")
+     */
+    public function FormAction(Request $request)
+    {
+        $produit = new Produit();
+        $form = $this->createForm(ProduitType::class, $p);
+
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            $p = $form->getData();
+            $p1 = $this->getDoctrine()
+                ->getRepository('EcommerceBundle:Produit')
+                ->findBy(
+                    array(
+                        'nom' => $p->getnom(),
+                        'prix' => $p->getPrix()
+                    )
+                );
+            if($p1){
+                return new Response("Erreur, produit dèja ajouté !");
+            }else{
+                $em = $this->getDoctrine()->getManager();
+
+                $em->persist($p);
+                $em->flush();
+
+                return new Response("Produit ajouté avec succès !");
+            }
+
+        }else{
+            return $this->render('', array(
+                'name' => '',
+                'form' => $form->createView(),
+            ));
+        }
+    }
+
+    public function findByNomAction()
+    {
+        $em = $this->getDoctrine()->getManager()->getRepository('MSFBundle:Produit');
+        $prods = $em->findBy(array('nom' => 'A'), null, 1);
+        return $this->render('',
+            array(
+            )
+        );
+    }
+    public function creationPanierAction(Request $request){
+        $panier = new Panier();
+
+        $session = $panier->getSession();
+        if(count($session->get('panier'))==0){
+            $panier->creationPanier();
+        }
+
+        //echo count($session->get('panier'))."<br>";
+        //echo $session->getId();
+        //$session->invalidate();
+
+        if ($request->getMethod() == 'GET') {
+
+            $nom = $request->get('nom');
+            $qte = $request->get('qte');
+            $prix = $request->get('prix');
+
+            $panier->ajouterArticle($libelle,$prix);
+
+            //$panier->modifierQTeArticle($libelle,10,"Taza-az-BLANC");
+            //echo "<br>".$panier->MontantGlobal();
+            //echo "<br>".$panier->compterArticles();
+        }
+
+        echo "<br><br>";
+        var_dump($session->get('panier'));
+        return new response("");
+    }
+    public function panierAction(){
+        $panier = new Panier();
+        $session = $panier->getSession();
+        if(count($session->get('panier'))==0){
+            $panier->creationPanier();
+        }
+        $session = $panier->getSession();
+
+        return $this->render('',
+            array(
+                'panier' => $session->get('panier')
+            )
+        );
+    }
+    public function supprimerAction($detail){
+        $panier = new Panier();
+        $session = $panier->getSession();
+        if(count($session->get('panier'))==0){
+            $panier->creationPanier();
+        }
+        $panier->supprimerArticle($detail);
+        return $this->redirect($this->generateUrl('panier_panier'));
+    }
+    public function modifierQteAction(Request $request){
+        if ($request->getMethod() == 'POST') {
+            $qte = $request->get('q');
+
+            if (is_array($qte)){
+                $QteArticle = array();
+                $i=0;
+                foreach ($qte as $contenu){
+                    $QteArticle[$i++] = intval($contenu);
+                }
+            }else{
+                $qte = intval($qte);
+            }
+
+            $p = new Panier();
+            $session = $p->getSession();
+            $panier = $session->get('panier');
+
+            for ($i = 0 ; $i < count($QteArticle) ; $i++){
+                $p->modifierQTeArticle($panier['libelleProduit'][$i],round($QteArticle[$i]),$panier['detail'][$i]);
+            }
+        }
+        return $this->redirect($this->generateUrl('panier_panier'));
+    }
+    public function saveCartAction(){
+        $em = $this->getDoctrine()->getManager();
+
+        $repository = $this->getDoctrine()
+            ->getRepository('PanierAdminBundle:Produit');
+        $produit = $repository->findOneByLibelle('A');
+
+        $cmd = new Commande();
+        $cmd->setMontant(1000)
+            ->setModePaiement("Normal");
+
+        $em->persist($cmd);
+
+        $p = new Panier();
+        $session = $p->getSession();
+        $panier = $session->get('panier');
+
+        for ($i = 0 ; $i < count($panier['libelleProduit']) ; $i++){
+            $lc[$i] = new LigneCommande();
+
+            $lc[$i]->setQuantite($panier['qteProduit'][$i]);
+            $lc[$i]->setPrixUnitaire($panier['prixProduit'][$i]);
+            $lc[$i]->setCommande($cmd);
+            $lc[$i]->setProduit($produit);
+            $em->persist($lc[$i]);
+        }
+
+
+        $em->flush();
+        return new Response("Commande sauvegardée");
+    }
 
 }

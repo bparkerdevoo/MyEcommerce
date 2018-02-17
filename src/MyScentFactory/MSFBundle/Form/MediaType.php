@@ -1,13 +1,13 @@
 <?php
 
-namespace MSF\EcommerceBundle\Form;
+namespace MSFBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class CategoriesType extends AbstractType
+
+class MediaType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -15,14 +15,18 @@ class CategoriesType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('nom', TextType::class);
+            ->add('path')
+            ->add('alt')
+            ->add('vignette1')
+            ->add('vignette2')
+            ->add('image');
     }/**
      * {@inheritdoc}
      */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'MSF\EcommerceBundle\Entity\Categories'
+            'data_class' => 'MSFBundle\Entity\Media'
         ));
     }
 
@@ -31,7 +35,7 @@ class CategoriesType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'msf_ecommercebundle_categories';
+        return 'myscentfactory_msfbundle_media';
     }
 
 

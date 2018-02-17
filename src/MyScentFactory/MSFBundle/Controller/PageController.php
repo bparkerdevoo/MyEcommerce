@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class PageController extends Controller
 {
     /**
-     * @Route("/Catalogue")
+     * @Route("/Catalogue", name="catalogue")
      */
     public function CatalogueAction()
     {

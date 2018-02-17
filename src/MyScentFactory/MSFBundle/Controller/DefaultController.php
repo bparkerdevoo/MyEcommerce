@@ -4,8 +4,8 @@ namespace MyScentFactory\MSFBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use MyScentFactory\MSFBundle\Entity\Photo;
-use MSF\EcommerceBundle\Entity\Media;
+use MSFBundle\Entity\Media;
+use MSFBundle\Form\MediaType;
 use Doctrine\ORM\EntityManagerInterface;
 
 class DefaultController extends Controller
@@ -27,12 +27,45 @@ class DefaultController extends Controller
     }
 
     /**
-     * @Route("/Media")
+     * @Route("/Media/upload", name="upload_image")
      */
     public function MediaAction()
     {
-        return $this->render('MSFBundle:Default:media.html.twig', array(
-            // ...
-        ));
+
+        $media = new Media();
+
+        // recupere formulaire
+        $form = $this->createForm(MediaType::class, $media);
+
+        //generate form html
+        $formView = $form->createView();
+
+        return $this->redirectToRoute('catalogue');
+    }
+
+    /**
+     *
+     * @Route("produit/upload", name="upload")
+     *
+     */
+    public function fileAction( )
+    {
+        $produit = new Produit();
+        $form = $this->createForm(ProduitType::class, $produit);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() && $form->isValid()) {
+            $file = $produit->getBrochure();
+            $fileName = $fileUploader->upload($file);
+
+            $produit->setBrochure($fileName);
+
+
+            return $this->render('EcommerceBundle:Produits:layout/produits.html.twig', array('form' => $form->createView(),
+            ));
+
+
+        }
+        return $this;
     }
 }
