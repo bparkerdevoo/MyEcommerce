@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\UserBundle;
+namespace MyScentFactory\UserBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

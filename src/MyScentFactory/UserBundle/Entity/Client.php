@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\UserBundle\Entity;
+namespace MyScentFactory\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -10,7 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Client
  *
  * @ORM\Table(name="client")
- * @ORM\Entity(repositoryClass="MSF\UserBundle\Repository\ClientRepository")
+ * @ORM\Entity(repositoryClass="\MyScentFactory\UserBundle\Repository\ClientRepository")
  *
  */
 class Client
@@ -25,7 +25,7 @@ class Client
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="MSF\UserBundle\Entity\User", inversedBy="client")
+     * @ORM\ManyToOne(targetEntity="MyScentFactory\UserBundle\Entity\User", inversedBy="client")
      * @ORM\Column(type="integer")
      */
     private $id_User;
@@ -37,7 +37,7 @@ class Client
 
 
     /**
-     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Commande", mappedBy="idClient")
+     * @ORM\OneToMany(targetEntity="MSFBundle\Entity\Commande", mappedBy="idClient")
      * @ORM\JoinColumn(nullable=false)
      */
     private $idCommande;
@@ -142,7 +142,7 @@ class Client
     }
 
     /**
-     * @ORM\ManyToMany(targetEntity="MSF\FactoryBundle\Entity\Personnalisation")
+     * @ORM\ManyToMany(targetEntity="MSFBundle\Entity\Personnalisation")
      * @ORM\Column(type="integer")
      */
     private $id_customName;
@@ -483,11 +483,11 @@ class Client
     /**
      * Set idUser.
      *
-     * @param \MSF\UserBundle\Entity\User|null $idUser
+     * @param \MyScentFactory\UserBundle\Entity\User|null $idUser
      *
      * @return Client
      */
-    public function setIdUser(\MSF\UserBundle\Entity\User $idUser = null)
+    public function setIdUser(\MyScentFactory\UserBundle\Entity\User $idUser = null)
     {
         $this->id_User = $idUser;
 
@@ -497,7 +497,7 @@ class Client
     /**
      * Get idUser.
      *
-     * @return \MSF\UserBundle\Entity\User|null
+     * @return \MyScentFactory\UserBundle\Entity\User|null
      */
     public function getIdUser()
     {
@@ -507,11 +507,11 @@ class Client
     /**
      * Add idCustomName.
      *
-     * @param \MSF\FactoryBundle\Entity\Personnalisation $idCustomName
+     * @param \MSFBundle\Entity\Personnalisation $idCustomName
      *
      * @return Client
      */
-    public function addIdCustomName(\MSF\FactoryBundle\Entity\Personnalisation $idCustomName)
+    public function addIdCustomName(\MSFBundle\Entity\Personnalisation $idCustomName)
     {
         $this->id_customName[] = $idCustomName;
 
@@ -521,11 +521,11 @@ class Client
     /**
      * Remove idCustomName.
      *
-     * @param \MSF\FactoryBundle\Entity\Personnalisation $idCustomName
+     * @param \MSFBundle\Entity\Personnalisation $idCustomName
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeIdCustomName(\MSF\FactoryBundle\Entity\Personnalisation $idCustomName)
+    public function removeIdCustomName(\MSFBundle\Entity\Personnalisation $idCustomName)
     {
         return $this->id_customName->removeElement($idCustomName);
     }
@@ -567,11 +567,11 @@ class Client
     /**
      * Add idCommande.
      *
-     * @param \MSF\EcommerceBundle\Entity\Commande $idCommande
+     * @param \MSFBundle\Entity\Commande $idCommande
      *
      * @return Client
      */
-    public function addIdCommande(\MSF\EcommerceBundle\Entity\Commande $idCommande)
+    public function addIdCommande(\MSFBundle\Entity\Commande $idCommande)
     {
         $this->idCommande[] = $idCommande;
 
@@ -581,11 +581,11 @@ class Client
     /**
      * Remove idCommande.
      *
-     * @param \MSF\EcommerceBundle\Entity\Commande $idCommande
+     * @param \MSFBundle\Entity\Commande $idCommande
      *
      * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
      */
-    public function removeIdCommande(\MSF\EcommerceBundle\Entity\Commande $idCommande)
+    public function removeIdCommande(\MSFBundle\Entity\Commande $idCommande)
     {
         return $this->idCommande->removeElement($idCommande);
     }

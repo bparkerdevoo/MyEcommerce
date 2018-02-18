@@ -49,12 +49,12 @@ services:
        #     - { name: doctrine.event_listener, event: postLoad }
 
     application_fos_user.security.interactive_login_listener:
-            class: MSF\UserBundle\EventListener\UserListener
+            class: MyScentFactory\UserBundle\EventListener\UserListener
             tags:
                 - { name: kernel.event_listener, event: security.interactive_login, method: setLocaleForAuthenticatedUser }
 
     application_fos_user.security.kernel_request_listener:
-            class: MSF\UserBundle\EventListener\UserListener
+            class: MyScentFactory\UserBundle\EventListener\UserListener
             tags:
                 - { name: kernel.event_listener, event: kernel.request, method: setLocaleForUnauthenticatedUser }
     # add more services, or override services that need manual wiring
@@ -82,7 +82,7 @@ services:
             - { name: sonata.admin, manager_type: orm, label: "Gestion_Client" }
         arguments:
             - ~
-            - MSF\UserBundle\Entity\Client
+            - MyScentFactory\UserBundle\Entity\Client
             - 'AppBundle:ClientCRUD' # define the new controller via the third argument
         public: true
     admin.support:
@@ -91,7 +91,7 @@ services:
              - { name: sonata.admin, manager_type: orm, label: "Gestion_Support" }
          arguments:
              - ~
-             - MSF\FactoryBundle\Entity\Support
+             - MyScentFactory\MSFBundle\Entity\Support
              - 'AppBundle:SupportCRUD'
          public: true
     admin.parfum:
@@ -100,7 +100,7 @@ services:
              - { name: sonata.admin, manager_type: orm, label: "Gestion_Parfum" }
          arguments:
              - ~
-             - AppBundle\Entity\Parfum
+             - MyScentFactory\MSFBundle\Entity\Parfum
              - 'AppBundle:ParfumCRUD' # define the new controller via the third argument
          public: true
     admin.user:
@@ -109,7 +109,7 @@ services:
                 - { name: sonata.admin, manager_type: orm, label: "Gestion_Utilisateurs" }
             arguments:
                 - ~
-                - MSF\UserBundle\Entity\User
+                - MyScentFactory\UserBundle\Entity\User
                 - 'AppBundle:UserCRUD' # define the new controller via the third argument
             public: true
     admin.produit:
@@ -118,7 +118,7 @@ services:
                 - { name: sonata.admin, manager_type: orm, label: "Gestion_produit" }
             arguments:
                 - ~
-                - MSF\EcommerceBundle\Entity\Produit
+                - MyScentFactory\MSFBundle\Entity\Produit
                 - 'AppBundle:ProduitCRUD' # define the new controller via the third argument
             public: true
     admin.categories:
@@ -127,7 +127,7 @@ services:
                 - { name: sonata.admin, manager_type: orm, label: "Creation de Categories de produit" }
             arguments:
                 - ~
-                - MSF\EcommerceBundle\Entity\Categories
+                - MyScentFactory\MSFBundle\Entity\Categories
                 - 'AppBundle:CategoriesCRUD' # define the new controller via the third argument
             public: true
 
@@ -137,7 +137,7 @@ services:
                 - { name: sonata.admin, manager_type: orm, label: "Catalogues" }
             arguments:
                     - ~
-                    - MSF\EcommerceBundle\Entity\Media
+                    - MyScentFactory\MSFBundle\Entity\Media
                     - 'AppBundle:MediaCRUD' # define the new controller via the third argument
             public: true
     admin.avis:
@@ -146,7 +146,7 @@ services:
                 - { name: sonata.admin, manager_type: orm, label: "avis Clients" }
             arguments:
                     - ~
-                    - AppBundle\Entity\CommentPost
+                    - MyScentFactory\MSFBundle\Entity\CommentPost
                     - 'AppBundle:CommentPostCRUD'
             public: true
 
@@ -156,7 +156,7 @@ services:
                 - { name: sonata.admin, manager_type: orm, label: "Gallery photo" }
             arguments:
                     - ~
-                    - AppBundle\Entity\Image
+                    - MyScentFactory\MSFBundle\Entity\Image
                     - 'AppBundle:ImageCRUD' # define the new controller via the third argument
             public: true
 

@@ -5,7 +5,7 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
 use Symfony\Component\HttpFoundation\File\File;
 use Doctrine\ORM\Event\LifecycleEventArgs;
 use Doctrine\ORM\Event\PreUpdateEventArgs;
-use MSF\EcommerceBundle\Entity\Produit;
+use MyScentFactory\MSFBundle\Entity\Produit;
 use AppBundle\Service\FileUploader;
 
 class BrochureUploadListener

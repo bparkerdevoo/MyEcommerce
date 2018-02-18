@@ -8,7 +8,7 @@
 
 namespace AppBundle\EventListener;
 
-use MSF\UserBundle\Entity\User;
+use MyScentFactory\UserBundle\Entity\User;
 use Symfony\Component\Security\Http\Event\InteractiveLoginEvent;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\HttpKernel\HttpKernelInterface;

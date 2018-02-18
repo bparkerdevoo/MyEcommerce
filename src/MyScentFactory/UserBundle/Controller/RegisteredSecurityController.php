@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace MSF\UserBundle\Controller;
+namespace MyScentFactory\UserBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;

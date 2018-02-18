@@ -1,6 +1,6 @@
 <?php
 
-namespace MSFBundle\Controller;
+namespace MyScentFactory\MSFBundle\Controller;
 
 //////gestion produit et des catégories
 

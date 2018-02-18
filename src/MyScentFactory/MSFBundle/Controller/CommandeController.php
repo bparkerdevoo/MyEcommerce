@@ -1,6 +1,6 @@
 <?php
 
-namespace MSFBundle\Controller;
+namespace MyScentFactory\MSFBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Session\Session;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -9,6 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Doctrine\ORM\Mapping\Annotation;
 use Symfony\Component\Routing\Annotation\Route;
+
 
 
 class CommandeController extends Controller
@@ -42,7 +43,7 @@ class CommandeController extends Controller
 /**
  * Verifie si le panier existe, le créé sinon
  * @return bool
- * @Route("Panier", name="panier")
+ * @Route("/Panier/", name="panier")
  */
 
 

@@ -1,5 +1,4 @@
-{% extends "::layout/Layout.html.twig" %}
-{% form_theme form 'forms/fieldsTheme1.html.twig' 'forms/fieldsTheme2.html.twig' 'forms/fieldsTheme3.html.twig' %}
+{% extends ":Layout.html.twig" %}
 
 {% block body %}
 
@@ -44,7 +43,7 @@
                             <div class="caption">
                                 <h4>Thumbnail label</h4>
                                 <p>100,00 €</p>
-                                <a class="btn btn-primary" href="{{ path('presentation') }}">Plus d'infos</a>
+                                <a class="btn btn-primary" href="{{ path('brochures') }}">Plus d'infos</a>
                                 <a class="btn btn-success" href="{{ path('panier') }}">Ajouter au panier</a>
                             </div>
                         </div>

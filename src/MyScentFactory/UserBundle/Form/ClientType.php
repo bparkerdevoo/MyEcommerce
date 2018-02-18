@@ -1,8 +1,8 @@
 <?php
 
-namespace MSF\UserBundle\Form;
+namespace MyScentFactory\UserBundle\Form;
 
-use MSF\UserBundle\Entity\Client;
+use MyScentFactory\UserBundle\Entity\Client;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -63,7 +63,7 @@ class ClientType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'MSF\UserBundle\Entity\Client'
+            'data_class' => 'MyScentFactory\UserBundle\Entity\Client'
         ));
     }
 
@@ -72,7 +72,7 @@ class ClientType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'msf_userbundle_client';
+        return 'myscentfactory_userbundle_client';
     }
 
 

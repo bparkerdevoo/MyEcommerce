@@ -1,0 +1,4 @@
+my_scent_factory:
+    resource: "@MSFBundle/Controller/"
+    path: /shop
+    type: annotation

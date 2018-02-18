@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\UserBundle\Tests\Controller;
+namespace MyScentFactory\UserBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace MSF\UserBundle\Controller;
+namespace MyScentFactory\UserBundle\Controller;
 
-use MSF\EcommerceBundle\Entity\Produit;
-use MSF\FactoryBundle\Entity\Composition;
-use MSF\UserBundle\Entity\Client;
-use MSF\UserBundle\Form\ClientType;
+use MSFBundle\Entity\Produit;
+use MSFBundle\Entity\Composition;
+use MyScentFactory\UserBundle\Entity\Client;
+use MyScentFactory\UserBundle\Form\ClientType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -113,7 +113,7 @@ class EspaceClientController extends Controller
         $profile_client = new Client();
         #$profile_client->setPrenom('justine');
 
-        return $this->render('FOSUserBundle:Profile:show_profile.html.twig',  array('client'=>$profile_client->getPrenom()));
+        return $this->render('UserBundle:FOSUserBundle:Profile:show_content.html.twig',  array('client'=>$profile_client->getPrenom()));
     }
 
     /**
@@ -127,7 +127,7 @@ class EspaceClientController extends Controller
 var_dump($client);
 echo 'ddd';
 
-        return $this->render('FOSUserBundle:Profile:show_content_client.html.twig',  array('client'=>$client));
+        return $this->render('UserBundle;views:FOSUserBundle:Profile/show_content_client.html.twig',  array('client'=>$client));
 
     }
 

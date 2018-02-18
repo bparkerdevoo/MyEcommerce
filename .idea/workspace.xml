@@ -3,42 +3,77 @@
   <component name="ChangeListManager">
     <list id="3885c4b7-ed0c-4f94-8ff9-e0df37c2a738" name="New changelist" comment="" />
     <list default="true" id="6232abcb-4fb1-4f91-a6e1-7837a5ef993f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/page.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/pages/create.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/pages/delete.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/pages/factory.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/pages/update.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/pages/view.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/AmbianceController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CompositionController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CustomController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/NoteController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/PostController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/config/services.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/layout/factory.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/modules/AjoutSupport.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/modules/ambiance.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PagesBundle/Controller/PagesController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PagesBundle/DependencyInjection/Configuration.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PagesBundle/DependencyInjection/PagesExtension.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PagesBundle/PagesBundle.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PagesBundle/Tests/Controller/DefaultControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MSF/PagesBundle/Tests/Controller/PageControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/commande.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/layout/page.html.twig" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/panier/promo_panier.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/inc/promo_panier.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/layout/composition.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/composition.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/views/Produits/layout/personalisation.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/personalisation.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/layout/catalogue.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/catalogue.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/config/routing.yml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/layout/base.html.twig" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/ChangePassword/change_password.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/ChangePassword/change_password_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/edit.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/edit_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/edit_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/list.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/list_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/list_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/new.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/new_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/new_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/show.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Group/show_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/show_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/edit.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/edit_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/edit_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/show.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_client.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/show_client.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/show_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content_client.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/show_content_client.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content_client_profile.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/show_content_client_profile.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_content_user_profile.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/show_content_user_profile.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Profile/show_profile.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/show_profile.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/check_email.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Registration/check_email.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/confirmed.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Registration/confirmed.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/email.txt.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Registration/email.txt.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Registration/register.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/register_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Registration/register_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Registration/registered_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Registration/registered_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/check_email.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Resetting/check_email.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/email.txt.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Resetting/email.txt.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Resetting/request.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/request_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Resetting/request_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Resetting/reset.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Resetting/reset_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Security/login.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/login_content.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Security/login_content.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/Security/registered.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Security/registered.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/FOSUserBundle/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/layout.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/AppBundle/Form/CodePromoType.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Form/CodePromoType.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/cropper" afterPath="$PROJECT_DIR$/web/cropper" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/MyEcommerce.iml" afterPath="$PROJECT_DIR$/.idea/MyEcommerce.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/FactoryController.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/FactoryController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/custom.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/custom.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_composition.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_composition.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_inc.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_inc.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_parfum.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_parfum.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_support.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_support.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/Layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/Layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/panier.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/panier.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout/navigation.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout/navigation.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/Doctrine/Media/Image.orm.yml" afterPath="$PROJECT_DIR$/app/config/Doctrine/Media/Image.orm.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/EventListener/BrochureUploadListener.php" afterPath="$PROJECT_DIR$/src/AppBundle/EventListener/BrochureUploadListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/EventListener/UserListener.php" afterPath="$PROJECT_DIR$/src/AppBundle/EventListener/UserListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/CommandeController.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/CommandeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/ProduitsController.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/ProduitsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/EspaceClientController.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/EspaceClientController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/RegisteredSecurityController.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/RegisteredSecurityController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/UserController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/DependencyInjection/Configuration.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/DependencyInjection/Configuration.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/DependencyInjection/UserExtension.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/DependencyInjection/UserExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Entity/Client.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Entity/Client.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Entity/User.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/EventListener/UserListener.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/EventListener/UserListener.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Form/ClientType.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Form/ClientType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Repository/ClientRepository.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Repository/ClientRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Repository/UserRepository.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Repository/UserRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/config/services.yml" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/modules/ajoutClient.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/modules/ajoutClient.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/modules/updateClient.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/modules/updateClient.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Tests/Controller/DefaultControllerTest.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Tests/Controller/DefaultControllerTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/UserBundle.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/UserBundle.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -80,98 +115,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="promo_panier.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/inc/promo_panier.html.twig">
+      <file leaf-file-name="CommandeController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/CommandeController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-283">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-274">
+              <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="29" />
               <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
+                <element signature="e#55#108#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="panier.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/panier.html.twig">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2694">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#12#30#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="produit.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/produit.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1429">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-              <folding>
-                <element signature="e#12#30#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="composition.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/composition.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/custom.html.twig">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="193">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="34" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="personalisation.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/personalisation.html.twig">
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1650">
-              <caret line="52" column="61" lean-forward="true" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
+            <state relative-caret-position="90">
+              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProduitsController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/ProduitsController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
               <folding>
-                <element signature="e#12#28#0#Twig" expanded="true" />
+                <element signature="e#96#147#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="catalogue.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/catalogue.html.twig">
+      <file leaf-file-name="PageController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/PageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-142">
-              <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-              <folding>
-                <element signature="e#12#29#0#Twig" expanded="true" />
-                <element signature="e#832#877#0#Twig" expanded="true" />
-                <element signature="e#1053#1099#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/page.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-              <folding>
-                <element signature="e#12#29#0#Twig" expanded="true" />
-                <element signature="e#449#481#0#Twig" expanded="true" />
-                <element signature="e#631#663#0#Twig" expanded="true" />
-              </folding>
+            <state relative-caret-position="43">
+              <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -220,57 +223,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/src/MSF/PagesBundle/Controller/PagesController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Admin/ClientAdmin.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/MediaType.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Composition.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/etat.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Evenement.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Note.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Support.php" />
+        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Entity/Personnalisation.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Form/SupportType.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Form/PersonnalisationType.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Form/ParfumType.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Form/NoteType.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Form/EvenementType.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/ParfumAdmin.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/SupportAdmin.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/ProduitAdmin.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/ImageAdmin.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/CategoriesAdmin.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/CommentPostAdmin.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Admin/MediaAdmin.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/Extension/ImageTypeExtension.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Form/MediaType.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Produit.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository/ProduitRepository.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/views/Produits/layout/produits.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity/Produit.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/CommentPost.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/produit.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/EcommerceController.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/panier.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/PageController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/template/Tables/table.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/MediaController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Media.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/1ProduitsController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CategoriesController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/CommandeController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/PanierController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/PanierDefaultController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitCRUDController.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Controller/ProduitsController.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/ProduitsController.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository/MediaRepository.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Form/CategoriesType.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/CommandeController.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Form/MediaType.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Form/TVAType.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Form/ProduitType.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Commande.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/LigneDeCommande.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/Categories.php" />
-        <option value="$PROJECT_DIR$/src/MSF/EcommerceBundle/Entity/TVA.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Admin/PanierAdmin.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/modules/updateClient.html.twig" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/modules/ajoutClient.html.twig" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Tests/Controller/DefaultControllerTest.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Entity/Client.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/RegisteredSecurityController.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/UserController.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/DependencyInjection/Configuration.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/DependencyInjection/UserExtension.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/EventListener/UserListener.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Form/ClientType.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Repository/ClientRepository.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Repository/UserRepository.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout/modulesUsed/panier.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/Layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout/navigation.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/UserBundle.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/EventListener/UserListener.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/EventListener/BrochureUploadListener.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Form/CodePromoType.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/config/services.yml" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/EspaceClientController.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/app/config/Doctrine/Media/Image.orm.yml" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/layout/catalogue.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/layout/page.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_inc.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_parfum.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_support.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_composition.html.twig" />
-        <option value="$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CompositionController.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/FactoryController.php" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/custom.html.twig" />
-        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/personalisation.html.twig" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/CommandeController.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/ProduitsController.php" />
+        <option value="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/config/routing.yml" />
       </list>
     </option>
   </component>
@@ -424,81 +427,12 @@
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FOSUserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FOSUserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="template" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FactoryBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FactoryBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FactoryBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSF" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="FactoryBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
@@ -519,38 +453,87 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Tests" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="var" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MSFBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MyScentFactory" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="UserBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="bundles" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="jquery" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="uploads" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="MyEcommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyEcommerce" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -564,7 +547,7 @@
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/vendor/sonata-project/admin-bundle/src/Resources/views/standard_layout.html.twig&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/friendsofsymfony/user-bundle/composer.json&#10;/Applications/MAMP/htdocs/MyEcommerce/app/config/parameters.yml&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form/form_div_layout.html.twig&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/bmatzner/fontawesome-bundle/Bmatzner/FontAwesomeBundle/Resources/public/css/font-awesome.css.map&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/friendsofsymfony/user-bundle/Model/User.php&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/bmatzner/fontawesome-bundle/Bmatzner/FontAwesomeBundle/Resources/public/css/font-awesome.min.css&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/friendsofsymfony/user-bundle/Doctrine/UserListener.php&#10;/Applications/MAMP/htdocs/MyEcommerce/vendor/bmatzner/fontawesome-bundle/Bmatzner/FontAwesomeBundle/Resources/public/css/font-awesome.css" />
-    <property name="SearchEverywhereHistoryKey" value="ImageTypeExtension&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/var/cache/dev/ContainerIl6hrp3/getImageTypeExtensionService.php&#10;skin&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/web/bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black-light.css&#10;knp_menu.html.twig&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu.html.twig&#10;knp&#9;null&#9;null&#10;frameworkB&#9;null&#9;null&#10;sonatacoreexten&#9;null&#9;null&#10;sonata core form mapping&#9;null&#9;null&#10;getRoutes&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="UserBundle&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/src/MyScentFactory/UserBundle/UserBundle.php&#10;ImageTypeExtension&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/var/cache/dev/ContainerIl6hrp3/getImageTypeExtensionService.php&#10;skin&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/web/bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black-light.css&#10;knp_menu.html.twig&#9;FILE&#9;file:///Applications/MAMP/htdocs/MyEcommerce/vendor/knplabs/knp-menu/src/Knp/Menu/Resources/views/knp_menu.html.twig&#10;knp&#9;null&#9;null&#10;frameworkB&#9;null&#9;null&#10;sonatacoreexten&#9;null&#9;null&#10;sonata core form mapping&#9;null&#9;null&#10;getRoutes&#9;null&#9;null" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
@@ -582,11 +565,11 @@
       <recent name="$PROJECT_DIR$/src/MSF/PagesBundle/Resources/views/Page" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page" />
-      <recent name="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory" />
-      <recent name="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views" />
-      <recent name="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/inc" />
-      <recent name="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce" />
+      <recent name="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views" />
+      <recent name="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Form" />
+      <recent name="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources" />
+      <recent name="$PROJECT_DIR$/src/MyScentFactory" />
+      <recent name="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -653,7 +636,7 @@
       <workItem from="1518618680735" duration="6569000" />
       <workItem from="1518627944213" duration="55332000" />
       <workItem from="1518731644932" duration="24459000" />
-      <workItem from="1518792188796" duration="56919000" />
+      <workItem from="1518792188796" duration="64813000" />
     </task>
     <task id="LOCAL-00001" summary="added codePromo Entity, issue of null tables still to be solved">
       <created>1518745446695</created>
@@ -709,20 +692,21 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="567922000" />
+    <option name="totallyTimeSpent" value="575816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="845" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944834" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2167382" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2167382" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.539801" sideWeight="0.3783977" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14377682" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35763413" sideWeight="0.6216023" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41953233" sideWeight="0.6216023" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39752406" sideWeight="0.48569384" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -738,29 +722,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36313617" sideWeight="0.37510878" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880434" sideWeight="0.49713877" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6877579" sideWeight="0.6248912" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17637917" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24475524" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39752406" sideWeight="0.48569384" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -818,12 +779,12 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/MSF/UserBundle/Controller/EspaceClientController.php</url>
+          <url>file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/EspaceClientController.php</url>
           <line>126</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/MSF/UserBundle/Controller/EspaceClientController.php</url>
+          <url>file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/EspaceClientController.php</url>
           <line>127</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
@@ -831,20 +792,12 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="11" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/routing.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Resources/config/services.yml">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/edit_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -852,7 +805,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/EcommerceBundle/Repository/EvenementRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/list_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -860,7 +813,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository/LigneDeCommandeRepository.php">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/show_content.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -868,7 +821,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository/TVARepository.php">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -876,93 +829,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/UserAdmin.php">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/show.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-926">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/indexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/EvenementController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1505">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository/CommandeRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Repository/CategoriesRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity/TVA.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3095">
-          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Entity/Categories.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4260">
-          <caret line="142" column="37" lean-forward="false" selection-start-line="142" selection-start-column="37" selection-end-line="142" selection-end-column="37" />
+        <state relative-caret-position="180">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
-            <element signature="e#51#83#0#PHP" expanded="true" />
+            <element signature="e#84#123#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Admin/ParfumAdmin.php">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/list.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1331">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/edit.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="e#447#482#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/UserBundle/Controller/EspaceClientController.php">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Group/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/show_profile.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#45#84#0#PHP" expanded="true" />
+            <element signature="e#12#37#0#Twig" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/cgu.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/show_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/views/FOSUserBundle/views/Profile/show_client.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -970,7 +889,131 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/PagesBundle/Resources/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/EspaceClientController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="120" column="6" lean-forward="false" selection-start-line="120" selection-start-column="6" selection-end-line="120" selection-end-column="6" />
+          <folding>
+            <element signature="e#56#85#0#PHP" expanded="true" />
+            <element signature="e#788#821#0#PHP" expanded="true" />
+            <element signature="e#1645#1688#1#PHP" expanded="true" />
+            <element signature="e#1833#1875#0#PHP" expanded="true" />
+            <element signature="e#2689#2732#0#PHP" expanded="true" />
+            <element signature="e#3057#3114#0#PHP" expanded="true" />
+            <element signature="e#3445#3515#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/RegisteredSecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2222">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="e#310#367#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-665">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/DependencyInjection/Configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-695">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#65#125#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1175">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#52#94#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/EventListener/UserListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1205">
+          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Form/ClientType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="74" column="39" lean-forward="true" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+          <folding>
+            <element signature="e#50#94#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Entity/Client.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3035">
+          <caret line="499" column="30" lean-forward="false" selection-start-line="499" selection-start-column="30" selection-end-line="499" selection-end-column="30" />
+          <folding>
+            <element signature="e#52#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/DependencyInjection/UserExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding>
+            <element signature="e#65#124#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/MSFBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-138">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/UserBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/FOSUserBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="26" column="6" lean-forward="false" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Tests/Controller/PageControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -978,300 +1021,212 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Tests/Controller/FactoryControllerTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Tests/Controller/EcommerceControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Tests/Controller/DefaultControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Tests/Controller/ClientControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-402">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Repository/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Repository/ClientRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5765">
+          <caret line="42" column="30" lean-forward="false" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1173">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-605">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-246">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/Doctrine/Media/Image.orm.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2159">
+          <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2005">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/apple-touch-icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-518">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-149">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppCache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-155">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-622">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/PageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/ProduitsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding>
+            <element signature="e#96#147#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/CommandeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-274">
+          <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="29" />
+          <folding>
+            <element signature="e#55#108#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/apropos.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/UserBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="9" lean-forward="true" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+        <state relative-caret-position="193">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="34" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_inc.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/config/routing.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="e#699#705#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_parfum.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="90">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_support.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/catalogue_composition.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="12" column="88" lean-forward="false" selection-start-line="12" selection-start-column="88" selection-end-line="12" selection-end-column="88" />
-          <folding>
-            <element signature="e#625#635#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/inc/cgv.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4004">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/PagesBundle/Controller/PagesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-810">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/pages/create.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2677">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/pages/delete.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1830">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/pages/factory.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2776">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/pages/update.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1830">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/pages/view.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1830">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/commande.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/inc/promo_panier.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-283">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/panier.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2694">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#30#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/AmbianceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1658">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/NoteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1260">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Controller/FactoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="58" column="48" lean-forward="false" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
-          <folding>
-            <element signature="e#55#112#0#PHP" expanded="true" />
-            <element signature="e#480#516#0#PHP" expanded="true" />
-            <element signature="e#2348#2376#1#PHP" expanded="true" />
-            <element signature="e#2421#2467#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CompositionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1923">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Controller/CustomController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2730">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MSF/FactoryBundle/Resources/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Produits/modules/AjoutSupport.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2760">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Produits/modules/ambiance.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/composition.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/custom.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/factory.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2700">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Ecommerce/produit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1429">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#30#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Factory/personalisation.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1650">
-          <caret line="52" column="61" lean-forward="true" selection-start-line="52" selection-start-column="61" selection-end-line="52" selection-end-column="61" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/catalogue.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/page.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="e#12#29#0#Twig" expanded="true" />
-            <element signature="e#449#481#0#Twig" expanded="true" />
-            <element signature="e#631#663#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Page/catalogue.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-142">
-          <caret line="22" column="46" lean-forward="false" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
-          <folding>
-            <element signature="e#12#29#0#Twig" expanded="true" />
-            <element signature="e#832#877#0#Twig" expanded="true" />
-            <element signature="e#1053#1099#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

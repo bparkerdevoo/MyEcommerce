@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\UserBundle\DependencyInjection;
+namespace MyScentFactory\UserBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

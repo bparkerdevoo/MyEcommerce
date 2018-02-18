@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\UserBundle\Repository;
+namespace MyScentFactory\UserBundle\Repository;
 
 /**
  * UserRepository

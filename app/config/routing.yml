@@ -1,7 +1,7 @@
 msf:
     resource: "@MSFBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /msf
 
 admin:
     resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
