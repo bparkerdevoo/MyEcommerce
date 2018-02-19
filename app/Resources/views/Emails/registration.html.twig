@@ -1,0 +1,18 @@
+
+{% block body %}
+
+    message pour : {{ name }}
+
+    Bienvenue dans un mode d'odes et de senteurs naturelles et ancestral.
+
+    Accéder a vos compte: <a href="{{ url('fos_user_registered_login') }}">Mon Laboratoire</a>.
+
+    Thanks!
+
+    {# Makes an absolute URL to the /images/logo.png file #}
+    <img src="{{ absolute_url(asset('img/background_header.jpg')) }}">
+
+    Cordialement
+    La team MSF.
+
+{% endblock body %}
