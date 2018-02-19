@@ -7,14 +7,16 @@
  */
 
 namespace AppBundle\Admin;
+use Sonata\AdminBundle\Form\Type\Filter\ChoiceType;
 use Sonata\AdminBundle\Form\Type\ModelAutocompleteType;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
-use MSF\UserBundle\Entity\User;
+use MyScentFactory\UserBundle\Entity\User;
 use Sonata\AdminBundle\Route\RouteCollection;
 use Symfony\Component\Security\Core\Role\SwitchUserRole;
+
 
 class UserAdmin extends AbstractAdmin
 {
@@ -22,8 +24,25 @@ class UserAdmin extends AbstractAdmin
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
-            ->add('username', 'text')
-            ->add('roles');
+            ->tab('profile')
+              ->with('Content', ['class' => 'col-md-9'])
+                ->add('username', 'text')
+                ->add('roles')
+                ->add('email')
+                ->add('password')
+            ->add('last_login', 'date')
+
+                ->end()
+            ->end()
+
+            ->tab('authorization')
+                ->with('Meta data', ['class' => 'col-md-3'])
+
+
+
+                ->end()
+            ->end()    ;
+
     }
 
     protected function configureDatagridFilters(DatagridMapper $datagridMapper)

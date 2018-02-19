@@ -1,6 +1,6 @@
 <?php
 
-namespace MSFBundle\Entity;
+namespace MyScentFactory\MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Personnalisation
  *
  * @ORM\Table(name="personnalisation")
- * @ORM\Entity(repositoryClass="MSFBundle\Repository\PersonnalisationRepository")
+ * @ORM\Entity(repositoryClass="MyScentFactory\MSFBundle\Repository\PersonnalisationRepository")
  */
 class Personnalisation
 {
@@ -42,7 +42,7 @@ class Personnalisation
 
     /**
      * @ORM\Column(name="id_auteur", type="string", nullable=true)
-     * @ORM\ManyToMany(targetEntity="MSF\UserBundle\Entity\Client")
+     * @ORM\ManyToOne(targetEntity="MyScentFactory\UserBundle\Entity\Client", inversedBy="Client")
      */
     private $id_Auteur;
 

@@ -1,5 +1,5 @@
 <?php
-namespace MSFBundle\Entity;
+namespace MyScentFactory\MSFBundle\Entity;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
@@ -18,9 +18,31 @@ class Image
  *
  * unmapped property to handle file uploads
  *
- */
+     * @ORM\Column(type="string")
+     */
 private $file;
 
+    /**
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     * @ORM\Column(type="integer")
+     */private $id;
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
 
 
 /**
@@ -84,6 +106,7 @@ public function upload()
 
     /**
      *
+     * @ORM\Column(type="string")
      */
     private $imageAlt;
 

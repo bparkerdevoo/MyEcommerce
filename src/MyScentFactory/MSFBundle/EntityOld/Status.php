@@ -1,6 +1,6 @@
 <?php
 
-namespace MSFBundle\Entity;
+namespace MyScentFactory\MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -10,7 +10,7 @@ use Doctrine\Common\Collections\ArrayCollection;
  * Status
  *
  * @ORM\Table(name="status")
- * @ORM\Entity(repositoryClass="MSFBundle\Repository\StatusRepository")
+ * @ORM\Entity(repositoryClass="\MSFBundle\Repository\StatusRepository")
  */
 class status
 {
@@ -23,16 +23,6 @@ class status
      */
     private $id;
 
-    /**
-     * @ORM\Column(name="id_composition", type="string")
-     * @ORM\OneToMany(targetEntity="MSFBundle\Entity\Composition", mappedBy="status")
-     */
-    private $id_composition;
-
-    public function __construct()
-    {
-        $this->id_composition = new ArrayCollection();
-    }
 
     /**
      * @var string
@@ -40,6 +30,8 @@ class status
      * @ORM\Column(name="status", type="string", length=50, unique=true)
      */
     private $status;
+
+
 
 
     /**
@@ -74,29 +66,5 @@ class status
     public function getStatus()
     {
         return $this->status;
-    }
-
-    /**
-     * Set idComposition.
-     *
-     * @param string $idComposition
-     *
-     * @return etat
-     */
-    public function setIdComposition($idComposition)
-    {
-        $this->id_composition = $idComposition;
-
-        return $this;
-    }
-
-    /**
-     * Get idComposition.
-     *
-     * @return string
-     */
-    public function getIdComposition()
-    {
-        return $this->id_composition;
     }
 }

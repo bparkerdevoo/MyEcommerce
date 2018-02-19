@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\FactoryBundle\Repository;
+namespace MSFBundle\Repository;
 
 /**
  * CompositionRepository

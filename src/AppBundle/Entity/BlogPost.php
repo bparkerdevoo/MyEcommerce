@@ -60,20 +60,7 @@ class BlogPost
      */
     private $draft = false;
 
-    /**
-     * @ORM\OneToMany(targetEntity="CommentPost", mappedBy="BlogPost")
-     */
-    private $CommentPost;
 
-    public function __construct()
-    {
-        $this->commentPost = new ArrayCollection();
-    }
-
-    public function getCommentPost()
-    {
-        return $this->commentPost;
-    }
 
 
 
@@ -159,29 +146,5 @@ class BlogPost
         return $this->draft;
     }
 
-    /**
-     * Add commentPost.
-     *
-     * @param \AppBundle\Entity\CommentPost $commentPost
-     *
-     * @return BlogPost
-     */
-    public function addCommentPost(\AppBundle\Entity\CommentPost $commentPost)
-    {
-        $this->CommentPost[] = $commentPost;
 
-        return $this;
-    }
-
-    /**
-     * Remove commentPost.
-     *
-     * @param \AppBundle\Entity\CommentPost $commentPost
-     *
-     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-     */
-    public function removeCommentPost(\AppBundle\Entity\CommentPost $commentPost)
-    {
-        return $this->CommentPost->removeElement($commentPost);
-    }
 }

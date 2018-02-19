@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\EcommerceBundle\Repository;
+namespace MSFBundle\Repository;
 
 /**
  * LignedeCommandeRepository

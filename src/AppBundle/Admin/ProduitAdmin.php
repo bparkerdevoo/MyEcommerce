@@ -12,7 +12,7 @@ use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
-use MSFBundle\Entity\Produit;
+use MyScentFactory\MSFBundle\Entity\Produit;
 use Sonata\AdminBundle\Route\RouteCollection;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -27,13 +27,20 @@ class ProduitAdmin extends AbstractAdmin
                 ->with('Content', ['class'=> 'col-md-9'])
                     ->add('nom', 'text')
                     ->add('description', 'textarea')
-                    ->add('id_Categories','sonata_type_model', [
-                        'class' => 'MSF\EcommerceBundle\Entity\Categories',
+
+            ->add('id_Categories','sonata_type_model', [
+                        'class' => 'MyScentFactory\MSFBundle\Entity\Categories',
+                'property' => 'id',])
+            ->add('id_Categories','sonata_type_model', [
+                        'class' => 'MyScentFactory\MSFBundle\Entity\Categories',
                 'property' => 'nom',])
+
+
+
                     ->add('prix', 'number')
                     ->add('tva', 'number')
                     ->add('image', 'text')
-//                    ->add('brochure', FileType::class, array('label' => 'Brochure (Fichier PDF)'))
+//                   ->add('brochure', FileType::class, array('label' => 'Brochure (Fichier PDF)'))
         ->add('disponible', 'choice',
             array('choices' => array(
                 'oui' => 'oui',
@@ -48,6 +55,7 @@ class ProduitAdmin extends AbstractAdmin
     {
         $datagridMapper
             ->add('nom')
+            ->add('id_categories.id')
             ->add('id_categories.nom')
            ;
     }
@@ -58,8 +66,10 @@ class ProduitAdmin extends AbstractAdmin
             ->addIdentifier('nom')
             ->add('description')
             ->add('prix')
-            ->add('id_categories.nom')
             ->add('brochure')
+            ->add('id_categories.id')
+            ->add('id_categories.nom')
+
         ;
 
     }
@@ -83,7 +93,7 @@ class ProduitAdmin extends AbstractAdmin
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'MSF\EcommerceBundle\Entity\Produit',
+            'data_class' => 'MyScentFactory\MSFBundle\Entity\Produit',
         ));
     }
 

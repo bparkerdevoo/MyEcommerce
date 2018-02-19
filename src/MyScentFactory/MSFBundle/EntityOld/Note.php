@@ -1,6 +1,6 @@
 <?php
 
-namespace MSFBundle\Entity;
+namespace MyScentFactory\MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -32,14 +32,7 @@ class Note
      */
     private $note;
 
-    /**
-     * @var string
-     *
-     * @ORM\JoinColumn()
-     * @ORM\OneToMany()
-     *
-     */
-    private $produit;
+
 
 
     /**
@@ -76,27 +69,5 @@ class Note
         return $this->note;
     }
 
-    /**
-     * Set produit.
-     *
-     * @param string $produit
-     *
-     * @return Note
-     */
-    public function setProduit($produit)
-    {
-        $this->produit = $produit;
 
-        return $this;
-    }
-
-    /**
-     * Get produit.
-     *
-     * @return string
-     */
-    public function getProduit()
-    {
-        return $this->produit;
-    }
 }

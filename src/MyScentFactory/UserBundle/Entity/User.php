@@ -42,4 +42,19 @@ class User extends BaseUser
     }
 
 
+    /**
+     * @ORM\ManyToOne(targetEntity="MyScentFactory\UserBundle\Entity\Client", inversedBy="user")
+     */
+    private $client;
+
+    public function setClient(Client $client)
+    {
+        $this->client = $client;
+    }
+
+    public function getClient()
+    {
+        return $this->client;
+    }
+
 }

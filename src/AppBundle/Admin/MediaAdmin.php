@@ -2,7 +2,7 @@
 namespace AppBundle\Admin;
 
 use Symfony\Component\HttpFoundation\File\File;
-use MSFBundle\Entity\Media;
+use MyScentFactory\MSFBundle\Entity\MediaUploads;
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
@@ -29,7 +29,11 @@ class MediaAdmin extends AbstractAdmin
         $formMapper->add('imageName', 'text')
             ->add('imageFile', 'file',[
                 'required' => false])
-            ->add('imageFile', 'file', $fileFieldOptions);
+            ->add('imageFile', 'file', $fileFieldOptions)
+            ->add('file', 'file',[
+        'required' => false])
+
+    ;
     }
     public function prePersist($image)
     {
@@ -78,14 +82,14 @@ class MediaAdmin extends AbstractAdmin
     protected $baseRouteName = 'media_admin';
     protected function configureRoutes(RouteCollection $collection)
     {
-        $collection->add('media'); // Action gets added automatically
+        $collection->add('mediaUploads'); // Action gets added automatically
         $collection->add('view', $this->getRouterIdParameter().'/view');
         $collection->add('update_action', $this->getRouterIdParameter().'/update_action', [], [], [], '', ['https'], ['GET', 'POST']);
     }
     public function toString($object)
     {
-        return $object instanceof Media
-            ? $object->getImageName()
+        return $object instanceof MediaUploads
+            ? $object->getImage()
             : 'Media'; // shown in the breadcrumb on the create view
     }
 }

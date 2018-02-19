@@ -17,10 +17,9 @@
 
                     {% for photo in image %}
 
-                    <img src="{{ asset('img/') }}{{ photo.imageName }}" alt="{{ photo.alt }}">
+                    <img src="{{ asset(photo.path) }}" alt="{{ photo.alt }}" height="50" width="50" ) >
 
                     {%  endfor %}
-
                 </div>
 
             </div>

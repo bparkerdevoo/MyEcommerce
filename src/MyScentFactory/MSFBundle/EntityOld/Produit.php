@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\File\File;
  * Produit
  *
  * @ORM\Table(name="produit")
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="MyScentFactory\MSFBundle\Repository\ProduitRepository")
  * @Vich\Uploadable
  */
 class Produit
@@ -27,14 +27,7 @@ class Produit
      */
     private $id;
 
-    /**
-     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Media", mappedBy="Produit")
-     */
-    private $media_Id;
-    public function __construct()
-    {
-        $this->media_Id = new ArrayCollection();
-    }
+
 
     /**
      *@var File
@@ -46,39 +39,7 @@ class Produit
      */
     private $brochure;
 
-    /**
-     * @return mixed
-     */
-    public function getBrochure()
-    {
-        return $this->brochure;
-    }
 
-    /**
-     * @param mixed $brochure
-     */
-    public function setBrochure(File $brochure = null)
-    {
-        $this->brochure = $brochure;
-
-        return $this;
-    }
-
-
-
-    /**
-     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Categories", inversedBy="produit")
-     *
-     * @ORM\JoinColumn(name="categories_id", referencedColumnName="id")
-     */
-    private $id_categories;
-
-    /**
-     * @ORM\ManyToOne(targetEntity="MSF\EcommerceBundle\Entity\Commande", inversedBy="produit")
-     *
-     * @ORM\JoinColumn(name="idCommande", referencedColumnName="id")
-     */
-    private $idCommande;
 
     /**
      * @var string
@@ -132,6 +93,7 @@ class Produit
     private $image;
 
 
+
     /**
      * Get id.
      *
@@ -143,13 +105,37 @@ class Produit
     }
 
     /**
-     * Set nom.
+     * Set brochure.
      *
-     * @param string $nom
+     * @param string|null $brochure
      *
      * @return Produit
      */
-    public function setNom($nom)
+    public function setBrochure($brochure = null)
+    {
+        $this->brochure = $brochure;
+
+        return $this;
+    }
+
+    /**
+     * Get brochure.
+     *
+     * @return string|null
+     */
+    public function getBrochure()
+    {
+        return $this->brochure;
+    }
+
+    /**
+     * Set nom.
+     *
+     * @param string|null $nom
+     *
+     * @return Produit
+     */
+    public function setNom($nom = null)
     {
         $this->nom = $nom;
 
@@ -159,22 +145,21 @@ class Produit
     /**
      * Get nom.
      *
-     * @return string
+     * @return string|null
      */
     public function getNom()
     {
         return $this->nom;
     }
 
-
     /**
      * Set description.
      *
-     * @param string $description
+     * @param string|null $description
      *
      * @return Produit
      */
-    public function setDescription($description)
+    public function setDescription($description = null)
     {
         $this->description = $description;
 
@@ -184,7 +169,7 @@ class Produit
     /**
      * Get description.
      *
-     * @return string
+     * @return string|null
      */
     public function getDescription()
     {
@@ -194,11 +179,11 @@ class Produit
     /**
      * Set prix.
      *
-     * @param float $prix
+     * @param float|null $prix
      *
      * @return Produit
      */
-    public function setPrix($prix)
+    public function setPrix($prix = null)
     {
         $this->prix = $prix;
 
@@ -208,7 +193,7 @@ class Produit
     /**
      * Get prix.
      *
-     * @return float
+     * @return float|null
      */
     public function getPrix()
     {
@@ -218,11 +203,11 @@ class Produit
     /**
      * Set tva.
      *
-     * @param float $tva
+     * @param float|null $tva
      *
      * @return Produit
      */
-    public function setTva($tva)
+    public function setTva($tva = null)
     {
         $this->tva = $tva;
 
@@ -232,7 +217,7 @@ class Produit
     /**
      * Get tva.
      *
-     * @return float
+     * @return float|null
      */
     public function getTva()
     {
@@ -242,11 +227,11 @@ class Produit
     /**
      * Set disponible.
      *
-     * @param bool $disponible
+     * @param bool|null $disponible
      *
      * @return Produit
      */
-    public function setDisponible($disponible)
+    public function setDisponible($disponible = null)
     {
         $this->disponible = $disponible;
 
@@ -256,7 +241,7 @@ class Produit
     /**
      * Get disponible.
      *
-     * @return bool
+     * @return bool|null
      */
     public function getDisponible()
     {
@@ -285,90 +270,5 @@ class Produit
     public function getImage()
     {
         return $this->image;
-    }
-
-    /**
-     * Set idCategories.
-     *
-     * @param int $idCategories
-     *
-     * @return Produit
-     */
-    public function setIdCategories(Categories $idCategories)
-    {
-        $this->id_categories = $idCategories;
-
-        return $this;
-    }
-
-    /**
-     * Get idCategories.
-     *
-     * @return int
-     */
-    public function getIdCategories()
-    {
-        return $this->id_categories;
-    }
-
-
-    /**
-     * Add mediaId.
-     *
-     * @param \MSF\EcommerceBundle\Entity\Media $mediaId
-     *
-     * @return Produit
-     */
-    public function addMediaId(\MSF\EcommerceBundle\Entity\Media $mediaId)
-    {
-        $this->media_Id[] = $mediaId;
-
-        return $this;
-    }
-
-    /**
-     * Remove mediaId.
-     *
-     * @param \MSF\EcommerceBundle\Entity\Media $mediaId
-     *
-     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-     */
-    public function removeMediaId(\MSF\EcommerceBundle\Entity\Media $mediaId)
-    {
-        return $this->media_Id->removeElement($mediaId);
-    }
-
-    /**
-     * Get mediaId.
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getMediaId()
-    {
-        return $this->media_Id;
-    }
-
-    /**
-     * Set idCommande.
-     *
-     * @param \MSF\EcommerceBundle\Entity\Commande|null $idCommande
-     *
-     * @return Produit
-     */
-    public function setIdCommande(\MSF\EcommerceBundle\Entity\Commande $idCommande = null)
-    {
-        $this->idCommande = $idCommande;
-
-        return $this;
-    }
-
-    /**
-     * Get idCommande.
-     *
-     * @return \MSF\EcommerceBundle\Entity\Commande|null
-     */
-    public function getIdCommande()
-    {
-        return $this->idCommande;
     }
 }

@@ -5,12 +5,11 @@ namespace MyScentFactory\UserBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
 use Symfony\Component\Validator\Constraints as Assert;
-
 /**
  * Client
  *
  * @ORM\Table(name="client")
- * @ORM\Entity(repositoryClass="\MyScentFactory\UserBundle\Repository\ClientRepository")
+ * @ORM\Entity(repositoryClass="MyScentFactory\UserBundle\Repository\ClientRepository")
  *
  */
 class Client
@@ -23,26 +22,14 @@ class Client
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
-
     /**
      * @ORM\ManyToOne(targetEntity="MyScentFactory\UserBundle\Entity\User", inversedBy="client")
-     * @ORM\Column(type="integer")
      */
     private $id_User;
-
     public function setId_User($id_User)
     {
         $this->id_User = new ArrayCollection();
     }
-
-
-    /**
-     * @ORM\OneToMany(targetEntity="MSFBundle\Entity\Commande", mappedBy="idClient")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $idCommande;
-
-
     /**
      * @var string
      *
@@ -51,110 +38,81 @@ class Client
      * @Assert\NotBlank(message="Merci de renseigner ce champ")
      */
     private $nom;
-
     /**
      * @var string
      *
-     * @ORM\Column(name="Prenom", type="string", length=100, nullable=false)
+     * @ORM\Column(name="Prenom", type="string", length=100, nullable=true)
      */
     private $prenom;
-
     /**
      * @var bool
      *
-     * @ORM\Column(name="Titre", type="string", nullable=false)
+     * @ORM\Column(name="Titre", type="string", nullable=true)
      */
     private $titre;
-
     /**
      * @var string
      *
      * @ORM\Column(name="adresse1", type="text", nullable=true)
      */
     private $adresse1;
-
     /**
      * @var string
      *
      * @ORM\Column(name="adresse2", type="text", nullable=true)
      */
     private $adresse2;
-
     /**
      * @var string
      *
      * @ORM\Column(name="ville", type="string", length=60, nullable=true)
      */
     private $ville;
-
     /**
      * @var string
      *
      * @ORM\Column(name="CodePostal", type="string", length=8, nullable=true)
      */
     private $codePostal;
-
     /**
      * @var string
      *
      * @ORM\Column(name="region", type="string", length=60, nullable=true)
      */
     private $region;
-
     /**
      * @var string
      *
      * @ORM\Column(name="telephone", type="string", length=10, nullable=true)
      */
     private $telephone;
-
     /**
      * @var string
      *
      * @ORM\Column(name="mobile", type="string", length=10, nullable=true)
      */
     private $mobile;
-
     /**
-     * @var string
+     * @var bool
      *
-     * @ORM\Column(name="AdresseType", type="string", nullable=true)
+     * @ORM\Column(name="CategorieAdresse", type="boolean", nullable=true)
      */
-    private $adresseType;
-
+    private $categorieAdresse;
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="date_de_naissance", type="date", nullable=true)
      */
     private $dateDeNaissance;
-
     /**
      * @var \DateTime
      *
      * @ORM\Column(name="date_inscription", type="date", nullable=true)
      */
     private $dateInscription;
-
     public function __construct()
     {
         $this->dateInscription = new \DateTime('NOW');
-    }
-
-    /**
-     * @ORM\ManyToMany(targetEntity="MSFBundle\Entity\Personnalisation")
-     * @ORM\Column(type="integer")
-     */
-    private $id_customName;
-
-
-
-    /**
-     * @param mixed $id_customName
-     */
-    public function setIdCustomName($id_customName)
-    {
-        $this->id_customName = $id_customName;
     }
 
 
@@ -167,7 +125,6 @@ class Client
     {
         return $this->id;
     }
-
     /**
      * Set nom.
      *
@@ -178,10 +135,8 @@ class Client
     public function setNom($nom)
     {
         $this->nom = $nom;
-
         return $this;
     }
-
     /**
      * Get nom.
      *
@@ -191,7 +146,6 @@ class Client
     {
         return $this->nom;
     }
-
     /**
      * Set prenom.
      *
@@ -202,10 +156,8 @@ class Client
     public function setPrenom($prenom)
     {
         $this->prenom = $prenom;
-
         return $this;
     }
-
     /**
      * Get prenom.
      *
@@ -215,7 +167,6 @@ class Client
     {
         return $this->prenom;
     }
-
     /**
      * Set titre.
      *
@@ -226,10 +177,8 @@ class Client
     public function setTitre($titre)
     {
         $this->titre = $titre;
-
         return $this;
     }
-
     /**
      * Get titre.
      *
@@ -239,7 +188,6 @@ class Client
     {
         return $this->titre;
     }
-
     /**
      * Set adresse1.
      *
@@ -250,10 +198,8 @@ class Client
     public function setAdresse1($adresse1)
     {
         $this->adresse1 = $adresse1;
-
         return $this;
     }
-
     /**
      * Get adresse1.
      *
@@ -263,7 +209,6 @@ class Client
     {
         return $this->adresse1;
     }
-
     /**
      * Set adresse2.
      *
@@ -274,10 +219,8 @@ class Client
     public function setAdresse2($adresse2)
     {
         $this->adresse2 = $adresse2;
-
         return $this;
     }
-
     /**
      * Get adresse2.
      *
@@ -287,7 +230,6 @@ class Client
     {
         return $this->adresse2;
     }
-
     /**
      * Set ville.
      *
@@ -298,10 +240,8 @@ class Client
     public function setVille($ville)
     {
         $this->ville = $ville;
-
         return $this;
     }
-
     /**
      * Get ville.
      *
@@ -311,7 +251,6 @@ class Client
     {
         return $this->ville;
     }
-
     /**
      * Set codePostal.
      *
@@ -322,10 +261,8 @@ class Client
     public function setCodePostal($codePostal)
     {
         $this->codePostal = $codePostal;
-
         return $this;
     }
-
     /**
      * Get codePostal.
      *
@@ -335,7 +272,6 @@ class Client
     {
         return $this->codePostal;
     }
-
     /**
      * Set region.
      *
@@ -346,10 +282,8 @@ class Client
     public function setRegion($region)
     {
         $this->region = $region;
-
         return $this;
     }
-
     /**
      * Get region.
      *
@@ -359,7 +293,6 @@ class Client
     {
         return $this->region;
     }
-
     /**
      * Set categorieAdresse.
      *
@@ -370,10 +303,8 @@ class Client
     public function setCategorieAdresse($categorieAdresse)
     {
         $this->categorieAdresse = $categorieAdresse;
-
         return $this;
     }
-
     /**
      * Get categorieAdresse.
      *
@@ -383,7 +314,6 @@ class Client
     {
         return $this->categorieAdresse;
     }
-
     /**
      * Set dateDeNaissance.
      *
@@ -394,10 +324,8 @@ class Client
     public function setDateDeNaissance($dateDeNaissance)
     {
         $this->dateDeNaissance = $dateDeNaissance;
-
         return $this;
     }
-
     /**
      * Get dateDeNaissance.
      *
@@ -407,7 +335,6 @@ class Client
     {
         return $this->dateDeNaissance;
     }
-
     /**
      * Set dateInscription.
      *
@@ -418,10 +345,8 @@ class Client
     public function setDateInscription($dateInscription)
     {
         $this->dateInscription = $dateInscription;
-
         return $this;
     }
-
     /**
      * Get dateInscription.
      *
@@ -431,7 +356,6 @@ class Client
     {
         return $this->dateInscription;
     }
-
     /**
      * Set telephone.
      *
@@ -442,10 +366,8 @@ class Client
     public function setTelephone($telephone)
     {
         $this->telephone = $telephone;
-
         return $this;
     }
-
     /**
      * Get telephone.
      *
@@ -455,7 +377,6 @@ class Client
     {
         return $this->telephone;
     }
-
     /**
      * Set mobile.
      *
@@ -466,10 +387,8 @@ class Client
     public function setMobile($mobile)
     {
         $this->mobile = $mobile;
-
         return $this;
     }
-
     /**
      * Get mobile.
      *
@@ -479,7 +398,6 @@ class Client
     {
         return $this->mobile;
     }
-
     /**
      * Set idUser.
      *
@@ -490,10 +408,8 @@ class Client
     public function setIdUser(\MyScentFactory\UserBundle\Entity\User $idUser = null)
     {
         $this->id_User = $idUser;
-
         return $this;
     }
-
     /**
      * Get idUser.
      *
@@ -504,99 +420,4 @@ class Client
         return $this->id_User;
     }
 
-    /**
-     * Add idCustomName.
-     *
-     * @param \MSFBundle\Entity\Personnalisation $idCustomName
-     *
-     * @return Client
-     */
-    public function addIdCustomName(\MSFBundle\Entity\Personnalisation $idCustomName)
-    {
-        $this->id_customName[] = $idCustomName;
-
-        return $this;
-    }
-
-    /**
-     * Remove idCustomName.
-     *
-     * @param \MSFBundle\Entity\Personnalisation $idCustomName
-     *
-     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-     */
-    public function removeIdCustomName(\MSFBundle\Entity\Personnalisation $idCustomName)
-    {
-        return $this->id_customName->removeElement($idCustomName);
-    }
-
-    /**
-     * Get idCustomName.
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getIdCustomName()
-    {
-        return $this->id_customName;
-    }
-
-    /**
-     * Set adresseType.
-     *
-     * @param string|null $adresseType
-     *
-     * @return Client
-     */
-    public function setAdresseType($adresseType = null)
-    {
-        $this->adresseType = $adresseType;
-
-        return $this;
-    }
-
-    /**
-     * Get adresseType.
-     *
-     * @return string|null
-     */
-    public function getAdresseType()
-    {
-        return $this->adresseType;
-    }
-
-    /**
-     * Add idCommande.
-     *
-     * @param \MSFBundle\Entity\Commande $idCommande
-     *
-     * @return Client
-     */
-    public function addIdCommande(\MSFBundle\Entity\Commande $idCommande)
-    {
-        $this->idCommande[] = $idCommande;
-
-        return $this;
-    }
-
-    /**
-     * Remove idCommande.
-     *
-     * @param \MSFBundle\Entity\Commande $idCommande
-     *
-     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-     */
-    public function removeIdCommande(\MSFBundle\Entity\Commande $idCommande)
-    {
-        return $this->idCommande->removeElement($idCommande);
-    }
-
-    /**
-     * Get idCommande.
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getIdCommande()
-    {
-        return $this->idCommande;
-    }
 }

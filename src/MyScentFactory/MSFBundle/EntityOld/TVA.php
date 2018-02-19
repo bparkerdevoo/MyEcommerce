@@ -1,6 +1,6 @@
 <?php
 
-namespace MSFBundle\Entity;
+namespace MyScentFactory\MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

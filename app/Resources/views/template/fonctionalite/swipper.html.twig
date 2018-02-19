@@ -1,0 +1,25 @@
+{% set imagestyle = {
+'#theme':      'image_style',
+'#style_name': 'medium',
+'#uri':        node.field_slides[key].entity.uri.value,
+'#alt':        node.field_slides[key].alt,
+'#attributes': { class: 'swiper-image' },
+} %}
+
+
+
+{% for key, item in node.field_slides %}
+    {% if node.field_slides[key].entity | image_style('thumbnail') %}
+        <figure class="swiper-slide">
+            <img {{ imagestyle }} />
+
+            {% if node.field_slides[key].title %}
+                <figcaption class="swiper-caption">
+                    <div class="swiper-user-content user-content">
+                        {{ node.field_slides[key].title|striptags("<a>,<h1>,<h2>,<h3>,<h4>,<h5>,<h6>,<ol>,<p>,<table>,<ul>")|raw }}
+                    </div><!--/.swiper-user-content.user-content-->
+                </figcaption><!--/.swiper-caption-->
+            {% endif %}
+        </figure><!--/.swiper-slide-->
+    {% endif %}
+{% endfor %}

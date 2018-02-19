@@ -38,7 +38,7 @@ class PageController extends Controller
     }
 
     /**
-     * @Route("/Condition")
+     * @Route("/condition", name="condition")
      */
     public function ConditionAction()
     {

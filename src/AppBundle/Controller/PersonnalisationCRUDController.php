@@ -3,14 +3,14 @@
 namespace AppBundle\Controller;
 
 use Sonata\AdminBundle\Controller\CRUDController;
-use MyScentFactory\UserBundle\Entity\Client;
-use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use MyScentFactory\MSFBundle\Entity\Personnalisation;
 use Symfony\Component\Routing\Annotation\Route;
 
-class ClientCRUDController extends CRUDController
+
+class PersonnalisationCRUDController extends CRUDController
 {
     /**
-     * @Route("/client", name="client_home")
+     * @Route("/personnalisation", name="customisation")
      */
     public function UpdateAction()
     {

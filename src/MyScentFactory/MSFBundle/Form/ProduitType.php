@@ -12,7 +12,6 @@ use Symfony\Component\Form\Extension\Core\Type\PercentType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use MyScentFactory\MSFBundle\Entity\Produit;
 use Sonata\AdminBundle\Form\DataTransformer;
 use Symfony\Component\Form\DataTransformerInterface;
 

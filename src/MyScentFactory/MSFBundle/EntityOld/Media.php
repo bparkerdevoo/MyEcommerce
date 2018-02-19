@@ -1,6 +1,6 @@
 <?php
 
-namespace MSFBundle\Entity;
+namespace MyScentFactory\MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\HttpFoundation\File\File;
@@ -146,23 +146,6 @@ class Media
      */
     private $updatedAt;
 
-
-    /**
-     * @ORM\ManyToOne(targetEntity="MyScentFactory\MSFBundle\Entity\Produit", inversedBy="Media")
-     *
-     * @ORM\JoinColumn(name="produit", referencedColumnName="id", nullable=true)
-     */
-    private $produit;
-
-    public function setProduit(Produit $produit)
-    {
-        $this->produit = $produit;
-    }
-
-    public function getProduit()
-    {
-        return $this->produit;
-    }
 
 
 

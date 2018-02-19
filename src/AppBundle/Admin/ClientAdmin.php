@@ -12,7 +12,7 @@ use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;
 use Sonata\AdminBundle\Datagrid\DatagridMapper;
 use Sonata\AdminBundle\Form\FormMapper;
-use MSF\UserBundle\Entity\Client;
+use MyScentFactory\UserBundle\Entity\Client;
 use Sonata\AdminBundle\Route\RouteCollection;
 use Sonata\MediaBundle\Model\MediaInterface;
 
@@ -39,9 +39,13 @@ class ClientAdmin extends AbstractAdmin
             ->add('telephone', 'text')
             ->add('mobile', 'text')
             ->add('dateDeNaissance', 'date')
-            ->add('id_User', 'sonata_type_model', [
-                'class' => 'MSF\UserBundle\Entity\User',
+            ->add('idUser', 'sonata_type_model', [
+                'class' => 'MyScentFactory\UserBundle\Entity\User',
                 'property' => 'username',])
+
+
+
+
 
         ;
     }

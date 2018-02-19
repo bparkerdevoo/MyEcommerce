@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Entity;
+namespace MyScentFactory\MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * CodePromo
  *
  * @ORM\Table(name="codePromo")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\CodePromoRepository")
+ * @ORM\Entity(repositoryClass="\CodePromoRepository")
  */
 class CodePromo
 {
@@ -21,27 +21,6 @@ class CodePromo
      */
     private $id;
 
-    /**
-     * @ORM\JoinColumn(nullable=true)
-     * @ORM\OneToOne(targetEntity="MSF\EcommerceBundle\Entity\Commande")
-     */
-    private $idCommande;
-
-    /**
-     * @return mixed
-     */
-    public function getIdCommande()
-    {
-        return $this->idCommande;
-    }
-
-    /**
-     * @param mixed $idCommande
-     */
-    public function setIdCommande($idCommande)
-    {
-        $this->idCommande = $idCommande;
-    }
 
     /**
      * @var string

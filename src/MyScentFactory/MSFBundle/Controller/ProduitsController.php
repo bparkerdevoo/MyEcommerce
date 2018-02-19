@@ -73,9 +73,9 @@ class ProduitsController extends Controller
      */
     public function viewCategorieAction()
     {
-        $post = $this->getDoctrine()->getRepository('EcommerceBundle:Categories')->findAll();
+        $post = $this->getDoctrine()->getRepository('MSFBundle:Categories')->findAll();
 
-        return $this->render("EcommerceBundle:pages:eshop.html.twig");
+        return $this->render("pages:eshop.html.twig");
     }
 
     /**
@@ -84,7 +84,7 @@ class ProduitsController extends Controller
 
     public function createCategorieAction()
     {
-        return $this->render("EcommerceBundle:pages:create.html.twig");
+        return $this->render("pages:create.html.twig");
     }
 
     /**
@@ -92,7 +92,7 @@ class ProduitsController extends Controller
      */
     public function updateCategorieAction($id)
     {
-        return $this->render("EcommerceBundle:pages:update.html.twig");
+        return $this->render("pages:update.html.twig");
     }
 
     /**
@@ -100,7 +100,7 @@ class ProduitsController extends Controller
      */
     public function showCategorieAction($id)
     {
-        return $this->render("EcommerceBundle:pages:view.html.twig");
+        return $this->render("pages:view.html.twig");
     }
 
     /**
@@ -108,7 +108,7 @@ class ProduitsController extends Controller
      */
     public function deleteCategorieAction($id)
     {
-        return $this->render("EcommerceBundle:pages:delete.html.twig");
+        return $this->render("pages:delete.html.twig");
     }
 
 
@@ -128,7 +128,7 @@ class ProduitsController extends Controller
             ->getForm()
         ;
 
-        return $this->render("EcommerceBundle:Produits:modules/AjoutCategorie.html.twig", array($form->createView()
+        return $this->render("Produits:modules/AjoutCategorie.html.twig", array($form->createView()
         ))
             //generate form html
             ;

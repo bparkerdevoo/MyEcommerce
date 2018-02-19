@@ -109,7 +109,7 @@ doctrine:
 
 #         cdn:
 #             server:
-#                 path: '%kernel.project_dir%/public/uploads/images/products'
+#                 path: '%kernel.project_dir%/img/products'
 #         filesystem:
 #             local:
 #                 directory: '%kernel.project_dir%/public/uploads/media'
@@ -123,8 +123,8 @@ vich_uploader:
 #chargement depuis l'admin
     mappings:
         product_image:
-            uri_prefix: public/images/products
-            upload_destination: '%kernel.project_dir%/public/images/products'
+            uri_prefix: /img
+            upload_destination: '%kernel.project_dir%/img'
 
             inject_on_load: false
             delete_on_update: true

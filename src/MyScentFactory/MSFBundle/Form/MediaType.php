@@ -17,8 +17,6 @@ class MediaType extends AbstractType
         $builder
             ->add('path')
             ->add('alt')
-            ->add('vignette1')
-            ->add('vignette2')
             ->add('image');
     }/**
      * {@inheritdoc}
@@ -26,7 +24,7 @@ class MediaType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'MSFBundle\Entity\Media'
+            'data_class' => 'MSFBundle\Entity\MediaUploads'
         ));
     }
 
@@ -35,7 +33,7 @@ class MediaType extends AbstractType
      */
     public function getBlockPrefix()
     {
-        return 'myscentfactory_msfbundle_media';
+        return 'myscentfactory_msfbundle_mediaUploads';
     }
 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\FactoryBundle\Repository;
+namespace MyScentFactory\MSFBundle\Repository;
 
 /**
  * PersonnalisationRepository

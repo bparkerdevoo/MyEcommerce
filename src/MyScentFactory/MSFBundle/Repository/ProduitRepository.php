@@ -1,6 +1,6 @@
 <?php
 
-namespace MSFBundle\Repository;
+namespace MyScentFactory\MSFBundle\Repository;
 
 /**
  * ProduitRepository

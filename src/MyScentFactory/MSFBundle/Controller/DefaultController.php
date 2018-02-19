@@ -4,8 +4,10 @@ namespace MyScentFactory\MSFBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use MSFBundle\Entity\Media;
+use MyScentFactory\MSFBundle\Entity\MediaUploads;
+use MyScentFactory\MSFBundle\Entity\Produit;
 use MSFBundle\Form\MediaType;
+use MSFBundle\Form\ProduitType;
 use Doctrine\ORM\EntityManagerInterface;
 
 class DefaultController extends Controller
@@ -19,7 +21,7 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         //recuperation de la bdd
-        $repository = $this->getDoctrine()->getRepository(Media::class);
+        $repository = $this->getDoctrine()->getRepository(MediaUploads::class);
 
         $photos = $repository->findAll();
 
@@ -32,7 +34,7 @@ class DefaultController extends Controller
     public function MediaAction()
     {
 
-        $media = new Media();
+        $media = new MediaUploads();
 
         // recupere formulaire
         $form = $this->createForm(MediaType::class, $media);

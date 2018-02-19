@@ -36,17 +36,7 @@ class LigneDeCommande
     private $prixUnitaire;
 
 
-    /**
-     * @ORM\ManyToOne(targetEntity="MSFBundle\Entity\Commande")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $commande;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="MyScentFactory\MSFBundle\Entity\Produit")
-     * @ORM\JoinColumn(nullable=false)
-     */
-    private $produit;
 
 
     /**
@@ -107,51 +97,7 @@ class LigneDeCommande
         return $this->prixUnitaire;
     }
 
-    /**
-     * Set commande.
-     *
-     * @param \AppBundle\Entity\Commande $commande
-     *
-     * @return LignedeCommande
-     */
-    public function setCommande(\MyScentFactory\MSFBundle\Bundle\Entity\Commande $commande)
-    {
-        $this->commande = $commande;
 
-        return $this;
-    }
 
-    /**
-     * Get commande.
-     *
-     * @return \AppBundle\Entity\Commande
-     */
-    public function getCommande()
-    {
-        return $this->commande;
-    }
 
-    /**
-     * Set produit.
-     *
-     * @param  $produit
-     *
-     * @return LignedeCommande
-     */
-    public function setProduit( \MSFBundle\Entity\Produit $produit)
-    {
-        $this->produit = $produit;
-
-        return $this;
-    }
-
-    /**
-     * Get produit.
-     *
-     * @return \MSFBundle\Entity\Produit
-     */
-    public function getProduit()
-    {
-        return $this->produit;
-    }
 }

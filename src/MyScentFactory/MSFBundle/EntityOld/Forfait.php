@@ -1,6 +1,6 @@
 <?php
 
-namespace AppBundle\Entity;
+namespace MyScentFactory\MSFBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Forfait
  *
  * @ORM\Table(name="forfait")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\ForfaitRepository")
+ * @ORM\Entity(repositoryClass="MSFBundle\Repository\ForfaitRepository")
  */
 class Forfait
 {
