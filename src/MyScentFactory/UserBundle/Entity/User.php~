@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\UserBundle\Entity;
+namespace MyScentFactory\UserBundle\Entity;
 
 use FOS\UserBundle\Model\User as BaseUser;
 use Doctrine\ORM\Mapping as ORM;
@@ -41,5 +41,20 @@ class User extends BaseUser
         $this->locale = $locale;
     }
 
+
+    /**
+     * @ORM\ManyToOne(targetEntity="MyScentFactory\UserBundle\Entity\Client", inversedBy="user")
+     */
+    private $client;
+
+    public function setClient(Client $client)
+    {
+        $this->client = $client;
+    }
+
+    public function getClient()
+    {
+        return $this->client;
+    }
 
 }

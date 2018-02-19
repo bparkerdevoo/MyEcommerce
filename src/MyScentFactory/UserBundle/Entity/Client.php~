@@ -1,6 +1,6 @@
 <?php
 
-namespace MSF\UserBundle\Entity;
+namespace MyScentFactory\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -10,7 +10,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Client
  *
  * @ORM\Table(name="client")
- * @ORM\Entity(repositoryClass="MSF\UserBundle\Repository\ClientRepository")
+ * @ORM\Entity(repositoryClass="\MyScentFactory\UserBundle\Repository\ClientRepository")
  *
  */
 class Client
@@ -24,23 +24,64 @@ class Client
      */
     private $id;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="MSF\UserBundle\Entity\User", inversedBy="client")
-     * @ORM\Column(type="integer")
-     */
-    private $id_User;
 
-    public function setId_User($id_User)
+    /**
+     * @ORM\OneToMany(targetEntity="MyScentFactory\UserBundle\Entity\User", mappedBy="client")
+     */
+    private $idUser;
+
+
+    /**
+     * @param int $id
+     */
+    public function setId(int $id)
     {
-        $this->id_User = new ArrayCollection();
+        $this->id = $id;
+    }
+
+    /**
+     * @param mixed $idUser
+     */
+    public function setIdUser($idUser)
+    {
+        $this->idUser = $idUser;
+    }
+
+
+    public function getIdUser()
+    {
+        return $this->idUser;
     }
 
 
     /**
-     * @ORM\OneToMany(targetEntity="MSF\EcommerceBundle\Entity\Commande", mappedBy="idClient")
-     * @ORM\JoinColumn(nullable=false)
+     * Add idUser
+     *
+     * @param \MyScentFactory\Entity\User
+     *
+     * @return $idUser
+     *
      */
-    private $idCommande;
+    public function addUser(\MyScentFactory\UserBundle\Entity\User $idUser)
+    {
+        $this->idUser[] = $idUser;
+
+        return $this;
+    }
+
+    /**
+     * Remove idUser.
+     *
+     * @param \MyScentFactory\UserBundle\Entity\User $idUser
+     *
+     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
+     */
+    public function removeIdUser(\MyScentFactory\UserBundle\Entity\User $idUser)
+    {
+        return $this->idUser->removeElement($idUser);
+    }
+
+
 
 
     /**
@@ -136,13 +177,14 @@ class Client
      */
     private $dateInscription;
 
-    public function __construct()
+    public function dateInscription()
     {
         $this->dateInscription = new \DateTime('NOW');
+
     }
 
     /**
-     * @ORM\ManyToMany(targetEntity="MSF\FactoryBundle\Entity\Personnalisation")
+     * @ORM\ManyToMany(targetEntity="MSFBundle\Entity\Personnalisation")
      * @ORM\Column(type="integer")
      */
     private $id_customName;
@@ -480,65 +522,15 @@ class Client
         return $this->mobile;
     }
 
-    /**
-     * Set idUser.
-     *
-     * @param \MSF\UserBundle\Entity\User|null $idUser
-     *
-     * @return Client
-     */
-    public function setIdUser(\MSF\UserBundle\Entity\User $idUser = null)
-    {
-        $this->id_User = $idUser;
 
-        return $this;
-    }
 
-    /**
-     * Get idUser.
-     *
-     * @return \MSF\UserBundle\Entity\User|null
-     */
-    public function getIdUser()
-    {
-        return $this->id_User;
-    }
 
-    /**
-     * Add idCustomName.
-     *
-     * @param \MSF\FactoryBundle\Entity\Personnalisation $idCustomName
-     *
-     * @return Client
-     */
-    public function addIdCustomName(\MSF\FactoryBundle\Entity\Personnalisation $idCustomName)
-    {
-        $this->id_customName[] = $idCustomName;
 
-        return $this;
-    }
 
-    /**
-     * Remove idCustomName.
-     *
-     * @param \MSF\FactoryBundle\Entity\Personnalisation $idCustomName
-     *
-     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-     */
-    public function removeIdCustomName(\MSF\FactoryBundle\Entity\Personnalisation $idCustomName)
-    {
-        return $this->id_customName->removeElement($idCustomName);
-    }
 
-    /**
-     * Get idCustomName.
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getIdCustomName()
-    {
-        return $this->id_customName;
-    }
+
+
+
 
     /**
      * Set adresseType.
@@ -564,39 +556,33 @@ class Client
         return $this->adresseType;
     }
 
+
+
+
+
+
+
     /**
-     * Add idCommande.
+     * Get idCustomName.
      *
-     * @param \MSF\EcommerceBundle\Entity\Commande $idCommande
+     * @return int
+     */
+    public function getIdCustomName()
+    {
+        return $this->id_customName;
+    }
+
+    /**
+     * Add idUser.
+     *
+     * @param \MyScentFactory\UserBundle\Entity\User $idUser
      *
      * @return Client
      */
-    public function addIdCommande(\MSF\EcommerceBundle\Entity\Commande $idCommande)
+    public function addIdUser(\MyScentFactory\UserBundle\Entity\User $idUser)
     {
-        $this->idCommande[] = $idCommande;
+        $this->idUser[] = $idUser;
 
         return $this;
-    }
-
-    /**
-     * Remove idCommande.
-     *
-     * @param \MSF\EcommerceBundle\Entity\Commande $idCommande
-     *
-     * @return boolean TRUE if this collection contained the specified element, FALSE otherwise.
-     */
-    public function removeIdCommande(\MSF\EcommerceBundle\Entity\Commande $idCommande)
-    {
-        return $this->idCommande->removeElement($idCommande);
-    }
-
-    /**
-     * Get idCommande.
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getIdCommande()
-    {
-        return $this->idCommande;
     }
 }

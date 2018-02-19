@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list id="3885c4b7-ed0c-4f94-8ff9-e0df37c2a738" name="New changelist" comment="" />
     <list default="true" id="6232abcb-4fb1-4f91-a6e1-7837a5ef993f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/Emails/promotion.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/Emails/registration.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/cropper" afterPath="$PROJECT_DIR$/web/cropper" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Admin/UserAdmin.php" afterPath="$PROJECT_DIR$/src/AppBundle/Admin/UserAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/UserCRUDController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/UserCRUDController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/UserController.php" afterPath="$PROJECT_DIR$/src/MyScentFactory/UserBundle/Controller/UserController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,8 +45,8 @@
           <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Default/index.html.twig">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="113" column="79" lean-forward="false" selection-start-line="113" selection-start-column="79" selection-end-line="113" selection-end-column="79" />
+                <state relative-caret-position="64">
+                  <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
                   <folding>
                     <element signature="e#12#30#0#Twig" expanded="true" />
                   </folding>
@@ -737,7 +731,7 @@
       <workItem from="1518618680735" duration="6569000" />
       <workItem from="1518627944213" duration="55332000" />
       <workItem from="1518731644932" duration="24459000" />
-      <workItem from="1518792188796" duration="120299000" />
+      <workItem from="1518792188796" duration="120793000" />
     </task>
     <task id="LOCAL-00001" summary="added codePromo Entity, issue of null tables still to be solved">
       <created>1518745446695</created>
@@ -774,7 +768,14 @@
       <option name="project" value="LOCAL" />
       <updated>1519038229499</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="reshaping my project">
+      <created>1519063673474</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1519063673474</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers>
       <GitHub shared="false" url="https://github.com">
         <option name="assignedIssuesOnly" value="false" />
@@ -800,7 +801,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="631302000" />
+    <option name="totallyTimeSpent" value="631796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="845" extended-state="6" />
@@ -809,12 +810,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.539801" sideWeight="0.3783977" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20495185" sideWeight="0.6216023" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944834" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20495185" sideWeight="0.6216023" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32904148" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2696011" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25751072" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14377682" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14377682" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39752406" sideWeight="0.48569384" order="6" side_tool="false" content_ui="tabs" />
@@ -1385,8 +1386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyScentFactory/MSFBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="113" column="79" lean-forward="false" selection-start-line="113" selection-start-column="79" selection-end-line="113" selection-end-column="79" />
+        <state relative-caret-position="64">
+          <caret line="110" column="25" lean-forward="true" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
           <folding>
             <element signature="e#12#30#0#Twig" expanded="true" />
           </folding>
